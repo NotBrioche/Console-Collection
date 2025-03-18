@@ -4,6 +4,7 @@ class Item {
   description: string;
   quality: number;
   collection: string;
+  rareVariant: boolean;
   conditions: Array<string>;
 
   get rarity() {
@@ -27,7 +28,8 @@ class Item {
     quality: number,
     conditions: Array<string>,
     collection: string,
-    rarity?: number | null
+    rarity?: number | null,
+    rareVariant?: boolean | null
   ) {
     if (rarity != null && (rarity >= Item.rarity.length || rarity < 0)) { 
       throw new Error(`Rarity must be between 0 and ${Item.rarity.length - 1}`);
@@ -38,6 +40,7 @@ class Item {
     this.description = description;
     this.quality = quality;
     this.collection = collection;
+    this.rareVariant = rareVariant ?? false;
     this.conditions = conditions;
   }
 

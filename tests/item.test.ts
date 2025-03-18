@@ -2,12 +2,13 @@ import Item from "../src/item";
 
 describe('Item class', () => {
   test('An object created with the constructor has the right values', () => {
-    const item = new Item("Pierre", "C'est une pierre, elle peut vous porter compagnie", Math.random(), [], "Matériaux", 0);
+    const item = new Item("Pierre", "C'est une pierre, elle peut vous porter compagnie", Math.random(), [], "Matériaux", 0, true);
 
     expect(item.name).toBe("Pierre");
     expect(item.description).toBe("C'est une pierre, elle peut vous porter compagnie");
     expect(item.quality).toBeGreaterThan(0);
     expect(item.quality).toBeLessThan(1);
+    expect(item.rareVariant).toBe(true);
     expect(item.collection).toBe("Matériaux");
     expect(item.rarity).toBe("Common");
     expect(item._rarity).toBe(0);
