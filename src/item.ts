@@ -10,8 +10,6 @@ class Item {
     description: string,
     quality: number,
     conditions: Array<string>,
-    genre: boolean,
-    defined: boolean,
     rarity?: number | null
   ) {
     this.name = name;
