@@ -1,11 +1,10 @@
-import { log } from 'console';
-import Command from './command';
-import './extensions/date.extension';
-import Player from './player';
+import Command from '../command';
+import '../extensions/date.extension';
+import Player from '../player';
 
 class HomeCommand implements Command {
   name: string = 'home';
-  description: string = 'Returns your personal informations';
+  description: string = 'Affiche la page d\'accueil';
   syntax: string = 'home';
   longDescription?: string | undefined;
   player: Player;
@@ -26,7 +25,7 @@ class HomeCommand implements Command {
     );
     console.log(`> Energie : ${this.player.power} / 100`);
     console.log(`> ${'-'.repeat(titleString.length)}`);
-    console.log('> Use "help" to list available commands.');
+    console.log('> Tapez "help" pour lister les commandes utilisables.');
     console.log('> ');
   }
 }
