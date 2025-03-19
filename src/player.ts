@@ -1,13 +1,15 @@
-import Item from "./item";
+import Item from './item';
 
 class Player {
+  username: string;
   power: number;
   collection: Array<Item>;
 
-  constructor() {
-    this.power = 0;
+  constructor(username: string) {
+    this.username = username;
+    this.power = 100;
     this.collection = [];
   }
 }
 
-export default Player
+export default Player;

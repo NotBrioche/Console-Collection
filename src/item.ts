@@ -10,12 +10,12 @@ class Item {
   get rarity() {
     return Item.rarity[this._rarity];
   }
-  
+
   set rarity(value) {
     this._rarity = Item.rarity.indexOf(value);
   }
 
-  static rarity = ["Common", "Uncommon", "Rare", "Epic", "Legendary", "Secret"];
+  static rarity = ['Common', 'Uncommon', 'Rare', 'Epic', 'Legendary', 'Secret'];
 
   get details() {
     this.getObjectInfos();
@@ -31,7 +31,7 @@ class Item {
     rarity?: number | null,
     rareVariant?: boolean | null
   ) {
-    if (rarity != null && (rarity >= Item.rarity.length || rarity < 0)) { 
+    if (rarity != null && (rarity >= Item.rarity.length || rarity < 0)) {
       throw new Error(`Rarity must be between 0 and ${Item.rarity.length - 1}`);
     }
 
@@ -46,11 +46,11 @@ class Item {
 
   public getObjectInfos() {
     console.log(`[ ${this.name} ] - ${this.rarity}`);
-    console.log("-".repeat(`| ${this.description}`.length));
+    console.log('-'.repeat(`| ${this.description}`.length));
     console.log(`| Qualité : ${this.quality}`);
-    console.log("|");
+    console.log('|');
     console.log(`| ${this.description}`);
-    console.log("-".repeat(`| ${this.description}`.length));
+    console.log('-'.repeat(`| ${this.description}`.length));
   }
 }
 
