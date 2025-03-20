@@ -1,7 +1,7 @@
 import Command from './command';
 import * as readline from 'readline/promises';
-import { exit } from 'process';
-import Player from './player';
+
+import Game from './game';
 
 // Commands
 import HomeCommand from './commands/homeCommand';
@@ -11,20 +11,23 @@ import ClearCommand from './commands/clearCommand';
 
 const rl = readline.createInterface(process.stdin, process.stdout);
 
-const player = new Player('Fabrioche');
-
 class Console {
-  commands: Array<Command> = [
-    new HomeCommand(player),
-    new ExitCommand(),
-    new ClearCommand(),
-  ];
+  game: Game;
 
-  constructor() {
+  commands: Array<Command>;
+
+  constructor(game: Game) {
+    this.game = game;
+
+    this.commands = [
+      new HomeCommand(this.game.player),
+      new ExitCommand(),
+      new ClearCommand(),
+    ];
     this.commands.push(new HelpCommand(this.commands));
   }
 
-  async init() {
+  public async init() {
     console.log('> home');
     this.commands[0].execute();
 
@@ -32,7 +35,7 @@ class Console {
       const input = (await rl.question('> ')).trim();
 
       if (input === null || input == '') continue;
-      if (input == 'exit') exit();
+      if (input == 'exit') break;
 
       const command = this.commands.find((c) => c.name == input);
       if (command) {

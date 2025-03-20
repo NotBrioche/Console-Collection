@@ -1,5 +1,3 @@
-import Console from './src/console';
+import Game from './src/game';
 
-const console = new Console();
-
-console.init();
+new Game();

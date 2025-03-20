@@ -1,10 +1,13 @@
 import Command from '../command';
 import '../extensions/date.extension';
 import Player from '../player';
+const createSeasonSolver = require('date-season');
+
+const season = createSeasonSolver();
 
 class HomeCommand implements Command {
   name: string = 'home';
-  description: string = 'Affiche la page d\'accueil';
+  description: string = "Affiche la page d'accueil";
   syntax: string = 'home';
   longDescription?: string | undefined;
   player: Player;
@@ -15,7 +18,7 @@ class HomeCommand implements Command {
 
   execute(): void {
     const now = new Date();
-    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${now.toLocaleTimeString().substring(0, 5)}`;
+    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${getSeason(now)} ${now.toLocaleTimeString().substring(0, 5)}`;
 
     console.log('> ');
     console.log(`> ${titleString}`);
@@ -27,6 +30,21 @@ class HomeCommand implements Command {
     console.log(`> ${'-'.repeat(titleString.length)}`);
     console.log('> Tapez "help" pour lister les commandes utilisables.');
     console.log('> ');
+  }
+}
+
+function getSeason(date: Date) {
+  const s = season(date);
+
+  switch (s) {
+    case 'Spring':
+      return 'Printemps';
+    case 'Summer':
+      return 'Été';
+    case 'Autumn':
+      return 'Automne';
+    case 'Winter':
+      return 'Hiver';
   }
 }
 
