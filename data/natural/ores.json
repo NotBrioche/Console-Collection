@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Pierre",
+    "description": "C'est une pierre, elle peut vous porter compagnie",
+    "rarity": 0,
+    "conditions": ["Search"]
+  }
+]

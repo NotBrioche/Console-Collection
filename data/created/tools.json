@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Marteau",
+    "description": "Pratique pour enfoncer un clou",
+    "rarity": 0,
+    "conditions": ["Search", "Day"]
+  }
+]
