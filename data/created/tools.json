@@ -1,8 +1,21 @@
 [
   {
+    "id": 50,
     "name": "Marteau",
     "description": "Pratique pour enfoncer un clou",
     "rarity": 0,
-    "conditions": ["Search", "Day"]
+    "conditions": {
+      "action": "search",
+      "time": "day"
+    }
+  },
+  {
+    "id": 51,
+    "name": "Pioche",
+    "description": "Pratique pour miner",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
   }
 ]

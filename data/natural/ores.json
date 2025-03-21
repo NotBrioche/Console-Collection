@@ -1,8 +1,21 @@
 [
   {
+    "id": 1,
     "name": "Pierre",
     "description": "C'est une pierre, elle peut vous porter compagnie",
     "rarity": 0,
-    "conditions": ["Search"]
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Fer",
+    "description": "Minerais bien connu du grand public.",
+    "rarity": 0,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
   }
 ]

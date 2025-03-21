@@ -1,4 +1,5 @@
 class Item {
+  id: number;
   name: string;
   _rarity: number;
   description: string;
@@ -23,6 +24,7 @@ class Item {
   }
 
   constructor(
+    id: number,
     name: string,
     description: string,
     quality: number,
@@ -35,6 +37,7 @@ class Item {
       throw new Error(`Rarity must be between 0 and ${Item.rarity.length - 1}`);
     }
 
+    this.id = id;
     this.name = name;
     this._rarity = rarity ?? 0;
     this.description = description;

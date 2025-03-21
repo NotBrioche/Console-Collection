@@ -1,8 +1,11 @@
 [
   {
+    "id": 100,
     "name": "Gravité",
     "description": "Découvert par Isaac Newton, publié en 1687, pratique pour la physique et notamment pour vous tenir sur Terre.",
     "rarity": 1,
-    "conditions": ["Wait"]
+    "conditions": {
+      "action": "wait"
+    }
   }
 ]
