@@ -1,0 +1,54 @@
+[
+  {
+    "id": 7,
+    "name": "Nuage",
+    "description": "Un amas d'eau, a vous de voir ce que vous allez en faire...",
+    "rarity": 0,
+    "conditions": {
+      "action": "wait",
+      "time": "day"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Pluie",
+    "description": "Apparemment certains gens aiment ça, mais pas moi.",
+    "rarity": 0
+  },
+  {
+    "id": 9,
+    "name": "Neige",
+    "description": "C'EST L'HIVER",
+    "rarity": 0,
+    "conditions": {
+      "season": "winter"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Vent",
+    "description": "Attention, ça décoiffe.",
+    "rarity": 0
+  },
+  {
+    "id": 11,
+    "name": "Marée Haute",
+    "description": "Attention, ça ne prévient pas quand ça arrive.",
+    "rarity": 1,
+    "conditions": {
+      "action": "wait",
+      "time": "night",
+      "moon": ["full", "new"],
+      "near": "water"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Avalanche",
+    "description": "Dangereux, faites attention.",
+    "rarity": 1,
+    "conditions": {
+      "near": "snow"
+    }
+  }
+]
