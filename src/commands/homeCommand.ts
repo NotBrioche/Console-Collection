@@ -9,14 +9,14 @@ class HomeCommand implements Command {
   name: string = 'home';
   description: string = "Affiche la page d'accueil";
   syntax: string = 'home';
-  longDescription?: string | undefined;
+  longDescription: string[] = [];
   player: Player;
 
   constructor(player: Player) {
     this.player = player;
   }
 
-  execute(): void {
+  async execute(args: string[] | null): Promise<void> {
     const now = new Date();
     const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${getSeason(now)} ${now.toLocaleTimeString().substring(0, 5)}`;
 

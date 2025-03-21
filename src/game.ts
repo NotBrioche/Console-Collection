@@ -5,11 +5,10 @@ import { exit } from 'process';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const rl = readline.createInterface(process.stdin, process.stdout);
-
 class Game {
   player: Player;
   console: Console;
+  rl = readline.createInterface(process.stdin, process.stdout);
 
   static playerDataPath: string = path.join(__dirname, '../data/player.json');
 
@@ -19,7 +18,7 @@ class Game {
 
       const importedPlayer = JSON.parse(fileString);
 
-      this.player = new Player(importedPlayer.username);
+      this.player = new Player(importedPlayer.username, importedPlayer.power);
     } else {
       this.player = new Player('');
     }
@@ -31,7 +30,7 @@ class Game {
 
   async init() {
     if (this.player.username == '') {
-      this.player.username = await rl.question(
+      this.player.username = await this.rl.question(
         "Quel est votre nom d'utilisateur ? : "
       );
       fs.writeFileSync(Game.playerDataPath, JSON.stringify(this.player), {

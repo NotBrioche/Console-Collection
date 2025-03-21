@@ -2,9 +2,9 @@ interface Command {
   name: string;
   description: string;
   syntax: string;
+  longDescription: string[];
 
-  longDescription?: string | undefined;
-  execute(): void;
+  execute(args: string[] | null): Promise<void>;
 }
 
 export default Command;
