@@ -4,13 +4,17 @@ import Console from './console';
 import { exit } from 'process';
 import * as fs from 'fs';
 import * as path from 'path';
+import getAppDataPath from 'appdata-path';
 
 class Game {
   player: Player;
   console: Console;
   rl = readline.createInterface(process.stdin, process.stdout);
 
-  static playerDataPath: string = path.join(__dirname, '../data/player.json');
+  static playerDataPath: string = path.join(
+    getAppDataPath('Console-Collection'),
+    'player.json'
+  );
 
   constructor() {
     if (fs.existsSync(Game.playerDataPath)) {
@@ -20,6 +24,7 @@ class Game {
 
       this.player = new Player(importedPlayer.username, importedPlayer.power);
     } else {
+      fs.mkdirSync(getAppDataPath('Console-Collection'), { recursive: true });
       this.player = new Player('');
     }
 
