@@ -1,18 +1,18 @@
 class Condition {
-  action: string;
-  time: string;
-  season: string;
-  item: number;
-  moon: string;
-  near: string[];
+  action: string | null;
+  time: string | null;
+  season: string | null;
+  item: number | null;
+  moon: string | null;
+  near: string[] | null;
 
   constructor(
-    action: string,
-    time: string,
-    season: string,
-    item: number,
-    moon: string,
-    near: string[]
+    action: string | null,
+    time: string | null,
+    season: string | null,
+    item: number | null,
+    moon: string | null,
+    near: string[] | null
   ) {
     this.action = action;
     this.time = time;
@@ -20,6 +20,10 @@ class Condition {
     this.item = item;
     this.moon = moon;
     this.near = near;
+  }
+
+  public static empty() {
+    return new Condition(null, null, null, null, null, null);
   }
 }
 

@@ -1,3 +1,4 @@
+import Condition from '../src/condition';
 import Item from '../src/item';
 
 describe('Item class', () => {
@@ -7,7 +8,7 @@ describe('Item class', () => {
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
       Math.random(),
-      [],
+      Condition.empty(),
       'Matériaux',
       0,
       true
@@ -32,7 +33,7 @@ describe('Item class', () => {
         'Pierre',
         "C'est une pierre, elle peut vous porter compagnie",
         Math.random(),
-        [],
+        Condition.empty(),
         'Matériaux',
         i
       );
@@ -47,7 +48,7 @@ describe('Item class', () => {
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
       Math.random(),
-      [],
+      Condition.empty(),
       'Matériaux',
       null
     );
@@ -63,7 +64,7 @@ describe('Item class', () => {
         'Pierre',
         "C'est une pierre, elle peut vous porter compagnie",
         Math.random(),
-        [],
+        Condition.empty(),
         'Matériaux',
         6
       );
@@ -80,7 +81,7 @@ describe('Item class', () => {
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
       Math.random(),
-      [],
+      Condition.empty(),
       'Matériaux',
       0
     );

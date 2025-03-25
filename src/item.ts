@@ -1,3 +1,5 @@
+import Condition from './condition';
+
 class Item {
   id: number;
   name: string;
@@ -6,7 +8,7 @@ class Item {
   quality: number;
   collection: string;
   rareVariant: boolean;
-  conditions: Array<string>;
+  conditions: Condition;
 
   get rarity() {
     return Item.rarity[this._rarity];
@@ -28,7 +30,7 @@ class Item {
     name: string,
     description: string,
     quality: number,
-    conditions: Array<string>,
+    conditions: Condition,
     collection: string,
     rarity?: number | null,
     rareVariant?: boolean | null
