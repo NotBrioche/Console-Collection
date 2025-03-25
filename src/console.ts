@@ -9,6 +9,7 @@ import HelpCommand from './commands/helpCommand';
 import ExitCommand from './commands/exitCommand';
 import ClearCommand from './commands/clearCommand';
 import TrainCommand from './commands/trainCommand';
+import WaitCommand from './commands/waitCommand';
 
 class Console {
   game: Game;
@@ -20,9 +21,10 @@ class Console {
 
     this.commands = [
       new HomeCommand(this.game.player),
-      new TrainCommand(this.game, this.game.player),
+      new TrainCommand(this.game),
       new ExitCommand(),
       new ClearCommand(),
+      new WaitCommand(this.game),
     ];
     this.commands.push(new HelpCommand(this.commands));
   }

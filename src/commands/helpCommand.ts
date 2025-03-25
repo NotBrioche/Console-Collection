@@ -50,6 +50,11 @@ class HelpCommand implements Command {
 
         console.log(`> ${'-'.repeat(maxLength)}`);
 
+        if (this.commands[index].syntax != this.commands[index].name) {
+          console.log(`> ${this.commands[index].syntax}`);
+          console.log('> ');
+        }
+
         if (this.commands[index].longDescription.length < 1) {
           console.log(`> ${this.commands[index].description}`);
         }
