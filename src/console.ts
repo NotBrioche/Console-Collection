@@ -1,5 +1,4 @@
 import Command from './command';
-import * as readline from 'readline/promises';
 
 import Game from './game';
 

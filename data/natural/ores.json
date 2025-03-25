@@ -56,5 +56,75 @@
       "action": "search",
       "item": 51
     }
+  },
+  {
+    "id": 7,
+    "name": "Argent",
+    "description": "Saviez vous que l'argent était le 47ème élément sur le tableau périodique",
+    "rarity": 1,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
+  },
+  {
+    "id": 8,
+    "name": "Saphir",
+    "description": "Le point de fusion du saphir est de 2050°C, ce qui est plus chaud que celui du diamant, qui est de 1750°C.",
+    "rarity": 2,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
+  },
+  {
+    "id": 9,
+    "name": "Améthyste",
+    "description": "Le mot améthyste vient du grec ancien améthustos composé du verbe methúô qui signifie être ivre",
+    "rarity": 1,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
+  },
+  {
+    "id": 10,
+    "name": "Uranium",
+    "description": "Saurez vous citer 2 bombes crées avec de l'uranium?",
+    "rarity": 2,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
+  },
+  {
+    "id": 11,
+    "name": "Quartz",
+    "description": "Selon Wikipedia le quartz peut avoir jusqu'à 9 couleurs différentes.",
+    "rarity": 1,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
+  },
+  {
+    "id": 12,
+    "name": "Opale",
+    "description": "Le mot Opale vient du mot sanskrit upala qui signifie pierre précieuse.",
+    "rarity": 2,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
+  },
+  {
+    "id": 13,
+    "name": "Soufre",
+    "description": "Ceci n'est pas un métal",
+    "rarity": 0,
+    "conditions": {
+      "action": "search",
+      "item": 51
+    }
   }
 ]
