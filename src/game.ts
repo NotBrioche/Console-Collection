@@ -22,7 +22,11 @@ class Game {
 
       const importedPlayer = JSON.parse(fileString);
 
-      this.player = new Player(importedPlayer.username, importedPlayer._power);
+      this.player = new Player(
+        importedPlayer.username,
+        importedPlayer._power,
+        importedPlayer._region
+      );
     } else {
       fs.mkdirSync(getAppDataPath('Console-Collection'), { recursive: true });
       this.player = new Player('');
