@@ -31,7 +31,7 @@ class WaitCommand implements Command {
         this.game.player.power--;
       }
 
-      if (time + 1 >= 10 * (isNaN(length) ? 1 : length)) {
+      if (time + 1 >= 60 * (isNaN(length) ? 1 : length)) {
         ac.abort();
         clearInterval(interval);
       }
