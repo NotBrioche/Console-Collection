@@ -14,6 +14,12 @@ class TravelCommand implements Command {
   }
 
   async execute(args: string[] | null): Promise<void> {
+    if (this.game.player.power < 10) {
+      console.log("> Vous n'avez pas assez d'énergie pour voyager");
+      console.log('> ');
+      return;
+    }
+    
     this.game.player.power -= 10;
     this.game.player.region = Region.random();
 

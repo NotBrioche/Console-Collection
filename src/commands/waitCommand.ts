@@ -13,13 +13,20 @@ class WaitCommand implements Command {
   }
 
   async execute(args: string[] | null): Promise<void> {
-    console.log("> ----- Vous avez commencé d'attendre -----");
-    let time: number = 0;
-
     let length: number = 1;
     if (args != null && args.length > 0) {
       length = Number.parseInt(args[1]);
     }
+    length = isNaN(length) ? 1 : length;
+
+    if (this.game.player.power < 1 + length) {
+      console.log("> Vous n'avez pas assez d'énergie pour attendre");
+      console.log('> ');
+      return;
+    }
+
+    console.log("> ----- Vous avez commencé d'attendre -----");
+    let time: number = 0;
 
     const ac: AbortController = new AbortController();
     const signal = ac.signal;
@@ -31,14 +38,14 @@ class WaitCommand implements Command {
         this.game.player.power--;
       }
 
-      if (time + 1 >= 60 * (isNaN(length) ? 1 : length)) {
+      if (time + 1 >= 60 * length) {
         ac.abort();
         clearInterval(interval);
       }
     }, 1000);
     this.game.player.power--;
 
-    while (time + 1 < 60 * (isNaN(length) ? 1 : length)) {
+    while (time + 1 < 60 * length) {
       try {
         const rep = await this.game.rl.question('> ', {
           signal,

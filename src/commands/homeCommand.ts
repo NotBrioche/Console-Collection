@@ -23,6 +23,8 @@ class HomeCommand implements Command {
     console.log('> ');
     console.log(`> ${titleString}`);
     console.log(`> ${'-'.repeat(titleString.length)}`);
+    console.log(`> [ ${this.player.region.name} ]`);
+    console.log('> ');
     console.log(
       `> ${this.player.username} - ${this.player.collection.length} / 372`
     );
