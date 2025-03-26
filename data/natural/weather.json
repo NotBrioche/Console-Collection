@@ -80,7 +80,7 @@
     "rarity": 3,
     "conditions": {
       "time": "day",
-      "weather": "rain",
+      "item": "Pluie",
       "season": "summer"
     }
   }

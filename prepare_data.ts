@@ -4,10 +4,15 @@ import { Storage } from './src/storage';
 import Item from './src/item';
 import Condition from './src/condition';
 
-const files = glob.globSync('data/**/*.json');
 const datas: Array<Array<Storage>> = [];
 const datasSingleArray: Array<Storage> = [];
 const output: Array<Item> = [];
+
+if (fs.existsSync('./data/all.json')) {
+  fs.rmSync('./data/all.json');
+}
+
+const files = glob.globSync('data/**/*.json');
 
 for (const file of files) {
   const content = fs.readFileSync(file, 'utf-8');
@@ -28,12 +33,22 @@ for (let i = 0; i < datas.length; i++) {
 }
 
 for (let i = 0; i < datasSingleArray.length; i++) {
+  const condition = new Condition(
+    datasSingleArray[i].conditions?.action,
+    datasSingleArray[i].conditions?.time,
+    datasSingleArray[i].conditions?.season,
+    undefined,
+    datasSingleArray[i].conditions?.moon,
+    datasSingleArray[i].conditions?.near
+  );
+
   const item = new Item(
     datasSingleArray[i].id ?? -1,
     datasSingleArray[i].name,
     datasSingleArray[i].description,
-    Condition.empty(),
-    datasSingleArray[i].collection
+    condition,
+    datasSingleArray[i].collection,
+    datasSingleArray[i].rarity
   );
   output.push(item);
   if (
@@ -44,10 +59,18 @@ for (let i = 0; i < datasSingleArray.length; i++) {
       datasSingleArray.findIndex(
         (item: Storage) => item.name == datasSingleArray[i].conditions!.item
       ) + 1;
-    output[i].conditions.item = index;
+    output[i].conditions!.item = index;
   }
 }
 
-fs.writeFileSync('data/all.json', JSON.stringify(output), {
-  flag: 'w',
-});
+for (let i = 0; i < output.length; i++) {
+  output[i].rarity = Item.rarity[output[i]._rarity];
+}
+
+fs.writeFileSync(
+  'data/all.json',
+  JSON.stringify(output).replace(/\_rarity/gi, 'rarity'),
+  {
+    flag: 'w',
+  }
+);

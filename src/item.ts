@@ -6,9 +6,9 @@ class Item {
   _rarity: number;
   description: string;
   collection: string;
-  conditions: Condition;
-  quality: number | null;
-  rareVariant: boolean | null;
+  conditions: Condition | null | undefined;
+  quality: number | null | undefined;
+  rareVariant: boolean | null | undefined;
 
   get rarity() {
     return Item.rarity[this._rarity];
@@ -31,8 +31,8 @@ class Item {
     description: string,
     conditions: Condition,
     collection: string,
-    quality?: number | null,
     rarity?: number | null,
+    quality?: number | null,
     rareVariant?: boolean | null
   ) {
     if (rarity != null && (rarity >= Item.rarity.length || rarity < 0)) {

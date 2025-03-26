@@ -7,10 +7,10 @@ describe('Item class', () => {
       1,
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
-      Condition.empty(),
+      new Condition(),
       'Matériaux',
-      Math.random(),
       0,
+      Math.random(),
       true
     );
 
@@ -32,9 +32,8 @@ describe('Item class', () => {
         1,
         'Pierre',
         "C'est une pierre, elle peut vous porter compagnie",
-        Condition.empty(),
+        new Condition(),
         'Matériaux',
-        Math.random(),
         i
       );
 
@@ -47,10 +46,10 @@ describe('Item class', () => {
       1,
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
-      Condition.empty(),
+      new Condition(),
       'Matériaux',
-      Math.random(),
-      null
+      null,
+      Math.random()
     );
 
     expect(item.rarity).toBe('Common');
@@ -63,10 +62,10 @@ describe('Item class', () => {
         1,
         'Pierre',
         "C'est une pierre, elle peut vous porter compagnie",
-        Condition.empty(),
+        new Condition(),
         'Matériaux',
-        Math.random(),
-        6
+        6,
+        Math.random()
       );
     };
 
@@ -80,10 +79,10 @@ describe('Item class', () => {
       1,
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
-      Condition.empty(),
+      new Condition(),
       'Matériaux',
-      Math.random(),
-      0
+      0,
+      Math.random()
     );
 
     const spy = jest.spyOn(item, 'getObjectInfos');

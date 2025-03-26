@@ -1,3 +1,5 @@
+import Condition from "./condition";
+
 class ConditionStorage {
   action: string | undefined;
   time: string | undefined;
@@ -5,7 +7,17 @@ class ConditionStorage {
   item: string | undefined;
   moon: string | undefined;
   near: string[] | undefined;
-  weather: string | undefined;
+
+  public toCondition(itemId: number): Condition {
+    return new Condition(
+      this.action,
+      this.time,
+      this.season,
+      itemId,
+      this.moon,
+      this.near
+    );
+  }
 }
 
 class Storage {
