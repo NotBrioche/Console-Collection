@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "name": "Étoile",
+    "description": "C'est chaud et ça éblouit.",
+    "rarity": 1,
+    "conditions": {
+      "time": "night"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Trou noir",
+    "description": "Au centre de chaque galaxie.",
+    "rarity": 3,
+    "conditions": {
+      "time": "night"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Galaxie",
+    "description": "C'est grand.",
+    "rarity": 2,
+    "conditions": {
+      "time": "night"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Univers",
+    "description": "C'est encore plus grand.",
+    "rarity": 3,
+    "conditions": {
+      "time": "night"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Comète",
+    "description": "Saviez vous que le noyau d'une comète peut être appelé une \"boule de neige sale\"",
+    "rarity": 2,
+    "conditions": {
+      "action": "wait",
+      "time": "night"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Nébuleuse",
+    "description": "Un nuage de gaz.",
+    "rarity": 3,
+    "conditions": {
+      "time": "night"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Supernova",
+    "description": "Une étoile qui explose.",
+    "rarity": 3,
+    "conditions": {
+      "action": "wait",
+      "time": "night"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Voie lactée",
+    "description": "Notre galaxie.",
+    "rarity": 2,
+    "conditions": {
+      "time": "night"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Météorite",
+    "description": "Un rocher qui tombe.",
+    "rarity": 2,
+    "conditions": {
+      "action": "wait"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Éruption solaire",
+    "description": "Attention aux UV.",
+    "rarity": 2
+  },
+  {
+    "id": 11,
+    "name": "Éclipse Solaire",
+    "description": "Attention aux yeux.",
+    "rarity": 3,
+    "conditions": {
+      "action": "wait"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Éclipse Lunaire",
+    "description": "La fameuse lune de sang.",
+    "rarity": 3,
+    "conditions": {
+      "action": "wait"
+    }
+  }
+]
