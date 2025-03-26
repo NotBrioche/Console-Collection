@@ -32,8 +32,8 @@ class Item {
     conditions: Condition,
     collection: string,
     rarity?: number | null,
-    quality?: number | null,
-    rareVariant?: boolean | null
+    quality?: number | null | undefined,
+    rareVariant?: boolean | null | undefined
   ) {
     if (rarity != null && (rarity >= Item.rarity.length || rarity < 0)) {
       throw new Error(`Rarity must be between 0 and ${Item.rarity.length - 1}`);
@@ -45,8 +45,8 @@ class Item {
     this.description = description;
     this.collection = collection;
     this.conditions = conditions;
-    this.quality = quality ?? null;
-    this.rareVariant = rareVariant ?? false;
+    this.quality = quality;
+    this.rareVariant = rareVariant;
   }
 
   public getObjectInfos() {
