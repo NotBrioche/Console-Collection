@@ -1,6 +1,6 @@
 import Command from '../command';
 import Game from '../game';
-import Region from '../region';
+import { Region } from '../region';
 
 class TravelCommand implements Command {
   name: string = 'travel';
@@ -19,7 +19,7 @@ class TravelCommand implements Command {
       console.log('> ');
       return;
     }
-    
+
     this.game.player.power -= 10;
     this.game.player.region = Region.random();
 

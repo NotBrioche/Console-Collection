@@ -1,7 +1,7 @@
 import Game from './game';
 import Item from './item';
 import * as fs from 'fs';
-import Region from './region';
+import { Region } from './region';
 
 class Player {
   public username: string;
