@@ -4,7 +4,6 @@
     "description": "Un amas d'eau, a vous de voir ce que vous allez en faire...",
     "rarity": 0,
     "conditions": {
-      "action": "wait",
       "time": "day"
     }
   },
@@ -63,12 +62,13 @@
     "description": "Attention à bien s'hydrater.",
     "rarity": 2,
     "conditions": {
-      "near": "desert"
+      "near": "desert",
+      "time": "day"
     }
   },
   {
     "name": "Canicule",
-    "description": "Rester à l'ombre.",
+    "description": "Restez à l'ombre.",
     "rarity": 1,
     "conditions": {
       "time": "day"
@@ -77,11 +77,10 @@
   {
     "name": "Arc-en-ciel",
     "description": "C'est beau.",
-    "rarity": 3,
+    "rarity": 2,
     "conditions": {
       "time": "day",
-      "item": "Pluie",
-      "season": "summer"
+      "item": "Pluie"
     }
   }
 ]

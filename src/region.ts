@@ -9,6 +9,7 @@ class Near {
     new Near('forest', 'Forêt'),
     new Near('sand', 'Sable'),
     new Near('water', 'Eau'),
+    new Near('mountain', 'Montagnes'),
   ];
 
   constructor(id: string, name: string) {

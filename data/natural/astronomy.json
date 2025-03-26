@@ -10,8 +10,9 @@
   {
     "name": "Trou noir",
     "description": "Au centre de chaque galaxie.",
-    "rarity": 3,
+    "rarity": 2,
     "conditions": {
+      "action": "search",
       "time": "night"
     }
   },
@@ -20,14 +21,16 @@
     "description": "C'est grand.",
     "rarity": 2,
     "conditions": {
+      "action": "search",
       "time": "night"
     }
   },
   {
     "name": "Univers",
     "description": "C'est encore plus grand.",
-    "rarity": 3,
+    "rarity": 2,
     "conditions": {
+      "action": "search",
       "time": "night"
     }
   },
@@ -43,15 +46,16 @@
   {
     "name": "Nébuleuse",
     "description": "Un nuage de gaz.",
-    "rarity": 3,
+    "rarity": 2,
     "conditions": {
+      "action": "wait",
       "time": "night"
     }
   },
   {
     "name": "Supernova",
     "description": "Une étoile qui explose.",
-    "rarity": 3,
+    "rarity": 2,
     "conditions": {
       "action": "wait",
       "time": "night"
@@ -62,6 +66,7 @@
     "description": "Notre galaxie.",
     "rarity": 2,
     "conditions": {
+      "action": "search",
       "time": "night"
     }
   },
@@ -76,12 +81,15 @@
   {
     "name": "Éruption solaire",
     "description": "Attention aux UV.",
-    "rarity": 2
+    "rarity": 2,
+    "conditions": {
+      "action": "wait"
+    }
   },
   {
     "name": "Éclipse Solaire",
     "description": "Attention aux yeux.",
-    "rarity": 3,
+    "rarity": 2,
     "conditions": {
       "action": "wait"
     }
@@ -89,7 +97,7 @@
   {
     "name": "Éclipse Lunaire",
     "description": "La fameuse lune de sang.",
-    "rarity": 3,
+    "rarity": 2,
     "conditions": {
       "action": "wait"
     }

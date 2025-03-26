@@ -2,10 +2,7 @@
   {
     "name": "Ragondin",
     "description": "Rongeur semi-aquatique, cousin du castor.",
-    "rarity": 0,
-    "conditions": {
-      "action": "search"
-    }
+    "rarity": 0
   },
   {
     "name": "Tardigrade",
@@ -20,17 +17,13 @@
     "description": "C'est un arbre.",
     "rarity": 0,
     "conditions": {
-      "action": "search",
       "near": "forest"
     }
   },
   {
     "name": "Capybara",
     "description": "Capybara capybara capybara.",
-    "rarity": 0,
-    "conditions": {
-      "action": "search"
-    }
+    "rarity": 0
   },
   {
     "name": "Bigfoot",
@@ -45,7 +38,6 @@
     "description": "Créature légendaire cracheuse de feu.",
     "rarity": 2,
     "conditions": {
-      "action": "search",
       "near": "cave"
     }
   },
@@ -61,25 +53,18 @@
   {
     "name": "Chat",
     "description": "Miaou!!!",
-    "rarity": 0,
-    "conditions": {
-      "action": "search"
-    }
+    "rarity": 0
   },
   {
     "name": "Chien",
     "description": "Ouaf!!!",
-    "rarity": 0,
-    "conditions": {
-      "action": "search"
-    }
+    "rarity": 0
   },
   {
     "name": "Renard",
     "description": "Le fameux renard du Petit Prince.",
     "rarity": 0,
     "conditions": {
-      "action": "search",
       "near": "forest"
     }
   },
@@ -88,16 +73,7 @@
     "description": "Attention, il est très fort.",
     "rarity": 0,
     "conditions": {
-      "action": "search",
       "near": "forest"
-    }
-  },
-  {
-    "name": "Tardigrade",
-    "description": "Micro-animal résistant aux conditions extrêmes.",
-    "rarity": 2,
-    "conditions": {
-      "action": "search"
     }
   }
 ]

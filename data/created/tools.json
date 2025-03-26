@@ -4,13 +4,20 @@
     "description": "Pratique pour enfoncer un clou",
     "rarity": 0,
     "conditions": {
-      "action": "search",
-      "time": "day"
+      "action": "search"
     }
   },
   {
     "name": "Pioche",
     "description": "Pratique pour miner",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Pelle",
+    "description": "Pratique pour creuser",
     "rarity": 0,
     "conditions": {
       "action": "search"
