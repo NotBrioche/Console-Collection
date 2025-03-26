@@ -5,10 +5,10 @@ class Item {
   name: string;
   _rarity: number;
   description: string;
-  quality: number;
   collection: string;
-  rareVariant: boolean;
   conditions: Condition;
+  quality: number | null;
+  rareVariant: boolean | null;
 
   get rarity() {
     return Item.rarity[this._rarity];
@@ -29,9 +29,9 @@ class Item {
     id: number,
     name: string,
     description: string,
-    quality: number,
     conditions: Condition,
     collection: string,
+    quality?: number | null,
     rarity?: number | null,
     rareVariant?: boolean | null
   ) {
@@ -43,10 +43,10 @@ class Item {
     this.name = name;
     this._rarity = rarity ?? 0;
     this.description = description;
-    this.quality = quality;
     this.collection = collection;
-    this.rareVariant = rareVariant ?? false;
     this.conditions = conditions;
+    this.quality = quality ?? null;
+    this.rareVariant = rareVariant ?? false;
   }
 
   public getObjectInfos() {

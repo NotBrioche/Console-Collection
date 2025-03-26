@@ -7,9 +7,9 @@ describe('Item class', () => {
       1,
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
-      Math.random(),
       Condition.empty(),
       'Matériaux',
+      Math.random(),
       0,
       true
     );
@@ -32,9 +32,9 @@ describe('Item class', () => {
         1,
         'Pierre',
         "C'est une pierre, elle peut vous porter compagnie",
-        Math.random(),
         Condition.empty(),
         'Matériaux',
+        Math.random(),
         i
       );
 
@@ -47,9 +47,9 @@ describe('Item class', () => {
       1,
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
-      Math.random(),
       Condition.empty(),
       'Matériaux',
+      Math.random(),
       null
     );
 
@@ -63,9 +63,9 @@ describe('Item class', () => {
         1,
         'Pierre',
         "C'est une pierre, elle peut vous porter compagnie",
-        Math.random(),
         Condition.empty(),
         'Matériaux',
+        Math.random(),
         6
       );
     };
@@ -80,9 +80,9 @@ describe('Item class', () => {
       1,
       'Pierre',
       "C'est une pierre, elle peut vous porter compagnie",
-      Math.random(),
       Condition.empty(),
       'Matériaux',
+      Math.random(),
       0
     );
 

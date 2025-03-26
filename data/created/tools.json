@@ -1,6 +1,5 @@
 [
   {
-    "id": 50,
     "name": "Marteau",
     "description": "Pratique pour enfoncer un clou",
     "rarity": 0,
@@ -10,7 +9,6 @@
     }
   },
   {
-    "id": 51,
     "name": "Pioche",
     "description": "Pratique pour miner",
     "rarity": 0,

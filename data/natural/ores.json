@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Pierre",
     "description": "C'est une pierre, elle peut vous porter compagnie",
     "rarity": 0,
@@ -9,37 +8,33 @@
     }
   },
   {
-    "id": 2,
     "name": "Fer",
     "description": "Minerais bien connu du grand public.",
     "rarity": 0,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 3,
     "name": "Diamant",
     "description": "Pierre précieuse formée sous haute pression, connue pour sa dureté exceptionnelle et son éclat.",
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 4,
     "name": "Or",
     "description": "Métal précieux apprécié pour sa rareté, sa malléabilité et son usage en bijouterie et en finance.",
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 5,
     "name": "Charbon",
     "description": "Roche combustible d'origine organique, utilisée comme source d'énergie depuis la révolution industrielle.",
     "rarity": 0,
@@ -48,83 +43,75 @@
     }
   },
   {
-    "id": 6,
     "name": "Palladium",
     "description": "Métal rare de la famille du platine, utilisé notamment dans les pots catalytiques et l'électronique.",
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 7,
     "name": "Argent",
     "description": "Saviez vous que l'argent était le 47ème élément sur le tableau périodique",
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 8,
     "name": "Saphir",
     "description": "Le point de fusion du saphir est de 2050°C, ce qui est plus chaud que celui du diamant, qui est de 1750°C.",
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 9,
     "name": "Améthyste",
     "description": "Le mot améthyste vient du grec ancien améthustos composé du verbe methúô qui signifie être ivre",
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 10,
     "name": "Uranium",
     "description": "Saurez vous citer 2 bombes crées avec de l'uranium?",
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 11,
     "name": "Quartz",
     "description": "Selon Wikipedia le quartz peut avoir jusqu'à 9 couleurs différentes.",
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 12,
     "name": "Opale",
     "description": "Le mot Opale vient du mot sanskrit upala qui signifie pierre précieuse.",
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   },
   {
-    "id": 13,
     "name": "Soufre",
     "description": "Ceci n'est pas un métal",
     "rarity": 0,
     "conditions": {
       "action": "search",
-      "item": 51
+      "item": "Pioche"
     }
   }
 ]

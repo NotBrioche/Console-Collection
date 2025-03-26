@@ -5,6 +5,7 @@ class Condition {
   item: number | null;
   moon: string | null;
   near: string[] | null;
+  weather: string | null;
 
   constructor(
     action: string | null,
@@ -12,7 +13,8 @@ class Condition {
     season: string | null,
     item: number | null,
     moon: string | null,
-    near: string[] | null
+    near: string[] | null,
+    weather: string | null
   ) {
     this.action = action;
     this.time = time;
@@ -20,10 +22,11 @@ class Condition {
     this.item = item;
     this.moon = moon;
     this.near = near;
+    this.weather = weather;
   }
 
   public static empty() {
-    return new Condition(null, null, null, null, null, null);
+    return new Condition(null, null, null, null, null, null, null);
   }
 }
 

@@ -1,6 +1,5 @@
 [
   {
-    "id": 7,
     "name": "Nuage",
     "description": "Un amas d'eau, a vous de voir ce que vous allez en faire...",
     "rarity": 0,
@@ -10,13 +9,11 @@
     }
   },
   {
-    "id": 8,
     "name": "Pluie",
     "description": "Apparemment certains gens aiment ça, mais pas moi.",
     "rarity": 0
   },
   {
-    "id": 9,
     "name": "Neige",
     "description": "C'EST L'HIVER",
     "rarity": 0,
@@ -25,13 +22,11 @@
     }
   },
   {
-    "id": 10,
     "name": "Vent",
     "description": "Attention, ça décoiffe.",
     "rarity": 0
   },
   {
-    "id": 11,
     "name": "Marée Haute",
     "description": "Attention, ça ne prévient pas quand ça arrive.",
     "rarity": 1,
@@ -43,12 +38,50 @@
     }
   },
   {
-    "id": 12,
     "name": "Avalanche",
     "description": "Dangereux, faites attention.",
     "rarity": 1,
     "conditions": {
       "near": "snow"
+    }
+  },
+  {
+    "name": "Soleil",
+    "description": "Attention aux coups de soleil.",
+    "rarity": 0,
+    "conditions": {
+      "time": "day"
+    }
+  },
+  {
+    "name": "Tempête",
+    "description": "Attention à la colère de Zeus.",
+    "rarity": 1
+  },
+  {
+    "name": "Sécheresse",
+    "description": "Attention à bien s'hydrater.",
+    "rarity": 2,
+    "conditions": {
+      "near": "desert"
+    }
+  },
+  {
+    "name": "Canicule",
+    "description": "Rester à l'ombre.",
+    "rarity": 1,
+    "conditions": {
+      "time": "day"
+    }
+  },
+  {
+    "name": "Arc-en-ciel",
+    "description": "C'est beau.",
+    "rarity": 3,
+    "conditions": {
+      "time": "day",
+      "weather": "rain",
+      "season": "summer"
     }
   }
 ]

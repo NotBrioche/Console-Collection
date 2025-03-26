@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Ragondin",
     "description": "Rongeur semi-aquatique, cousin du castor.",
     "rarity": 0,
@@ -9,7 +8,6 @@
     }
   },
   {
-    "id": 2,
     "name": "Tardigrade",
     "description": "Micro-animal résistant aux conditions extrêmes.",
     "rarity": 2,
@@ -18,7 +16,6 @@
     }
   },
   {
-    "id": 3,
     "name": "Arbre",
     "description": "C'est un arbre.",
     "rarity": 0,
@@ -28,7 +25,6 @@
     }
   },
   {
-    "id": 4,
     "name": "Capybara",
     "description": "Capybara capybara capybara.",
     "rarity": 0,
@@ -37,7 +33,6 @@
     }
   },
   {
-    "id": 5,
     "name": "Bigfoot",
     "description": "Créature légendaire des forêts nord-américaines.",
     "rarity": 2,
@@ -46,7 +41,6 @@
     }
   },
   {
-    "id": 6,
     "name": "Dragon",
     "description": "Créature légendaire cracheuse de feu.",
     "rarity": 2,
@@ -56,7 +50,6 @@
     }
   },
   {
-    "id": 7,
     "name": "Kraken",
     "description": "Micro-animal résistant aux conditions extrêmes.",
     "rarity": 2,
@@ -66,7 +59,6 @@
     }
   },
   {
-    "id": 8,
     "name": "Chat",
     "description": "Miaou!!!",
     "rarity": 0,
@@ -75,7 +67,6 @@
     }
   },
   {
-    "id": 9,
     "name": "Chien",
     "description": "Ouaf!!!",
     "rarity": 0,
@@ -84,7 +75,6 @@
     }
   },
   {
-    "id": 10,
     "name": "Renard",
     "description": "Le fameux renard du Petit Prince.",
     "rarity": 0,
@@ -94,7 +84,6 @@
     }
   },
   {
-    "id": 11,
     "name": "Ours",
     "description": "Attention, il est très fort.",
     "rarity": 0,
@@ -104,7 +93,6 @@
     }
   },
   {
-    "id": 12,
     "name": "Tardigrade",
     "description": "Micro-animal résistant aux conditions extrêmes.",
     "rarity": 2,
