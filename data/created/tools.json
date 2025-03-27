@@ -22,5 +22,69 @@
     "conditions": {
       "action": "search"
     }
+  },
+  {
+    "name": "Vis",
+    "description": "Pratique pour accrocher du bois ensemble",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Tourne-Vis",
+    "description": "Sers à viser une vis",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Mètre",
+    "description": "Sers à mesurer des choses",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Perceuse",
+    "description": "Pratique pour percer divers trous",
+    "rarity": 1,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Scie",
+    "description": "Sers à couper du bois",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Clé à molette",
+    "description": "Sers à serrer ou desserrer des écrous",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Chalumeau",
+    "description": "Sers à souder",
+    "rarity": 1,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Pince",
+    "description": "Sers à saisir des objets",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
   }
 ]

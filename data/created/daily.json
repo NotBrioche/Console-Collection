@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Brosse à chiotte",
+        "description": "Utile pour se laver les dents",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Horloge",
+        "description": "Utilse pour regarder l'heure",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Gourde",
+        "description": "Utile pour stoquer de l'eau",
+        "rarity": 1,
+        "conditions": {
+            "action": "search",
+            "near": "water"
+        }
+    },
+    {
+        "name": "Chaussette",
+        "description": "Sers à garder ses pieds au chaud",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Assiette",
+        "description": "Utile pour manger",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Clés",
+        "description": "Sers à ouvrir des portes",
+        "rarity": 1,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Oreiller",
+        "description": "Sers à bien dormir",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Eponge",
+        "description": "Utile pour nettoyer",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Cadenas",
+        "description": "Sers à sécursier des choses",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Stylo",
+        "description": "Utile pour écrire",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Bougie",
+        "description": "Utile pour éclairer",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Parapluie",
+        "description": "Utile pour se protéger de la pluie",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Dentifrice",
+        "description": "Utile pour se laver les dents",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    }
+]
