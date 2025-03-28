@@ -6,5 +6,68 @@
     "conditions": {
       "action": "wait"
     }
+  },
+  {
+    "name": "Théorème de Pythagore",
+    "description": "Si vous n'avez pas quitté l'école vous savez de q'il fait.",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Théorème de Thalès",
+    "description": "Apparemment les cercles sont utiles.",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Maths",
+    "description": "Selon Wikipedia, il est probable que les maths ont étés utilisés avant l'écriture",
+    "rarity": 0
+  },
+  {
+    "name": "Physique",
+    "description": "Science qui essaye de comprendre les lois de l'Univers et de les expliquer.",
+    "rarity": 0,
+    "conditions": {
+      "item": "Maths"
+    }
+  },
+  {
+    "name": "Astrologie",
+    "description": "Science de l'espace.",
+    "rarity": 0,
+    "conditions": {
+      "item": "Maths"
+    }
+  },
+  {
+    "name": "Chimie",
+    "description": "Science qui étude la matière et ses transformations.",
+    "rarity": 0
+  },
+  {
+    "name": "Biologie",
+    "description": "Science qui étudie les êtres vivants",
+    "rarity": 0
+  },
+  {
+    "name": "Vecteurs",
+    "description": "Provient de la géométrie, complexe à utiliser",
+    "rarity": 1,
+    "conditions": {
+      "item": "Maths"
+    }
+  },
+  {
+    "name": "Atome",
+    "description": "Plus petite partie d'une matière",
+    "rarity": 1,
+    "conditions": {
+      "item": ["Maths", "Physique", "Microscope"]
+    }
   }
 ]

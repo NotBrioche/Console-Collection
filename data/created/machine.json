@@ -1,82 +1,90 @@
 [
-    {
-        "name": "Machine à remonter le temps",
-        "description": "Une machine permettant de changer d'epoque",
-        "rarity": 2,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Fusée",
-        "description": "Une machine permettant d'aller dans l'espace",
-        "rarity": 1,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Cheval de Troie",
-        "description": "Machine utilisé pour infiltrer une ville ennemie",
-        "rarity": 1,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Machine à café",
-        "description": "Sers à faire du café",
-        "rarity": 0,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Tracteur",
-        "description": "Engin agricole permettant de labourer les champs",
-        "rarity": 0,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Ordinateur",
-        "description": "Machine permettant de faire des calculs",
-        "rarity": 1,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Drone",
-        "description": "Petit engin volant",
-        "rarity": 0,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Exosquelette",
-        "description": "Machine permettant de renforcer la force humaine",
-        "rarity": 2,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Accélérateur de particules",
-        "description": "Machine permettant d'étuider la natures et les propriété des particules",
-        "rarity": 2,
-        "conditions": {
-            "action": "search"
-        }
-    },
-    {
-        "name": "Eolienne",
-        "description": "Machine créant de l'énergie à partir du vent",
-        "rarity": 0,
-        "conditions": {
-            "action": "search"
-        }
+  {
+    "name": "Machine à remonter le temps",
+    "description": "Une machine permettant de changer d'epoque",
+    "rarity": 2,
+    "conditions": {
+      "action": "search"
     }
+  },
+  {
+    "name": "Fusée",
+    "description": "Une machine permettant d'aller dans l'espace",
+    "rarity": 1,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Cheval de Troie",
+    "description": "Machine utilisé pour infiltrer une ville ennemie",
+    "rarity": 1,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Machine à café",
+    "description": "Sers à faire du café",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Tracteur",
+    "description": "Engin agricole permettant de labourer les champs",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Ordinateur",
+    "description": "Machine permettant de faire des calculs",
+    "rarity": 1,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Drone",
+    "description": "Petit engin volant",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Exosquelette",
+    "description": "Machine permettant de renforcer la force humaine",
+    "rarity": 2,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Accélérateur de particules",
+    "description": "Machine permettant d'étuider la natures et les propriété des particules",
+    "rarity": 2,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Éolienne",
+    "description": "Machine créant de l'énergie à partir du vent",
+    "rarity": 0,
+    "conditions": {
+      "action": "search"
+    }
+  },
+  {
+    "name": "Microscope",
+    "description": "Instrument qui permet de regarder des objets trop petits pour l'oeil nu",
+    "rarity": 1,
+    "conditions": {
+      "action": "trade"
+    }
+  }
 ]
