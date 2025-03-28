@@ -12,6 +12,12 @@ if (fs.existsSync('./data/all.json')) {
   fs.rmSync('./data/all.json');
 }
 
+for (let rarity of Item.rarity) {
+  if (fs.existsSync(`./data/${rarity}.json`)) {
+    fs.rmSync(`./data/${rarity}.json`);
+  }
+}
+
 const files = glob.globSync('data/**/*.json');
 
 for (const file of files) {
@@ -90,3 +96,16 @@ fs.writeFileSync(
     flag: 'w',
   }
 );
+
+for (let i = 0; i < Item.rarity.length; i++) {
+  const rarityOutput = output.filter((item: Item) => item._rarity == i);
+  const fileName = `data/${Item.rarity[i].toLowerCase()}.json`;
+
+  fs.writeFileSync(
+    fileName,
+    JSON.stringify(rarityOutput).replace(/\_rarity/gi, 'rarity'),
+    {
+      flag: 'w',
+    }
+  );
+}

@@ -18,7 +18,14 @@ class Item {
     this._rarity = Item.rarity.indexOf(value);
   }
 
-  static rarity = ['Common', 'Uncommon', 'Rare', 'Epic', 'Legendary', 'Secret'];
+  public static rarity = [
+    'Common',
+    'Uncommon',
+    'Rare',
+    'Epic',
+    'Legendary',
+    'Secret',
+  ];
 
   get details() {
     this.getObjectInfos();

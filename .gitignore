@@ -1,6 +1,12 @@
 # Cspell: disable
 Console-Collection.exe
 data/all.json
+data/common.json
+data/uncommon.json
+data/rare.json
+data/epic.json
+data/legendary.json
+data/secret.json
 
 # Logs
 logs
