@@ -11,6 +11,7 @@ import TrainCommand from './commands/trainCommand';
 import WaitCommand from './commands/waitCommand';
 import TravelCommand from './commands/travelCommand';
 import SearchCommand from './commands/searchCommand';
+import CollectionCommand from './commands/collectionCommand';
 
 class Console {
   game: Game;
@@ -28,6 +29,7 @@ class Console {
       new WaitCommand(this.game),
       new TravelCommand(this.game),
       new SearchCommand(this.game),
+      new CollectionCommand(this.game),
     ];
     this.commands.push(new HelpCommand(this.commands));
   }

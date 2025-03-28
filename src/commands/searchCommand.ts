@@ -36,7 +36,7 @@ class SearchCommand implements Command {
     const interval = setInterval(() => {
       time++;
 
-      if (time % 10 == 0) {
+      if (time % 60 == 0) {
         this.game.player.power -= 5;
         const item: Item | undefined = this.tryGetNewItem();
         if (item === undefined) {
@@ -48,14 +48,14 @@ class SearchCommand implements Command {
         }
       }
 
-      if (time >= 10 * length) {
+      if (time >= 60 * length) {
         ac.abort();
         clearInterval(interval);
       }
     }, 1000);
     this.game.player.power -= 5;
 
-    while (time + 1 < 10 * length) {
+    while (time + 1 < 60 * length) {
       try {
         const rep = await this.game.rl.question('> ', {
           signal,
