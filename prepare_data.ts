@@ -46,20 +46,36 @@ for (let i = 0; i < datasSingleArray.length; i++) {
     datasSingleArray[i].id ?? -1,
     datasSingleArray[i].name,
     datasSingleArray[i].description,
-    condition,
     datasSingleArray[i].collection,
+    condition.equals(new Condition()) ? undefined : condition,
     datasSingleArray[i].rarity
   );
   output.push(item);
   if (
     datasSingleArray[i].conditions !== undefined &&
-    datasSingleArray[i].conditions!.item !== undefined
+    datasSingleArray[i].conditions?.item !== undefined
   ) {
-    const index =
-      datasSingleArray.findIndex(
-        (item: Storage) => item.name == datasSingleArray[i].conditions!.item
-      ) + 1;
-    output[i].conditions!.item = index;
+    item.conditions = new Condition();
+    item.conditions.item = [];
+    let loop = datasSingleArray[i].conditions!.item!.length;
+
+    if (typeof datasSingleArray[i].conditions!.item == 'string') {
+      const index =
+        datasSingleArray.findIndex(
+          (ref: Storage) => datasSingleArray[i].conditions?.item == ref.name
+        ) + 1;
+
+      output[i].conditions?.item?.push(index);
+      continue;
+    }
+    for (let j = 0; j < loop; j++) {
+      const index =
+        datasSingleArray.findIndex(
+          (ref: Storage) => datasSingleArray[i].conditions?.item![j] == ref.name
+        ) + 1;
+
+      output[i].conditions?.item?.push(index);
+    }
   }
 }
 

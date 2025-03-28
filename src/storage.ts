@@ -1,14 +1,14 @@
-import Condition from "./condition";
+import Condition from './condition';
 
 class ConditionStorage {
   action: string | undefined;
   time: string | undefined;
   season: string | undefined;
-  item: string | undefined;
+  item: string[] | string | undefined;
   moon: string | undefined;
   near: string[] | undefined;
 
-  public toCondition(itemId: number): Condition {
+  public toCondition(itemId: number[]): Condition {
     return new Condition(
       this.action,
       this.time,

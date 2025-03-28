@@ -29,8 +29,8 @@ class Item {
     id: number,
     name: string,
     description: string,
-    conditions: Condition,
     collection: string,
+    conditions?: Condition | null | undefined,
     rarity?: number | null,
     quality?: number | null | undefined,
     rareVariant?: boolean | null | undefined
