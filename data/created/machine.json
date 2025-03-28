@@ -1,7 +1,7 @@
 [
   {
     "name": "Machine à remonter le temps",
-    "description": "Une machine permettant de changer d'epoque",
+    "description": "Une machine permettant de changer d’époque",
     "rarity": 2,
     "conditions": {
       "action": "search"
@@ -65,7 +65,7 @@
   },
   {
     "name": "Accélérateur de particules",
-    "description": "Machine permettant d'étuider la natures et les propriété des particules",
+    "description": "Machine permettant d’étudier la natures et les propriété des particules",
     "rarity": 2,
     "conditions": {
       "action": "search"
