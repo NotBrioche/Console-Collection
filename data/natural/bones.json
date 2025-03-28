@@ -1,3 +1,754 @@
 [
-  
+    {
+        "name": "Acétabulum",
+        "description": "Partie de l'os du bassin, il est en forme de cuillère et s'articule avec la tête fémorale.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Astragale (Talus)",
+        "description": "Se trouve entre le tibia et le calcanéum, il est en forme de poulie.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Atlas (C1)",
+        "description": "Se trouve entre le crâne et l'axis, il est en forme d'anneau.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Atlas (C2)",
+        "description": "Se trouve entre l'atlas et le corps vertébral, il est en forme de dent.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Calcanéus",
+        "description": "Os du talon, il est en forme de cube.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Capitatum",
+        "description": "Os du poignet, il est en forme de tête.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Clavicule",
+        "description": "Os de la ceinture scapulaire, il est en forme de S.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Coccyx",
+        "description": "Os de la région pelvienne, il est en forme de triangle.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Colonne vertébrale (composée de 33 vertèbres)",
+        "description": "Os de la colonne vertébrale, il est en forme de S.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Cuboïde",
+        "description": "Os du pied, il est en forme de cube.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Cunéiforme intermédiaire",
+        "description": "Os du pied, il est en forme de coin.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Cunéiforme latéral",
+        "description": "Os du pied, il est en forme de coin.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Cunéiforme médial",
+        "description": "Os du pied, il est en forme de coin.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Dent de l'axis",
+        "description": "Os de la colonne vertébrale, il est en forme de dent.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Ecaille de l'os temporal",
+        "description": "Os du crâne, il est en forme d'écaille.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Éthmoïde",
+        "description": "Os du crâne, il est en forme de grille.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Fémur",
+        "description": "Os de la cuisse, il est en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Fibula (Péroné)",
+        "description": "Os de la jambe, il est en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Frontal",
+        "description": "Os du crâne, il est en forme de front.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Grand os",
+        "description": "Os du crâne.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Grand palatin",
+        "description": "Os du palais.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Grand os sésamoïdes",
+        "description": "Os du pied.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Hamatum",
+        "description": "Os du poignet, il est en forme de crochet.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Hyoïde",
+        "description": "Os du cou, il est en forme de fer à cheval.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Incus (Enclume)",
+        "description": "Os de l'oreille, il est en forme d'enclume.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Ischion",
+        "description": "Os du bassin, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Lame criblée de l'ethmoïde",
+        "description": "Os du crâne, il est en forme de lame.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Lame perpendiculaire de l'ethmoïde",
+        "description": "Os du crâne, il est en forme de lame.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Lunatum",
+        "description": "Os du poignet, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Malléole latérale",
+        "description": "Os de la cheville, il est en forme de boule.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Malléole médiale",
+        "description": "Os de la cheville, il est en forme de boule.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Mandibule",
+        "description": "Os de la mâchoire inférieure, il est en forme de U.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Malleus (Marteau)",
+        "description": "Os de l'oreille, il est en forme de marteau.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Maxillaire",
+        "description": "Os de la mâchoire supérieure, il est en forme de U.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Méat acoustique externe",
+        "description": "Os du crâne, il est en forme de canal.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Métacarpiens",
+        "description": "Os de la main, ils sont en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Métatarsiens",
+        "description": "Os du pied, ils sont en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Naviculaire",
+        "description": "Os du poignet, il est en forme de bateau.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Occipital",
+        "description": "Os du crâne, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Ombilic",
+        "description": "Os du crâne, il est en forme de bouton.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os alvéolaire",
+        "description": "Os de la mâchoire, il est en forme de dent.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os coxal",
+        "description": "Os du bassin, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os de la face",
+        "description": "Os du visage.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os frontal",
+        "description": "Os du crâne.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os hyoïde",
+        "description": "Os du cou, il est en forme de fer à cheval.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os iliaque",
+        "description": "Os du bassin, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os lacrymal",
+        "description": "Os du crâne, il est en forme de larme.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os longs",
+        "description": "Os du corps, ils sont en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os nasal",
+        "description": "Os du crâne.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os occipital",
+        "description": "Os du crâne, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os palatin",
+        "description": "Os du palais, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os pariétal",
+        "description": "Os du crâne, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os pétreux",
+        "description": "Os du crâne, il est en forme de pierre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os plats",
+        "description": "Os du corps, ils sont en forme de plaque.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os pneumatisés",
+        "description": "Os du corps, ils sont en forme de plaque.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os propre du nez",
+        "description": "Os du nez, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os pyramidal",
+        "description": "Os du crâne, il est en forme de pyramide.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os quadrangulaire",
+        "description": "Os du crâne, il est en forme de carré.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os ronds",
+        "description": "Os du corps, ils sont en forme de rond.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os scaphoïde",
+        "description": "Os du poignet, il est en forme de bateau.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os sésamoïdes",
+        "description": "Os du pied.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os sphénoïde",
+        "description": "Os du crâne, il est en forme de papillon.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os squameux",
+        "description": "Os du crâne, il est en forme d'écaille.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os suturaux",
+        "description": "Os du crâne, ils sont en forme de plaque.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os trapézoïde",
+        "description": "Os du poignet, il est en forme de trapèze.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os triangulaire",
+        "description": "Os du poignet, il est en forme de triangle.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Os zygomatique",
+        "description": "Os du crâne, il est en forme de pommette.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Petit os sésamoïdes",
+        "description": "Os du pied.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Petit palatin",
+        "description": "Os du palais.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Phalanges des doigts",
+        "description": "Os de la main, ils sont en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Phalanges des orteils",
+        "description": "Os du pied, ils sont en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Pisiforme",
+        "description": "Os du poignet, il est en forme de pois.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Radius",
+        "description": "Os de l'avant-bras, il est en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Sacrum",
+        "description": "Os du bassin, il est en forme de triangle.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Scaphoïde",
+        "description": "Os du poignet, il est en forme de bateau.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Semi-lunaire (Lunatum)",
+        "description": "Os du poignet, il est en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Sésamoïdes",
+        "description": "Os du pied.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Sphénoïde",
+        "description": "Os du crâne, il est en forme de papillon.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Stapes (Étrier)",
+        "description": "Os de l'oreille, il est en forme d'étrier.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Sternum",
+        "description": "Os de la poitrine, il est en forme de plastron.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Suturaux",
+        "description": "Os du crâne, ils sont en forme de plaque.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Talus",
+        "description": "Os de la cheville, il est en forme de poulie.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Temporal",
+        "description": "Os du crâne, il est en forme de tempe.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Tibia",
+        "description": "Os de la jambe, il est en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Trapèze",
+        "description": "Os du poignet, il est en forme de trapèze.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Trapézoïde",
+        "description": "Os du poignet, il est en forme de trapèze.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Triquétrum",
+        "description": "Os du poignet, il est en forme de triangle.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Ulna (Cubitus)",
+        "description": "Os de l'avant-bras, il est en forme de long cylindre.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Vertèbres cervicales",
+        "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Vertèbres dorsales",
+        "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Vertèbres lombaires",
+        "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Vertèbres sacrées",
+        "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Vertèbres thoraciques",
+        "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    },
+    {
+        "name": "Zygomatique",
+        "description": "Os du crâne, il est en forme de pommette.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Pelle"
+        }
+    }
 ]

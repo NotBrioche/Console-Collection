@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Feuille",
+    "description": "Je ne pense pas devoir vous le présenter. On en trouve sur les arbres.",
+    "rarity": 0
+  },
+  {
+    "name": "Feu",
+    "description": "Ça brûle.",
+    "rarity": 0
+  },
+  {
+    "name": "Air",
+    "description": "Ça souffle.",
+    "rarity": 0
+  },
+  {
+    "name": "Foudre",
+    "description": "Ça électrise.",
+    "rarity": 0
+  },
+  {
+    "name": "Eau",
+    "description": "Ça mouille.",
+    "rarity": 0
+  }
+]
