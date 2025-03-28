@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Les disciples de VSCode",
+    "description": "On explique qu'ils sont en guerre millénaire avec le culte de Stack Overflow.",
+    "rarity": 2
+  },
+  {
+    "name": "Le culte de Stack Overflow",
+    "description": "Full stack dev ma geule.",
+    "rarity": 1
+  },
+  {
+    "name": "Catholicisme",
+    "description": "On ne se prononce pas sur la religion.",
+    "rarity": 0
+  },
+  {
+    "name": "Protestantisme",
+    "description": "On ne se prononce pas sur la religion.",
+    "rarity": 0
+  },
+  {
+    "name": "Musulmans",
+    "description": "On ne se prononce pas sur la religion.",
+    "rarity": 0
+  },
+  {
+    "name": "Athéisme",
+    "description": "Simplement ceux qui ne croient pas en un dieu.",
+    "rarity": 0
+  },
+  {
+    "name": "Bouddhisme",
+    "description": "On ne se prononce pas sur la religion.",
+    "rarity": 0
+  },
+  {
+    "name": "Cannibalisme",
+    "description": "C'est pas bien de manger des gens.",
+    "rarity": 0
+  },
+  {
+    "name": "Fabcorptisme",
+    "description": "Moi ou Souciss, choisissez votre camp.",
+    "rarity": 0
+  },
+  {
+    "name": "Soucissisme",
+    "description": "Pas fou en soi.",
+    "rarity": 0
+  }
+]
