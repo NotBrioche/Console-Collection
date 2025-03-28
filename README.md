@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-blue)](https://www.typescriptlang.org/)
 [![Pull request](https://img.shields.io/github/issues-pr/NotBrioche/Console-Collection.svg)](https://github.com/NotBrioche/Console-Collection/pulls)
 [![Licence](https://img.shields.io/github/license/NotBrioche/Console-Collection.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text)
-[![Language](https://img.shields.io/badge/Lang-fr-cornflowerblue)](https://www.youtube.com/watch?v=q-Y0bnx6Ndw)
+[![Language](https://img.shields.io/badge/Lang-fr-cornflowerblue)]()
 
 </div>
 
