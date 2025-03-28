@@ -7,6 +7,10 @@ data/rare.json
 data/epic.json
 data/legendary.json
 data/secret.json
+data/free.json
+data/search.json
+data/trade.json
+data/wait.json
 
 # Logs
 logs

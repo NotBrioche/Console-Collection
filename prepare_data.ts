@@ -8,6 +8,8 @@ const datas: Array<Array<Storage>> = [];
 const datasSingleArray: Array<Storage> = [];
 const output: Array<Item> = [];
 
+const actions = ['search', 'wait', 'trade', undefined];
+
 if (fs.existsSync('./data/all.json')) {
   fs.rmSync('./data/all.json');
 }
@@ -104,6 +106,23 @@ for (let i = 0; i < Item.rarity.length; i++) {
   fs.writeFileSync(
     fileName,
     JSON.stringify(rarityOutput).replace(/\_rarity/gi, 'rarity'),
+    {
+      flag: 'w',
+    }
+  );
+}
+
+for (let action of actions) {
+  const actionOutput = output.filter(
+    (item: Item) => item.conditions?.action == action
+  );
+
+  if (action == undefined) action = 'free';
+  const fileName = `data/${action.toLowerCase()}.json`;
+
+  fs.writeFileSync(
+    fileName,
+    JSON.stringify(actionOutput).replace(/\_rarity/gi, 'rarity'),
     {
       flag: 'w',
     }
