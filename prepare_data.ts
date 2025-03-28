@@ -21,6 +21,7 @@ for (let rarity of Item.rarity) {
 }
 
 for (let action of actions) {
+  if (action === undefined) action = 'free';
   if (fs.existsSync(`./data/${action}.json`)) {
     fs.rmSync(`./data/${action}.json`);
   }
@@ -97,7 +98,7 @@ for (let i = 0; i < output.length; i++) {
   output[i].rarity = Item.rarity[output[i]._rarity];
 }
 
-fs.writeFileSync('data/all.json', JSON.stringify(output), {
+fs.writeFileSync('data/all.json', JSON.stringify(output, null, 2), {
   flag: 'w',
 });
 
@@ -105,7 +106,7 @@ for (let i = 0; i < Item.rarity.length; i++) {
   const rarityOutput = output.filter((item: Item) => item._rarity == i);
   const fileName = `data/${Item.rarity[i].toLowerCase()}.json`;
 
-  fs.writeFileSync(fileName, JSON.stringify(rarityOutput), {
+  fs.writeFileSync(fileName, JSON.stringify(rarityOutput, null, 2), {
     flag: 'w',
   });
 }
@@ -118,7 +119,7 @@ for (let action of actions) {
   if (action == undefined) action = 'free';
   const fileName = `data/${action.toLowerCase()}.json`;
 
-  fs.writeFileSync(fileName, JSON.stringify(actionOutput), {
+  fs.writeFileSync(fileName, JSON.stringify(actionOutput, null, 2), {
     flag: 'w',
   });
 }
