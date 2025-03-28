@@ -2,11 +2,11 @@
 
 <div align="center">
 
-![Project Status](https://img.shields.io/badge/Status-In_Development-yellow)
-![TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-blue)
-![Licence](https://img.shields.io/github/issues-pr/NotBrioche/Console-Collection.svg)
-![Licence](https://img.shields.io/github/license/NotBrioche/Console-Collection.svg)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+[![Project Status](https://img.shields.io/badge/Status-In_Development-yellow)]()
+[![TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-blue)](https://www.typescriptlang.org/)
+[![Pull request](https://img.shields.io/github/issues-pr/NotBrioche/Console-Collection.svg)](https://github.com/NotBrioche/Console-Collection/pulls)
+[![Licence](https://img.shields.io/github/license/NotBrioche/Console-Collection.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text)
+[![Language](https://img.shields.io/badge/Lang-fr-cornflowerblue)](https://www.youtube.com/watch?v=q-Y0bnx6Ndw)
 
 </div>
 
@@ -43,13 +43,9 @@ Contributions are welcome to the project. It can be from fixing typos to adding 
    ```sh
    npm install
    ```
-3. Run the game in development mode:
+3. Run the game:
    ```sh
    npm start
-   ```
-4. Generate the executable (`.exe`):
-   ```sh
-   npm run build
    ```
 
 ---
