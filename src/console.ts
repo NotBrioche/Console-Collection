@@ -10,6 +10,7 @@ import ClearCommand from './commands/clearCommand';
 import TrainCommand from './commands/trainCommand';
 import WaitCommand from './commands/waitCommand';
 import TravelCommand from './commands/travelCommand';
+import SearchCommand from './commands/searchCommand';
 
 class Console {
   game: Game;
@@ -26,6 +27,7 @@ class Console {
       new ClearCommand(),
       new WaitCommand(this.game),
       new TravelCommand(this.game),
+      new SearchCommand(this.game),
     ];
     this.commands.push(new HelpCommand(this.commands));
   }
@@ -44,7 +46,7 @@ class Console {
         (c) => c.name == input.split(' ')[0].trim()
       );
       if (command) {
-        await command.execute(input.split(' '));
+        await command.execute(input.split(' ').slice(1));
       }
     }
   }

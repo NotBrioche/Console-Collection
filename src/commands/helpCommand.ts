@@ -14,7 +14,7 @@ class HelpCommand implements Command {
   }
 
   async execute(args: string[] | null): Promise<void> {
-    if (args == null || args.length < 2) {
+    if (args == null || args.length < 1) {
       let maxLength: number = 0;
       this.commands.forEach((command) => {
         const cmdString = `${command.name} - ${command.description}`;
@@ -35,7 +35,7 @@ class HelpCommand implements Command {
       let index = -1;
 
       for (let cmd of this.commands) {
-        if (cmd.name == args[1].trim()) {
+        if (cmd.name == args[0].trim()) {
           isACommand = true;
           index = this.commands.indexOf(cmd);
         }

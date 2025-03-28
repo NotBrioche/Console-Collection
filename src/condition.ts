@@ -32,6 +32,22 @@ class Condition {
       this.near == other.near
     );
   }
+
+  static compare(
+    first: Condition | null | undefined,
+    second: Condition | null | undefined
+  ): boolean {
+    if (first != second && (first == null || second == null)) return false;
+
+    return (
+      first!.action == second!.action &&
+      first!.time == second!.time &&
+      first!.season == second!.season &&
+      first!.item == second!.item &&
+      first!.moon == second!.moon &&
+      first!.near == second!.near
+    );
+  }
 }
 
 export default Condition;

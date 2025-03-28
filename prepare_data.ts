@@ -20,6 +20,12 @@ for (let rarity of Item.rarity) {
   }
 }
 
+for (let action of actions) {
+  if (fs.existsSync(`./data/${action}.json`)) {
+    fs.rmSync(`./data/${action}.json`);
+  }
+}
+
 const files = glob.globSync('data/**/*.json');
 
 for (const file of files) {
@@ -91,25 +97,17 @@ for (let i = 0; i < output.length; i++) {
   output[i].rarity = Item.rarity[output[i]._rarity];
 }
 
-fs.writeFileSync(
-  'data/all.json',
-  JSON.stringify(output).replace(/\_rarity/gi, 'rarity'),
-  {
-    flag: 'w',
-  }
-);
+fs.writeFileSync('data/all.json', JSON.stringify(output), {
+  flag: 'w',
+});
 
 for (let i = 0; i < Item.rarity.length; i++) {
   const rarityOutput = output.filter((item: Item) => item._rarity == i);
   const fileName = `data/${Item.rarity[i].toLowerCase()}.json`;
 
-  fs.writeFileSync(
-    fileName,
-    JSON.stringify(rarityOutput).replace(/\_rarity/gi, 'rarity'),
-    {
-      flag: 'w',
-    }
-  );
+  fs.writeFileSync(fileName, JSON.stringify(rarityOutput), {
+    flag: 'w',
+  });
 }
 
 for (let action of actions) {
@@ -120,11 +118,7 @@ for (let action of actions) {
   if (action == undefined) action = 'free';
   const fileName = `data/${action.toLowerCase()}.json`;
 
-  fs.writeFileSync(
-    fileName,
-    JSON.stringify(actionOutput).replace(/\_rarity/gi, 'rarity'),
-    {
-      flag: 'w',
-    }
-  );
+  fs.writeFileSync(fileName, JSON.stringify(actionOutput), {
+    flag: 'w',
+  });
 }

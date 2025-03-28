@@ -15,7 +15,7 @@ class WaitCommand implements Command {
   async execute(args: string[] | null): Promise<void> {
     let length: number = 1;
     if (args != null && args.length > 0) {
-      length = Number.parseInt(args[1]);
+      length = Number.parseInt(args[0]);
     }
     length = isNaN(length) ? 1 : length;
 

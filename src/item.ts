@@ -32,6 +32,19 @@ class Item {
     return null;
   }
 
+  static toOwned(item: Item): Item {
+    return new Item(
+      item.id,
+      item.name,
+      item.description,
+      item.collection,
+      undefined,
+      item._rarity,
+      Math.random(),
+      Math.floor(Math.random() * 500) == 0 ? true : false
+    );
+  }
+
   constructor(
     id: number,
     name: string,

@@ -7,12 +7,13 @@ class Player {
   public username: string;
   private _power: number;
   private _region: Region;
-  collection: Array<Item>;
+  private _collection: Array<Item>;
 
   constructor(
     username: string,
     power: number = 100,
-    region: Region = Region.default()
+    region: Region = Region.default(),
+    collection: Item[] = []
   ) {
     if (power > 100) power = 100;
     if (power < 0) power = 0;
@@ -20,7 +21,7 @@ class Player {
     this.username = username;
     this._power = power;
     this._region = region;
-    this.collection = [];
+    this._collection = collection;
   }
 
   set power(value: number) {
@@ -39,6 +40,15 @@ class Player {
 
   get region(): Region {
     return this._region;
+  }
+
+  get collection(): Item[] {
+    return this._collection;
+  }
+
+  addItem(item: Item) {
+    this._collection.push(item);
+    fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }
 }
 
