@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Lance",
+        "description": "Arme pouvant être utilisée pour attaquer les ennemis à distance.",
+        "rarity": 1,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Peau d'ours",
+        "description": "Peau pouvant être utilisée pour se protéger du froid.",
+        "rarity": 0,
+        "conditions": {
+            "action": "se"
+        }
+    },
+    {
+        "name": "Peinture",
+        "description": "Dessin présents sur les murs de la grotte.",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Habits",
+        "description": "Objet pouvant être utilisé pour se protéger du froid.",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Grotte",
+        "description": "Endroit où les hommes préhistoriques vivaient.",
+        "rarity": 1,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Hache",
+        "description": "Objet Utilisé pour couper du bois.",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Feu de camp",
+        "description": "Construction permettant de se réchauffer et de s'éclairer.",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Temple",
+        "description": "Construction antique et vénéré par les hommes préhistoriques.",
+        "rarity": 1,
+        "conditions": {
+            "action": "search"
+        }
+    }
+]
