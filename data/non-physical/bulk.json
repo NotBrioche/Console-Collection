@@ -1,0 +1,51 @@
+[
+    {
+        "name": "La méthode des six pas",
+        "description": "Principe selon lequel toute personne est connectée à une autre par un maximum de six relations.",
+        "rarity": 1
+    },
+    {
+        "name": "Langues",
+        "description": "Moyens de communication variés utilisés par les humains à travers le monde.",
+        "rarity": 0
+    },
+    {
+        "name": "Règle des 80/20",
+        "description": "Principe de Pareto : 80% des résultats proviennent de 20% des efforts.",
+        "rarity": 1
+    },
+    {
+        "name": "Discipline",
+        "description": "Capacité à maintenir un comportement ou un effort constant pour atteindre un objectif.",
+        "rarity": 0
+    },
+    {
+        "name": "Richesse",
+        "description": "Accumulation de ressources ou de biens matériels.",
+        "rarity": 1,
+        "conditions": {
+            "item": "Monnaie"
+        }
+    },
+    {
+        "name": "Baptême du chalet",
+        "description": "Rituel pour l'entrée d'une nouvelle personne dans un groupe d'amis.",
+        "rarity": 2,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Réseaux sociaux",
+        "description": "Plateformes en ligne permettant de connecter et d'interagir avec d'autres personnes.",
+        "rarity": 0
+    },
+    {
+        "name": "Politique",
+        "description": "Art ou science de gouverner une société ou un groupe.",
+        "rarity": 1,
+        "conditions": {
+            "action": "search"
+        }
+    }
+]
