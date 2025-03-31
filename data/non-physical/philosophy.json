@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Mortalité quantique",
+        "description": "Concept philosophique lié à l'interprétation des mondes multiples en physique quantique.",
+        "rarity": 2,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Remise en question",
+        "description": "Acte de réfléchir sur ses croyances et ses certitudes pour les réévaluer.",
+        "rarity": 1
+    },
+    {
+        "name": "Libre arbitre",
+        "description": "Capacité de faire des choix indépendamment de toute contrainte extérieure.",
+        "rarity": 1
+    }
+]
