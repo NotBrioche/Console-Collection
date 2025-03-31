@@ -1,0 +1,55 @@
+[
+    {
+        "name": "RLE",
+        "description": "Run Length Encoding, une méthode de compression de données.",
+        "rarity": 1,
+        "conditions": {
+            "item": "Langage de prog."
+        }
+    },
+    {
+        "name": "IDE",
+        "description": "Environnement de développement intégré, utilisé pour écrire et déboguer du code.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Langage de prog."
+        }
+    },
+    {
+        "name": "IA",
+        "description": "Intelligence artificielle, utilisée pour résoudre des problèmes complexes.",
+        "rarity": 2,
+        "conditions": {
+            "item": "Langage de prog."
+        }
+    },
+    {
+        "name": "Tests unitaires",
+        "description": "Méthode pour vérifier que chaque unité de code fonctionne correctement.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Langage de prog."
+        }
+    },
+    {
+        "name": "Algorithmes",
+        "description": "Ensemble d'instructions pour résoudre un problème ou effectuer une tâche.",
+        "rarity": 1,
+        "conditions": {
+            "item": "Langage de prog."
+        }
+    },
+    {
+        "name": "Classe",
+        "description": "Structure de base pour définir des objets en programmation orientée objet.",
+        "rarity": 0,
+        "conditions": {
+            "item": "Langage de prog."
+        }
+    },
+    {
+        "name": "Langage de prog.",
+        "description": "Langage utilisé pour écrire des programmes informatiques.",
+        "rarity": 1
+    }
+]
