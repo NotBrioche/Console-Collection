@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Mix Marketing (4P)",
+        "description": "Les 4P : Produit, Prix, Place, Promotion, une stratégie clé en marketing.",
+        "rarity": 1,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Storytelling",
+        "description": "Technique marketing qui consiste à raconter une histoire pour captiver l'audience.",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "SWOT Analysis",
+        "description": "Outil stratégique pour analyser les forces, faiblesses, opportunités et menaces.",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Freemium Model",
+        "description": "Modèle économique offrant un service gratuit avec des options payantes.",
+        "rarity": 1,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Programme de Fidélité",
+        "description": "Stratégie pour récompenser les clients fidèles et les inciter à revenir.",
+        "rarity": 0,
+        "conditions": {
+            "action": "search"
+        }
+    },
+    {
+        "name": "Deflation",
+        "description": "Baisse générale et durable des prix dans une économie.",
+        "rarity": 0
+    },
+    {
+        "name": "Inflation",
+        "description": "Augmentation générale et durable des prix dans une économie.",
+        "rarity": 0
+    },
+    {
+        "name": "Monnaie",
+        "description": "Moyen d'échange utilisé pour les transactions économiques.",
+        "rarity": 0
+    }
+]
