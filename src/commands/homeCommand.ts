@@ -1,6 +1,7 @@
 import Command from '../command';
 import '../extensions/date.extension';
 import Player from '../player';
+import Weather from '../weather';
 const createSeasonSolver = require('date-season');
 
 const season = createSeasonSolver();
@@ -19,11 +20,13 @@ class HomeCommand implements Command {
   async execute(args: string[] | null): Promise<void> {
     const now = new Date();
     const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${getSeason(now)} ${now.toLocaleTimeString().substring(0, 5)}`;
+    const weather = Weather.getCurrent();
 
     console.log('> ');
     console.log(`> ${titleString}`);
     console.log(`> ${'-'.repeat(titleString.length)}`);
-    console.log(`> [ ${this.player.region.name} ]`);
+    console.log(`> [ ${this.player.region.name} ] - [ ${weather.type} ]`);
+    console.log(`> ${weather.description}`);
     console.log('> ');
     console.log(
       `> ${this.player.username} - ${this.player.collection.length} / 372`
