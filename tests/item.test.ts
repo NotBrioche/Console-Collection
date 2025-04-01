@@ -90,4 +90,49 @@ describe('Item class', () => {
 
     expect(spy).toHaveBeenCalled();
   });
+
+  test('toOwned creates a new item with randomized quality and rareVariant', () => {
+    const originalItem = new Item(
+      1,
+      'Pierre',
+      "C'est une pierre, elle peut vous porter compagnie",
+      'Matériaux',
+      new Condition(),
+      2,
+      0.5,
+      false
+    );
+
+    const ownedItem = Item.toOwned(originalItem);
+
+    expect(ownedItem).not.toBe(originalItem);
+    expect(ownedItem.id).toBe(originalItem.id);
+    expect(ownedItem.name).toBe(originalItem.name);
+    expect(ownedItem.description).toBe(originalItem.description);
+    expect(ownedItem.collection).toBe(originalItem.collection);
+    expect(ownedItem._rarity).toBe(originalItem._rarity);
+    expect(ownedItem.quality).toBeGreaterThanOrEqual(0);
+    expect(ownedItem.quality).toBeLessThan(1);
+    expect(typeof ownedItem.rareVariant).toBe('boolean');
+  });
+
+  test('getObjectInfos logs the corrects informations', () => {
+    const item = new Item(
+      1,
+      'Pierre',
+      "C'est une pierre, elle peut vous porter compagnie",
+      'Matériaux',
+      new Condition(),
+      1,
+      0.8,
+      true
+    );
+
+    const spy = jest.spyOn(console, 'log').mockImplementation(() => { });
+    item.getObjectInfos();
+
+    expect(spy).toHaveBeenCalledWith('[ Pierre ] - Uncommon');
+    expect(spy).toHaveBeenCalledWith('| Qualité : 0.8');
+    expect(spy).toHaveBeenCalledWith('| C\'est une pierre, elle peut vous porter compagnie');
+  });
 });

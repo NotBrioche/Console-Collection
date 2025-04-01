@@ -65,7 +65,7 @@ class SearchCommand implements Command {
         }
 
         if (rep == 'stamina' || rep == 'stats' || rep == 'home') {
-          process.stdout.write(`${this.game.player.power} / 100\n> `);
+          process.stdout.write(`> ${this.game.player.power} / 100\n> `);
         }
       } catch (e) {
         break;
