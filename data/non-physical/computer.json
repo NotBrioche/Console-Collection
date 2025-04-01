@@ -36,7 +36,10 @@
         "description": "Ensemble d'instructions pour résoudre un problème ou effectuer une tâche.",
         "rarity": 1,
         "conditions": {
-            "item": "Langage de prog."
+            "item": [
+                "Langage de prog."
+            ],
+            "action": "search"
         }
     },
     {
@@ -44,7 +47,10 @@
         "description": "Structure de base pour définir des objets en programmation orientée objet.",
         "rarity": 0,
         "conditions": {
-            "item": "Langage de prog."
+            "item": [
+                "Langage de prog."
+            ],
+            "time": "day"
         }
     },
     {
@@ -52,7 +58,8 @@
         "description": "Langage utilisé pour écrire des programmes informatiques.",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "season": "summer"
         }
     }
 ]

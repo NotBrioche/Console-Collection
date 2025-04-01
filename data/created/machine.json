@@ -44,7 +44,11 @@
     "description": "Machine permettant de faire des calculs",
     "rarity": 1,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "time": "day",
+      "item": [
+        "Algorithmes"
+      ]
     }
   },
   {
@@ -52,7 +56,10 @@
     "description": "Petit engin volant",
     "rarity": 0,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "near": [
+        "forest"
+      ]
     }
   },
   {
@@ -60,15 +67,21 @@
     "description": "Machine permettant de renforcer la force humaine",
     "rarity": 2,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "season": "winter",
+      "moon": "full"
     }
   },
   {
     "name": "Accélérateur de particules",
-    "description": "Machine permettant d’étudier la natures et les propriété des particules",
+    "description": "Machine permettant d’étudier la nature et les propriétés des particules",
     "rarity": 2,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "time": "night",
+      "near": [
+        "water"
+      ]
     }
   },
   {

@@ -4,7 +4,10 @@
         "description": "Arme pouvant être utilisée pour attaquer les ennemis à distance.",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "near": [
+                "forest"
+            ]
         }
     },
     {
@@ -12,7 +15,10 @@
         "description": "Peau pouvant être utilisée pour se protéger du froid.",
         "rarity": 0,
         "conditions": {
-            "action": "se"
+            "action": "search",
+            "near": [
+                "mountain"
+            ]
         }
     },
     {
@@ -20,7 +26,11 @@
         "description": "Dessin présents sur les murs de la grotte.",
         "rarity": 0,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "near": [
+                "grotte"
+            ],
+            "time": "day"
         }
     },
     {
@@ -28,7 +38,8 @@
         "description": "Objet pouvant être utilisé pour se protéger du froid.",
         "rarity": 0,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "season": "winter"
         }
     },
     {
@@ -36,12 +47,16 @@
         "description": "Endroit où les hommes préhistoriques vivaient.",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "near": [
+                "forest"
+            ],
+            "moon": "full"
         }
     },
     {
         "name": "Hache",
-        "description": "Objet Utilisé pour couper du bois.",
+        "description": "Objet utilisé pour couper du bois.",
         "rarity": 0,
         "conditions": {
             "action": "search"

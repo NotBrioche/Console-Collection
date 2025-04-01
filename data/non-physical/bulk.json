@@ -32,20 +32,28 @@
         "description": "Rituel pour l'entrée d'une nouvelle personne dans un groupe d'amis.",
         "rarity": 2,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "near": [
+                "forest"
+            ]
         }
     },
     {
         "name": "Réseaux sociaux",
         "description": "Plateformes en ligne permettant de connecter et d'interagir avec d'autres personnes.",
-        "rarity": 0
+        "rarity": 0,
+        "conditions": {
+            "action": "search",
+            "time": "night"
+        }
     },
     {
         "name": "Politique",
         "description": "Art ou science de gouverner une société ou un groupe.",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "moon": "full"
         }
     }
 ]
