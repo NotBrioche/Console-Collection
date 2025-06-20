@@ -6,14 +6,14 @@ import Land from './land';
 class Player {
   public username: string;
   private _energy: number;
-  private _land: Land;
+  private _land: number;
   private _collection: Array<Item>;
   private _money: number;
 
   constructor(
     username: string,
     energy: number = 100,
-    land: Land = Land.default(),
+    land: number = 0,
     collection: Item[] = [],
     money: number = 0
   ) {
@@ -34,12 +34,12 @@ class Player {
   }
 
   set land(value: Land) {
-    this._land = value;
+    this._land = Land.lands.indexOf(value);
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }
 
   get land(): Land {
-    return this._land;
+    return Land.lands[this._land];
   }
 
   get collection(): Item[] {
