@@ -3,22 +3,14 @@ import Condition from './condition';
 class Item {
   id: number;
   name: string;
-  _rarity: number;
   description: string;
   collection: string;
+  _rarity: number;
   conditions: Condition | null | undefined;
   quality: number | null | undefined;
   rareVariant: boolean | null | undefined;
 
-  get rarity() {
-    return Item.rarity[this._rarity];
-  }
-
-  set rarity(value) {
-    this._rarity = Item.rarity.indexOf(value);
-  }
-
-  public static rarity = [
+  public static rarities = [
     'Common',
     'Uncommon',
     'Rare',
@@ -26,6 +18,40 @@ class Item {
     'Legendary',
     'Secret',
   ];
+
+  constructor(
+    id: number,
+    name: string,
+    description: string,
+    collection: string,
+    conditions?: Condition | null | undefined,
+    rarity?: number | null,
+    quality?: number | null | undefined,
+    rareVariant?: boolean | null | undefined
+  ) {
+    if (rarity != null && (rarity >= Item.rarities.length || rarity < 0)) {
+      throw new Error(
+        `Rarity must be between 0 and ${Item.rarities.length - 1}`
+      );
+    }
+
+    this.id = id;
+    this.name = name;
+    this._rarity = rarity ?? 0;
+    this.description = description;
+    this.collection = collection;
+    this.conditions = conditions;
+    this.quality = quality;
+    this.rareVariant = rareVariant;
+  }
+
+  get rarity() {
+    return Item.rarities[this._rarity];
+  }
+
+  set rarity(value) {
+    this._rarity = Item.rarities.indexOf(value);
+  }
 
   get details() {
     this.getObjectInfos();
@@ -41,32 +67,8 @@ class Item {
       undefined,
       item._rarity,
       Math.random(),
-      Math.floor(Math.random() * 500) == 0 ? true : false
+      Math.floor(Math.random() * 1024) == 0 ? true : false
     );
-  }
-
-  constructor(
-    id: number,
-    name: string,
-    description: string,
-    collection: string,
-    conditions?: Condition | null | undefined,
-    rarity?: number | null,
-    quality?: number | null | undefined,
-    rareVariant?: boolean | null | undefined
-  ) {
-    if (rarity != null && (rarity >= Item.rarity.length || rarity < 0)) {
-      throw new Error(`Rarity must be between 0 and ${Item.rarity.length - 1}`);
-    }
-
-    this.id = id;
-    this.name = name;
-    this._rarity = rarity ?? 0;
-    this.description = description;
-    this.collection = collection;
-    this.conditions = conditions;
-    this.quality = quality;
-    this.rareVariant = rareVariant;
   }
 
   public getObjectInfos() {

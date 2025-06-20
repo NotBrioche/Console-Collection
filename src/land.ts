@@ -8,6 +8,18 @@ class Land {
     this.name = name;
     this.destinations = destinations;
   }
+
+  static default() {
+    return new Land(0, 'Hey', []);
+  }
+
+  equals(other: Land) {
+    return (
+      this.id === other.id &&
+      this.name === other.name &&
+      this.destinations === other.destinations
+    );
+  }
 }
 
 export default Land;

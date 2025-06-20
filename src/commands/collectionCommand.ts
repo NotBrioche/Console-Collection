@@ -54,7 +54,7 @@ class CollectionCommand implements Command {
         );
         console.log('> ----------');
         console.log(`> ${item.description}`);
-        console.log(`> Rareté : ${Item.rarity[item._rarity]}`);
+        console.log(`> Rareté : ${Item.rarities[item._rarity]}`);
         console.log(`> Qualité : ${item.quality}`);
         console.log('> ');
       }

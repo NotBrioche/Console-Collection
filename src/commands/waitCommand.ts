@@ -19,7 +19,7 @@ class WaitCommand implements Command {
     }
     length = isNaN(length) ? 1 : length;
 
-    if (this.game.player.power < 1 + length) {
+    if (this.game.player.energy < 1 + length) {
       console.log("> Vous n'avez pas assez d'énergie pour attendre");
       console.log('> ');
       return;
@@ -35,7 +35,7 @@ class WaitCommand implements Command {
       time++;
 
       if (time % 60 == 0) {
-        this.game.player.power--;
+        this.game.player.energy--;
       }
 
       if (time + 1 >= 60 * length) {
@@ -43,7 +43,7 @@ class WaitCommand implements Command {
         clearInterval(interval);
       }
     }, 1000);
-    this.game.player.power--;
+    this.game.player.energy--;
 
     while (time + 1 < 60 * length) {
       try {
@@ -58,7 +58,7 @@ class WaitCommand implements Command {
       }
     }
     console.log("> ----- Vous avez fini d'attendre -----");
-    this.game.player.power--;
+    this.game.player.energy--;
     clearInterval(interval);
   }
 }

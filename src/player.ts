@@ -5,42 +5,42 @@ import Land from './land';
 
 class Player {
   public username: string;
-  private _power: number;
-  // private _region: Land;
+  private _energy: number;
+  private _land: Land;
   private _collection: Array<Item>;
+  private _money: number;
 
   constructor(
     username: string,
-    power: number = 100,
-    // region: Land = Land.default(),
-    collection: Item[] = []
+    energy: number = 100,
+    land: Land = Land.default(),
+    collection: Item[] = [],
+    money: number = 0
   ) {
-    if (power > 100) power = 100;
-    if (power < 0) power = 0;
-
     this.username = username;
-    this._power = power;
-    // this._region = region;
+    this._energy = energy;
+    this._land = land;
     this._collection = collection;
+    this._money = money;
   }
 
-  set power(value: number) {
-    this._power = value;
+  set energy(value: number) {
+    this._energy = value;
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }
 
-  get power(): number {
-    return this._power;
+  get energy(): number {
+    return this._energy;
   }
 
-  // set region(value: Land) {
-  //   this._region = value;
-  //   fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
-  // }
+  set land(value: Land) {
+    this._land = value;
+    fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
+  }
 
-  // get region(): Land {
-  //   return this._region;
-  // }
+  get land(): Land {
+    return this._land;
+  }
 
   get collection(): Item[] {
     return this._collection;
@@ -48,6 +48,15 @@ class Player {
 
   addItem(item: Item) {
     this._collection.push(item);
+    fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
+  }
+
+  get money(): number {
+    return this._money;
+  }
+
+  set money(value: number) {
+    this._money = value;
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }
 }

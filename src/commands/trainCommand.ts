@@ -13,7 +13,7 @@ class TrainCommand implements Command {
   }
 
   async execute(args: string[] | null): Promise<void> {
-    if (this.game.player.power >= 100) {
+    if (this.game.player.energy >= 100) {
       console.log("> Vous avez déjà le maximum d'énergie");
       console.log('> ');
       return;
@@ -51,7 +51,7 @@ class TrainCommand implements Command {
             isNaN(Number.parseInt(rep)) ||
             Number.parseInt(rep) != first + second
           ) {
-            this.game.player.power += bilan;
+            this.game.player.energy += bilan;
             console.log(`> Votre score : ${difficulty}`);
             console.log(`> Bilan : ${bilan > -1 ? '+' : ''}${bilan}`);
             break;
@@ -59,7 +59,7 @@ class TrainCommand implements Command {
 
           difficulty++;
         } catch (e) {
-          this.game.player.power += bilan;
+          this.game.player.energy += bilan;
           console.log(`> Votre score : ${difficulty}`);
           console.log(`> Bilan : ${bilan > -1 ? '+' : ''}${bilan}`);
           break;

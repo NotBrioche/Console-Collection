@@ -23,12 +23,12 @@ class HomeCommand implements Command {
     console.log('> ');
     console.log(`> ${titleString}`);
     console.log(`> ${'-'.repeat(titleString.length)}`);
-    // console.log(`> [ ${this.player.region.name} ] - [ ${weather.type} ]`);
+    console.log(`> [ ${this.player.land.name} ]`);
     console.log('> ');
     console.log(
       `> ${this.player.username} - ${this.player.collection.length} / 372`
     );
-    console.log(`> Energie : ${this.player.power} / 100`);
+    console.log(`> Energie : ${this.player.energy} / 100`);
     console.log(`> ${'-'.repeat(titleString.length)}`);
     console.log('> Tapez "help" pour lister les commandes utilisables.');
     console.log('> ');

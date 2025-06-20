@@ -37,7 +37,7 @@ class SearchCommand implements Command {
       time++;
 
       if (time % 60 == 0) {
-        this.game.player.power -= 5;
+        this.game.player.energy -= 5;
         const item: Item | undefined = this.tryGetNewItem();
         if (item === undefined) {
           process.stdout.write("Vous n'avez rien trouvé\n> ");
@@ -53,7 +53,7 @@ class SearchCommand implements Command {
         clearInterval(interval);
       }
     }, 1000);
-    this.game.player.power -= 5;
+    this.game.player.energy -= 5;
 
     while (time + 1 < 60 * length) {
       try {
@@ -65,7 +65,7 @@ class SearchCommand implements Command {
         }
 
         if (rep == 'stamina' || rep == 'stats' || rep == 'home') {
-          process.stdout.write(`> ${this.game.player.power} / 100\n> `);
+          process.stdout.write(`> ${this.game.player.energy} / 100\n> `);
         }
       } catch (e) {
         break;
@@ -80,7 +80,7 @@ class SearchCommand implements Command {
     const searchJson: Item[] = JSON.parse(json);
 
     const valid: Item[] = searchJson.filter((item) =>
-      Condition.compare(item.conditions, new Condition('search'))
+      item.conditions?.equals(new Condition('search'))
     );
 
     const random = Math.floor(Math.random() * 5);
