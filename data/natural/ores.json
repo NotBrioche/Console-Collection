@@ -10,7 +10,9 @@
     "rarity": 0,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -19,7 +21,9 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -28,7 +32,9 @@
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -45,7 +51,9 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -54,7 +62,9 @@
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -63,7 +73,9 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -72,7 +84,9 @@
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -81,7 +95,9 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -90,7 +106,9 @@
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -99,7 +117,9 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   },
   {
@@ -108,7 +128,9 @@
     "rarity": 0,
     "conditions": {
       "action": "search",
-      "item": "Pioche"
+      "items": [
+        "Pioche"
+      ]
     }
   }
 ]

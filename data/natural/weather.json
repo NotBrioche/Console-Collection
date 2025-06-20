@@ -32,8 +32,10 @@
     "conditions": {
       "action": "wait",
       "time": "night",
-      "moon": ["full", "new"],
-      "near": "water"
+      "moon": [
+        "full",
+        "new"
+      ]
     }
   },
   {
@@ -41,7 +43,9 @@
     "description": "Dangereux, faites attention.",
     "rarity": 1,
     "conditions": {
-      "near": "snow"
+      "items": [
+        "Neige"
+      ]
     }
   },
   {
@@ -62,8 +66,10 @@
     "description": "Attention à bien s'hydrater.",
     "rarity": 2,
     "conditions": {
-      "near": "desert",
-      "time": "day"
+      "time": "day",
+      "items": [
+        "Soleil"
+      ]
     }
   },
   {
@@ -71,7 +77,10 @@
     "description": "Restez à l'ombre.",
     "rarity": 1,
     "conditions": {
-      "time": "day"
+      "time": "day",
+      "items": [
+        "Soleil"
+      ]
     }
   },
   {
@@ -80,7 +89,10 @@
     "rarity": 2,
     "conditions": {
       "time": "day",
-      "item": "Pluie"
+      "items": [
+        "Pluie",
+        "Soleil"
+      ]
     }
   }
 ]

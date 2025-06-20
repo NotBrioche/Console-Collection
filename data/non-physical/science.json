@@ -4,15 +4,21 @@
     "description": "Découvert par Isaac Newton, publié en 1687, pratique pour la physique et notamment pour vous tenir sur Terre.",
     "rarity": 1,
     "conditions": {
-      "action": "wait"
+      "action": "wait",
+      "items": [
+        "Maths"
+      ]
     }
   },
   {
     "name": "Théorème de Pythagore",
-    "description": "Si vous n'avez pas quitté l'école vous savez de q'il fait.",
+    "description": "Si vous n'avez pas quitté l'école vous savez de qu'il fait.",
     "rarity": 0,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "items": [
+        "Maths"
+      ]
     }
   },
   {
@@ -20,7 +26,10 @@
     "description": "Apparemment les cercles sont utiles.",
     "rarity": 0,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "items": [
+        "Géométrie"
+      ]
     }
   },
   {
@@ -29,11 +38,23 @@
     "rarity": 0
   },
   {
+    "name": "Géométrie",
+    "description": "Apparemment les cercles sont utiles.",
+    "rarity": 0,
+    "conditions": {
+      "items": [
+        "Maths"
+      ]
+    }
+  },
+  {
     "name": "Physique",
     "description": "Science qui essaye de comprendre les lois de l'Univers et de les expliquer.",
     "rarity": 0,
     "conditions": {
-      "item": "Maths"
+      "items": [
+        "Maths"
+      ]
     }
   },
   {
@@ -41,7 +62,9 @@
     "description": "Science de l'espace.",
     "rarity": 0,
     "conditions": {
-      "item": "Maths"
+      "items": [
+        "Maths"
+      ]
     }
   },
   {
@@ -59,7 +82,9 @@
     "description": "Provient de la géométrie, complexe à utiliser",
     "rarity": 1,
     "conditions": {
-      "item": "Maths"
+      "items": [
+        "Géométrie"
+      ]
     }
   },
   {
@@ -67,7 +92,11 @@
     "description": "Plus petite partie d'une matière",
     "rarity": 1,
     "conditions": {
-      "item": ["Maths", "Physique", "Microscope"]
+      "items": [
+        "Maths",
+        "Physique",
+        "Microscope"
+      ]
     }
   }
 ]

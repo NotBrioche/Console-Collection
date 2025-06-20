@@ -4,7 +4,10 @@
         "description": "Tableau de Léonard de Vinci",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "items": [
+                "Peinture"
+            ]
         }
     },
     {
@@ -13,7 +16,10 @@
         "rarity": 1,
         "conditions": {
             "action": "search",
-            "time": "night"
+            "time": "night",
+            "items": [
+                "Peinture"
+            ]
         }
     },
     {
@@ -21,7 +27,10 @@
         "description": "Tableau de Johannes Vermeer",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "items": [
+                "Peinture"
+            ]
         }
     },
     {
@@ -29,7 +38,10 @@
         "description": "Tableau de Léonard de Vinci",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "items": [
+                "Peinture"
+            ]
         }
     },
     {
@@ -37,7 +49,10 @@
         "description": "Tableau d'Eugène Delacroix",
         "rarity": 1,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "items": [
+                "Peinture"
+            ]
         }
     },
     {
@@ -46,7 +61,10 @@
         "rarity": 2,
         "conditions": {
             "action": "search",
-            "near": "sea"
+            "near": "sea",
+            "items": [
+                "Peinture"
+            ]
         }
     }
 ]

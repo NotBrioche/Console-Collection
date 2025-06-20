@@ -9,7 +9,6 @@ import ExitCommand from './commands/exitCommand';
 import ClearCommand from './commands/clearCommand';
 import TrainCommand from './commands/trainCommand';
 import WaitCommand from './commands/waitCommand';
-import TravelCommand from './commands/travelCommand';
 import SearchCommand from './commands/searchCommand';
 import CollectionCommand from './commands/collectionCommand';
 
@@ -27,7 +26,6 @@ class Console {
       new ExitCommand(),
       new ClearCommand(),
       new WaitCommand(this.game),
-      new TravelCommand(this.game),
       new SearchCommand(this.game),
       new CollectionCommand(this.game),
     ];

@@ -4,10 +4,7 @@
         "description": "Arme pouvant être utilisée pour attaquer les ennemis à distance.",
         "rarity": 1,
         "conditions": {
-            "action": "search",
-            "near": [
-                "forest"
-            ]
+            "action": "search"
         }
     },
     {
@@ -15,10 +12,7 @@
         "description": "Peau pouvant être utilisée pour se protéger du froid.",
         "rarity": 0,
         "conditions": {
-            "action": "search",
-            "near": [
-                "mountain"
-            ]
+            "action": "search"
         }
     },
     {
@@ -27,10 +21,10 @@
         "rarity": 0,
         "conditions": {
             "action": "search",
-            "near": [
-                "grotte"
-            ],
-            "time": "day"
+            "time": "day",
+            "items": [
+                "Grotte"
+            ]
         }
     },
     {
@@ -39,19 +33,8 @@
         "rarity": 0,
         "conditions": {
             "action": "search",
-            "season": "winter"
-        }
-    },
-    {
-        "name": "Grotte",
-        "description": "Endroit où les hommes préhistoriques vivaient.",
-        "rarity": 1,
-        "conditions": {
-            "action": "search",
-            "near": [
-                "forest"
-            ],
-            "moon": "full"
+            "season": "winter",
+            "items": ["Peau d'ours"]
         }
     },
     {

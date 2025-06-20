@@ -15,10 +15,7 @@
   {
     "name": "Arbre",
     "description": "C'est un arbre.",
-    "rarity": 0,
-    "conditions": {
-      "near": "forest"
-    }
+    "rarity": 0
   },
   {
     "name": "Capybara",
@@ -38,7 +35,9 @@
     "description": "Créature légendaire cracheuse de feu.",
     "rarity": 2,
     "conditions": {
-      "near": "cave"
+      "items": [
+        "Grotte"
+      ]
     }
   },
   {
@@ -46,8 +45,7 @@
     "description": "Micro-animal résistant aux conditions extrêmes.",
     "rarity": 2,
     "conditions": {
-      "action": "search",
-      "near": "sea"
+      "action": "search"
     }
   },
   {
@@ -63,17 +61,11 @@
   {
     "name": "Renard",
     "description": "Le fameux renard du Petit Prince.",
-    "rarity": 0,
-    "conditions": {
-      "near": "forest"
-    }
+    "rarity": 0
   },
   {
     "name": "Ours",
     "description": "Attention, il est très fort.",
-    "rarity": 0,
-    "conditions": {
-      "near": "forest"
-    }
+    "rarity": 0
   }
 ]

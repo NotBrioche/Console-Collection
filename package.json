@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "start": "ts-node ./index.ts",
-    "build": "tsc && ts-node ./prepare_data.ts",
+    "build": "tsc && ts-node ./prepare-data.ts",
     "postbuild": "copyfiles -E -u 1 ./data/**/*.* ./dist/data && pkg ./dist/index.js -o ./Console-Collection.exe -t latest-windows-x64"
   },
   "author": "NotBrioche",
@@ -20,11 +20,11 @@
     "prettier": "^3.5.3",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "glob": "^11.0.3"
   },
   "dependencies": {
     "appdata-path": "^1.0.0",
-    "date-season": "^0.0.2",
-    "glob": "^11.0.1"
+    "date-season": "^0.0.2"
   }
 }

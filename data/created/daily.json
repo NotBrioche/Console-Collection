@@ -20,8 +20,7 @@
     "description": "Utile pour stocker de l'eau",
     "rarity": 1,
     "conditions": {
-      "action": "search",
-      "near": "water"
+      "action": "search"
     }
   },
   {
@@ -29,7 +28,10 @@
     "description": "Sers à garder ses pieds au chaud",
     "rarity": 0,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "items": [
+        "Habits"
+      ]
     }
   },
   {
@@ -69,7 +71,10 @@
     "description": "Sers à sécuriser des choses",
     "rarity": 0,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "items": [
+        "Clés"
+      ]
     }
   },
   {

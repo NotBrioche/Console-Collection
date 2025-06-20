@@ -1,21 +1,18 @@
 import Game from './game';
 import Item from './item';
 import * as fs from 'fs';
-import { Region } from './region';
-import Weather from './weather';
+import Land from './land';
 
 class Player {
   public username: string;
   private _power: number;
-  private _region: Region;
-  private _weather: Weather;
+  // private _region: Land;
   private _collection: Array<Item>;
 
   constructor(
     username: string,
     power: number = 100,
-    region: Region = Region.default(),
-    weather: Weather = Weather.getCurrent(),
+    // region: Land = Land.default(),
     collection: Item[] = []
   ) {
     if (power > 100) power = 100;
@@ -23,8 +20,7 @@ class Player {
 
     this.username = username;
     this._power = power;
-    this._region = region;
-    this._weather = weather;
+    // this._region = region;
     this._collection = collection;
   }
 
@@ -37,23 +33,14 @@ class Player {
     return this._power;
   }
 
-  set region(value: Region) {
-    this._region = value;
-    fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
-  }
+  // set region(value: Land) {
+  //   this._region = value;
+  //   fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
+  // }
 
-  get region(): Region {
-    return this._region;
-  }
-
-  set weather(value: Weather) {
-    this._weather = value;
-    fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
-  }
-
-  get weather(): Weather {
-    return this._weather;
-  }
+  // get region(): Land {
+  //   return this._region;
+  // }
 
   get collection(): Item[] {
     return this._collection;

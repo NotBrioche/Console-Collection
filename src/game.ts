@@ -25,7 +25,7 @@ class Game {
       this.player = new Player(
         importedPlayer.username,
         importedPlayer._power,
-        importedPlayer._region,
+        // importedPlayer._region,
         importedPlayer._collection
       );
     } else {

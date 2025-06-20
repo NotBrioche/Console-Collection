@@ -4,7 +4,31 @@
     "description": "C'est chaud et ça éblouit.",
     "rarity": 1,
     "conditions": {
-      "time": "night"
+      "action": "search",
+      "time": "night",
+      "items": [
+        "Téléscope"
+      ]
+    }
+  },
+  {
+    "name": "Terre",
+    "description": "C'est la terre ou autrement appelée la planète bleue.",
+    "rarity": 0,
+    "conditions": {
+      "action": "wait"
+    }
+  },
+  {
+    "name": "Système solaire",
+    "description": "Nope",
+    "rarity": 0,
+    "conditions": {
+      "action": "search",
+      "items": [
+        "Maths",
+        "Terre"
+      ]
     }
   },
   {
@@ -67,7 +91,10 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "time": "night"
+      "time": "night",
+      "items": [
+        "Galaxie"
+      ]
     }
   },
   {

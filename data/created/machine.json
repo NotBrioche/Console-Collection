@@ -46,7 +46,7 @@
     "conditions": {
       "action": "search",
       "time": "day",
-      "item": [
+      "items": [
         "Algorithmes"
       ]
     }
@@ -56,10 +56,7 @@
     "description": "Petit engin volant",
     "rarity": 0,
     "conditions": {
-      "action": "search",
-      "near": [
-        "forest"
-      ]
+      "action": "search"
     }
   },
   {
@@ -67,9 +64,7 @@
     "description": "Machine permettant de renforcer la force humaine",
     "rarity": 2,
     "conditions": {
-      "action": "search",
-      "season": "winter",
-      "moon": "full"
+      "action": "search"
     }
   },
   {
@@ -78,15 +73,12 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "time": "night",
-      "near": [
-        "water"
-      ]
+      "time": "night"
     }
   },
   {
     "name": "Éolienne",
-    "description": "Machine créant de l'énergie à partir du vent",
+    "description": "Machine créant de l'énergie à partir du vent.",
     "rarity": 0,
     "conditions": {
       "action": "search"
@@ -94,7 +86,15 @@
   },
   {
     "name": "Microscope",
-    "description": "Instrument qui permet de regarder des objets trop petits pour l'oeil nu",
+    "description": "Instrument qui permet de regarder des objets trop petits pour l'oeil nu.",
+    "rarity": 1,
+    "conditions": {
+      "action": "trade"
+    }
+  },
+  {
+    "name": "Téléscope",
+    "description": "Instrument optique qui permet d'augmenter la taille apparente des objets observés.",
     "rarity": 1,
     "conditions": {
       "action": "trade"

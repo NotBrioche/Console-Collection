@@ -24,7 +24,7 @@
         "description": "Accumulation de ressources ou de biens matériels.",
         "rarity": 1,
         "conditions": {
-            "item": "Monnaie"
+            "items": ["Monnaie"]
         }
     },
     {
@@ -32,10 +32,7 @@
         "description": "Rituel pour l'entrée d'une nouvelle personne dans un groupe d'amis.",
         "rarity": 2,
         "conditions": {
-            "action": "search",
-            "near": [
-                "forest"
-            ]
+            "action": "event"
         }
     },
     {

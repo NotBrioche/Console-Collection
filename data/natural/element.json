@@ -2,7 +2,12 @@
   {
     "name": "Feuille",
     "description": "Je ne pense pas devoir vous le présenter. On en trouve sur les arbres.",
-    "rarity": 0
+    "rarity": 0,
+    "conditions": {
+      "items": [
+        "Arbre"
+      ]
+    }
   },
   {
     "name": "Feu",
