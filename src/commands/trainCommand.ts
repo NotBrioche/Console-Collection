@@ -12,7 +12,7 @@ class TrainCommand implements Command {
     this.game = game;
   }
 
-  async execute(args: string[] | null): Promise<void> {
+  async execute(args: string[]): Promise<void> {
     if (this.game.player.energy >= 100) {
       console.log("> Vous avez déjà le maximum d'énergie");
       console.log('> ');

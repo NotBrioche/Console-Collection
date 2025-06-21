@@ -13,7 +13,7 @@ class CollectionCommand implements Command {
     this.game = game;
   }
 
-  async execute(args: string[] | null): Promise<void> {
+  async execute(args: string[]): Promise<void> {
     if (args == null || args.length < 1) {
       const appeared: string[] = [];
 

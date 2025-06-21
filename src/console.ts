@@ -34,19 +34,23 @@ class Console {
 
   public async init() {
     console.log('> home');
-    this.commands[0].execute(null);
+    this.commands[0].execute([]);
 
     while (true) {
-      const input = (await this.game.rl.question('> ')).trim();
+      try {
+        const input = (await this.game.rl.question('> ')).trim();
 
-      if (input === null || input == '') continue;
-      if (input == 'exit') break;
+        if (input === null || input == '') continue;
+        if (input == 'exit') break;
 
-      const command = this.commands.find(
-        (c) => c.name == input.split(' ')[0].trim()
-      );
-      if (command) {
-        await command.execute(input.split(' ').slice(1));
+        const command = this.commands.find(
+          (c) => c.name == input.split(' ')[0].trim()
+        );
+        if (command) {
+          await command.execute(input.split(' ').slice(1));
+        }
+      } catch {
+        break;
       }
     }
   }

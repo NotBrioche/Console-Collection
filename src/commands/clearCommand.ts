@@ -6,7 +6,7 @@ class ClearCommand implements Command {
   description: string = 'Efface la console';
   syntax: string = 'clear';
   longDescription: string[] = [];
-  async execute(args: string[] | null): Promise<void> {
+  async execute(args: string[]): Promise<void> {
     clear();
   }
 }

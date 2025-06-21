@@ -13,7 +13,7 @@ class HelpCommand implements Command {
     this.commands = commands;
   }
 
-  async execute(args: string[] | null): Promise<void> {
+  async execute(args: string[]): Promise<void> {
     if (args == null || args.length < 1) {
       let maxLength: number = 0;
       this.commands.forEach((command) => {
@@ -24,7 +24,7 @@ class HelpCommand implements Command {
         }
       });
 
-      console.log('> ' + '-'.repeat(maxLength));
+      console.log(`> ${'-'.repeat(maxLength)}`);
 
       this.commands.forEach((command) => {
         console.log(`> ${command.name} - ${command.description}`);

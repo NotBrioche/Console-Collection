@@ -14,7 +14,7 @@ describe('Player class', () => {
 
     test('A new player with no arguments have the correct initial land', () => {
         const player = new Player('Brioche');
-        expect(player.land.equals(Land.default()));
+        expect(player.land.equals(Land.lands[0]));
     });
 
     test('A new player with no arguments have the correct initial collection',  () => {

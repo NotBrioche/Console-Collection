@@ -71,6 +71,19 @@ class Item {
     );
   }
 
+  equals(other: Item) {
+    return (
+      this.id === other.id &&
+      this.name === other.name &&
+      this.description === other.description &&
+      this.collection === other.collection &&
+      this.rarity === other.rarity &&
+      this.conditions === other.conditions &&
+      this.quality === other.quality &&
+      this.rareVariant === other.rareVariant
+    );
+  }
+
   public getObjectInfos() {
     console.log(`[ ${this.name} ] - ${this.rarity}`);
     console.log('-'.repeat(`| ${this.description}`.length));

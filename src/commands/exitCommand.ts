@@ -5,7 +5,7 @@ class ExitCommand implements Command {
   description: string = "Ferme l'application";
   syntax: string = 'exit';
   longDescription: string[] = [];
-  async execute(args: string[] | null): Promise<void> {}
+  async execute(args: string[]): Promise<void> {}
 }
 
 export default ExitCommand;

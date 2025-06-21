@@ -4,7 +4,7 @@ interface Command {
   syntax: string;
   longDescription: string[];
 
-  execute(args: string[] | null): Promise<void>;
+  execute(args: string[]): Promise<void>;
 }
 
 export default Command;

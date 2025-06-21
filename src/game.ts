@@ -5,6 +5,7 @@ import { exit } from 'process';
 import * as fs from 'fs';
 import * as path from 'path';
 import getAppDataPath from 'appdata-path';
+import Utils from './utils';
 
 class Game {
   player: Player;
@@ -24,7 +25,7 @@ class Game {
 
       this.player = new Player(
         importedPlayer.username,
-        importedPlayer._power,
+        importedPlayer._energy,
         importedPlayer._land,
         importedPlayer._collection
       );
