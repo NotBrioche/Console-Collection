@@ -5,17 +5,17 @@ class Item {
   name: string;
   description: string;
   collection: string;
-  _rarity: number;
+  rarity: number;
   conditions: Condition | null | undefined;
   quality: number | null | undefined;
   rareVariant: boolean | null | undefined;
 
   public static rarities = [
-    'Common',
-    'Uncommon',
+    'Commun',
+    'Peu Commun',
     'Rare',
-    'Epic',
-    'Legendary',
+    'Épique',
+    'Légendaire',
     'Secret',
   ];
 
@@ -37,25 +37,12 @@ class Item {
 
     this.id = id;
     this.name = name;
-    this._rarity = rarity ?? 0;
+    this.rarity = rarity ?? 0;
     this.description = description;
     this.collection = collection;
     this.conditions = conditions;
     this.quality = quality;
     this.rareVariant = rareVariant;
-  }
-
-  get rarity() {
-    return Item.rarities[this._rarity];
-  }
-
-  set rarity(value) {
-    this._rarity = Item.rarities.indexOf(value);
-  }
-
-  get details() {
-    this.getObjectInfos();
-    return null;
   }
 
   static toOwned(item: Item): Item {
@@ -65,7 +52,7 @@ class Item {
       item.description,
       item.collection,
       undefined,
-      item._rarity,
+      item.rarity,
       Math.random(),
       Math.floor(Math.random() * 1024) == 0 ? true : false
     );
@@ -77,20 +64,10 @@ class Item {
       this.name === other.name &&
       this.description === other.description &&
       this.collection === other.collection &&
-      this.rarity === other.rarity &&
       this.conditions === other.conditions &&
       this.quality === other.quality &&
       this.rareVariant === other.rareVariant
     );
-  }
-
-  public getObjectInfos() {
-    console.log(`[ ${this.name} ] - ${this.rarity}`);
-    console.log('-'.repeat(`| ${this.description}`.length));
-    console.log(`| Qualité : ${this.quality}`);
-    console.log('|');
-    console.log(`| ${this.description}`);
-    console.log('-'.repeat(`| ${this.description}`.length));
   }
 }
 

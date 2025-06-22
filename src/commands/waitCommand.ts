@@ -1,5 +1,7 @@
 import Command from '../command';
 import Game from '../game';
+import Item from '../item';
+import Utils from '../utils';
 
 class WaitCommand implements Command {
   name: string = 'wait';
@@ -64,22 +66,44 @@ class WaitCommand implements Command {
     }
 
     this.game.player.energy--;
+    const randomWaitTime =
+      1 + Math.floor(Math.random() * 25) + Math.floor(Math.random() * 10);
+
+    const eventOrItemChance = setTimeout(
+      () => {
+        if (Math.floor(Math.random() * 3) == 0) {
+          const items = Utils.getAllPossibleToGetItems(
+            this.game.player,
+            Utils.getRarity(),
+            'wait'
+          );
+          const item = items[Math.floor(Math.random() * items.length)];
+
+          this.game.player.collection.push(Item.toOwned(item));
+          this.game.rl.write(
+            `+1 ${Utils.printWithRarityColor(Item.rarities[item.rarity], item.rarity)} ${item.name}\n> `
+          );
+        }
+      },
+      randomWaitTime * 60 * 1000
+    );
+
     while (true) {
       try {
-        const rep = await this.game.rl.question('> ', { signal });
-
-        // TODO possibility to get random item
         // TODO possibility to get random event
+        const rep = await this.game.rl.question('> ', { signal });
 
         if (rep == 'exit' || rep == 'stop') {
           console.log("> Vous avez arreté d'attendre");
           console.log('> ');
+          clearTimeout(eventOrItemChance);
           clearInterval(checkTimer);
           break;
         }
       } catch {
         console.log("> Vous avez arreté d'attendre");
         console.log('> ');
+        clearTimeout(eventOrItemChance);
         clearInterval(checkTimer);
         break;
       }

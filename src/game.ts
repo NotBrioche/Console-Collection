@@ -5,7 +5,6 @@ import { exit } from 'process';
 import * as fs from 'fs';
 import * as path from 'path';
 import getAppDataPath from 'appdata-path';
-import Utils from './utils';
 
 class Game {
   player: Player;
@@ -48,6 +47,7 @@ class Game {
         flag: 'w',
       });
     }
+    // TODO Restore player health
     await this.console.init();
     exit();
   }

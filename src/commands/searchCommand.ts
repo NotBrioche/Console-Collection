@@ -47,19 +47,7 @@ class SearchCommand implements Command {
         if (drain > this.game.player.energy) {
           this.game.rl.write(` | -${this.game.player.energy} energy\n`);
 
-          if (Math.floor(Math.random() * 9) == 0) {
-            const items = Utils.getAllPossibleToGetItems(
-              this.game.player,
-              Utils.getRarity(),
-              'search'
-            );
-            const item = items[Math.floor(Math.random() * items.length)];
-
-            this.game.player.collection.push(Item.toOwned(item));
-            console.log(`> +1 ${item.name}`);
-          } else {
-            console.log("> Vous n'avez rien trouvé");
-          }
+          this.tryGetItem(9);
           this.game.player.energy = 0;
           ac.abort();
           clearInterval(searchingTimer);
@@ -72,19 +60,7 @@ class SearchCommand implements Command {
 
         if (loop == searchTime + 3) {
           this.game.rl.write(` | -${total} energy\n`);
-          if (Math.floor(Math.random() * 3) == 0) {
-            const items = Utils.getAllPossibleToGetItems(
-              this.game.player,
-              Utils.getRarity(),
-              'search'
-            );
-            const item = items[Math.floor(Math.random() * items.length)];
-
-            this.game.player.collection.push(Item.toOwned(item));
-            console.log(`> +1 ${item.name}`);
-          } else {
-            console.log("> Vous n'avez rien trouvé");
-          }
+          this.tryGetItem();
 
           total = 0;
           ac.abort();
@@ -99,6 +75,24 @@ class SearchCommand implements Command {
           break;
         }
       }
+    }
+  }
+
+  tryGetItem(chance: number = 3) {
+    if (Math.floor(Math.random() * chance) == 0) {
+      const items = Utils.getAllPossibleToGetItems(
+        this.game.player,
+        Utils.getRarity(),
+        'search'
+      );
+      const item = items[Math.floor(Math.random() * items.length)];
+
+      this.game.player.collection.push(Item.toOwned(item));
+      console.log(
+        `> +1 ${Utils.printWithRarityColor(Item.rarities[item.rarity], item.rarity)} ${item.name}`
+      );
+    } else {
+      console.log("> Vous n'avez rien trouvé");
     }
   }
 }

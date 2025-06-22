@@ -65,7 +65,17 @@ class Utils {
       //   }
 
       if (item['conditions'] === undefined) {
-        available.push(item);
+        available.push(
+          new Item(
+            item['id'],
+            item['name'],
+            item['description'],
+            item['collection'],
+            null,
+            item['rarity']
+          )
+        );
+
         continue;
       }
 
@@ -191,7 +201,16 @@ class Utils {
       //     JSON.stringify(available, null, 2)
       //   );
 
-      available.push(item);
+      available.push(
+        new Item(
+          item['id'],
+          item['name'],
+          item['description'],
+          item['collection'],
+          null,
+          item['rarity']
+        )
+      );
     }
 
     return available;
@@ -209,6 +228,26 @@ class Utils {
     }
 
     return rarity;
+  }
+
+  static printWithRarityColor(message: string, rarity: number) {
+    switch (rarity) {
+      default:
+      case 0:
+        return message;
+      case 1:
+        return '\x1b[34m' + message + '\x1b[0m';
+      case 2:
+        return '\x1b[32m' + message + '\x1b[0m';
+      case 3:
+        return '\x1b[36m' + message + '\x1b[0m';
+      case 4:
+        return '\x1b[35m' + message + '\x1b[0m';
+      case 5:
+        return '\x1b[33m' + message + '\x1b[0m';
+      case 6:
+        return '\x1b[31m' + message + '\x1b[0m';
+    }
   }
 }
 

@@ -77,7 +77,6 @@ items.forEach((item: any) => {
     }
 
     switch (item.conditions['action']) {
-      default:
       case 'event':
         event.push(item);
         break;
