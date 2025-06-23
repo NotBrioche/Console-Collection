@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import Player from './player';
 import Item from './item';
+import { Moon } from 'lunarphase-js';
 
 const createSeasonSolver = require('date-season');
 
@@ -145,7 +146,19 @@ class Utils {
       }
 
       if (item['conditions']['moon'] !== undefined) {
-        // TODO moon condition check
+        const moonPhase = Moon.lunarPhase().toString();
+
+        // new first full last
+        switch (item['conditions']['moon']) {
+          case 'new':
+            if (moonPhase != 'New') continue;
+          case 'first':
+            if (moonPhase != 'First Quarter') continue;
+          case 'full':
+            if (moonPhase != 'Full') continue;
+          case 'last':
+            if (moonPhase != 'Last Quarter') continue;
+        }
       }
 
       if (item['conditions']['action'] !== undefined) {
