@@ -5,6 +5,7 @@ import { exit } from 'process';
 import * as fs from 'fs';
 import * as path from 'path';
 import getAppDataPath from 'appdata-path';
+import { getUnpackedSettings } from 'http2';
 
 class Game {
   player: Player;
@@ -28,6 +29,17 @@ class Game {
         importedPlayer._land,
         importedPlayer._collection
       );
+      if (importedPlayer.nextReward <= Date.now()) {
+        this.player.energy = 100;
+        importedPlayer.nextReward = Date.now() + 18 * 60 * 60 * 1000;
+      }
+
+      if (importedPlayer.nextReward === undefined) {
+        importedPlayer.nextReward = Date.now() + 24 * 60 * 60 * 1000;
+        fs.writeFileSync(Game.playerDataPath, JSON.stringify(importedPlayer), {
+          flag: 'w',
+        });
+      }
     } else {
       fs.mkdirSync(getAppDataPath('Console-Collection'), { recursive: true });
       this.player = new Player('');
@@ -47,7 +59,6 @@ class Game {
         flag: 'w',
       });
     }
-    // TODO Restore player health
     await this.console.init();
     exit();
   }

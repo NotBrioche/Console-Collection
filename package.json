@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "appdata-path": "^1.0.0",
-    "date-season": "^0.0.2"
+    "date-season": "^0.0.2",
+    "lunarphase-js": "^2.0.3"
   }
 }
