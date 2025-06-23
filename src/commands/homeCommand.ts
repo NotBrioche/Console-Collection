@@ -17,7 +17,8 @@ class HomeCommand implements Command {
 
   async execute(args: string[]): Promise<void> {
     const now = new Date();
-    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${Utils.getSeason(now)} ${now.toLocaleTimeString().substring(0, 5)} ${Moon.lunarPhaseEmoji()}`;
+    const elapsed = now.getHours() * 60 + now.getMinutes();
+    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${Utils.getSeason(now)} ${now.toLocaleTimeString().substring(0, 5)} ${elapsed < 360 && elapsed >= 1380 ? Moon.lunarPhaseEmoji() : '☀️'}`;
 
     console.log('> ');
     console.log(`> ${titleString}`);
