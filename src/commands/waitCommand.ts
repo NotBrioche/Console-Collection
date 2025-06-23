@@ -20,6 +20,13 @@ class WaitCommand implements Command {
   }
 
   async execute(args: string[]): Promise<void> {
+    if (this.game.player.energy < 1) {
+      console.log('> ' + '-'.repeat("Vous n'avez plus assez d'énergie".length));
+      console.log("> Vous n'avez plus assez d'énergie");
+      console.log('> ');
+      return;
+    }
+
     if (args.length > 0 && isNaN(Number(args[0]))) {
       console.log('> Please enter a valid number for the duration to wait');
       console.log('> ');
@@ -59,12 +66,6 @@ class WaitCommand implements Command {
 
       loops++;
     }, 500);
-
-    if (this.game.player.energy < 1) {
-      console.log("> Vous n'avez plus assez d'énergie");
-      clearInterval(checkTimer);
-      return;
-    }
 
     this.game.player.energy--;
     const randomWaitTime =

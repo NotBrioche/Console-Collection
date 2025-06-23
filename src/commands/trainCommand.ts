@@ -19,6 +19,7 @@ class TrainCommand implements Command {
       return;
     } else {
       let difficulty = 0;
+      console.log('> ' + '-'.repeat(`6 + 6 = 12`.length));
 
       while (true) {
         const first =

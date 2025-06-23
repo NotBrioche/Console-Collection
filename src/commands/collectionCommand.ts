@@ -16,30 +16,37 @@ class CollectionCommand implements Command {
 
   async execute(args: string[]): Promise<void> {
     if (args == null || args.length < 1) {
-      const appeared: string[] = [];
-
-      console.log('> ');
-
       if (this.game.player.collection.length < 1) {
+        console.log(
+          '> ' + '-'.repeat("Vous n'avez rien trouvé pour l'instant".length)
+        );
         console.log("> Vous n'avez rien trouvé pour l'instant");
+        console.log('> ');
+
         return;
       }
 
+      const appeared: number[] = [];
       for (let item of this.game.player.collection.sort(
-        (a, b) => a.id - b.id
+        (a, b) => a.id - b.id // TODO add consistency separator '-'
       )) {
-        if (appeared.includes(item.name)) continue;
+        if (appeared.includes(item.id)) continue;
 
-        const instances = this.game.player.collection.filter(
-          (dup) => dup.name == item.name
+        const duplicates = this.game.player.collection.filter(
+          (dup) => dup.id == item.id
         );
-        const count = instances.length;
+
+        if (appeared.length < 1) {
+          console.log(
+            `> ${'-'.repeat(`${item.id}: ${item.name} (${duplicates.length})`.length)}`
+          );
+        }
 
         console.log(
-          `> ${item.id}: ${Utils.printWithRarityColor(`${item.name}`, item.rarity)} (${count})`
+          `> ${item.id}: ${Utils.printWithRarityColor(`${item.name}`, item.rarity)} (${duplicates.length})`
         );
 
-        appeared.push(item.name);
+        appeared.push(item.id);
       }
       console.log('> ');
     } else {
@@ -54,11 +61,15 @@ class CollectionCommand implements Command {
         );
       }
 
-      console.log('> ');
+      console.log(
+        `> ${'-'.repeat(`${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length)}`
+      );
       console.log(
         `> ${Utils.printWithRarityColor(Item.rarities[filtered[0].rarity], filtered[0].rarity)} - ${filtered[0].name}`
       );
-      console.log(`> ${'-'.repeat(filtered[0].description.length)}`);
+      console.log(
+        `> ${'-'.repeat(`${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length)}`
+      );
       console.log(`> ${filtered[0].description}`);
       console.log('> ');
       for (let item of filtered

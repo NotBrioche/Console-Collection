@@ -19,7 +19,16 @@ class SearchCommand implements Command {
   }
 
   async execute(args: string[]): Promise<void> {
+    if (this.game.player.energy < 1) {
+      console.log(`> ${'-'.repeat("Vous n'avez plus assez d'énergie".length)}`);
+      console.log("> Vous n'avez plus assez d'énergie");
+      console.log('> ');
+
+      return;
+    }
+
     if (args.length > 0 && isNaN(Number(args[0]))) {
+      console.log(`> ${'-'.repeat('Veuillez entrer un nombre valide'.length)}`);
       console.log('> Veuillez entrer un nombre valide');
       console.log('> ');
       return;
@@ -31,14 +40,8 @@ class SearchCommand implements Command {
       return;
     }
 
-    if (this.game.player.energy == 0) {
-      console.log("> Vous n'avez plus assez d'énergie");
-      console.log('> ');
-
-      return;
-    }
-
     let searchesAmount = args.length > 0 ? Number(args[0]) : 1;
+    console.log('> ');
 
     for (let i = 0; i < searchesAmount; i++) {
       const ac = new AbortController();

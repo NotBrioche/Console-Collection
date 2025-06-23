@@ -15,16 +15,9 @@ class HelpCommand implements Command {
 
   async execute(args: string[]): Promise<void> {
     if (args == null || args.length < 1) {
-      let maxLength: number = 0;
-      this.commands.forEach((command) => {
-        const cmdString = `${command.name} - ${command.description}`;
-
-        if (cmdString.length > maxLength) {
-          maxLength = cmdString.length;
-        }
-      });
-
-      console.log(`> ${'-'.repeat(maxLength)}`);
+      console.log(
+        `> ${'-'.repeat(`${this.commands[0].name} - ${this.commands[0].description}`.length)}`
+      );
 
       this.commands.forEach((command) => {
         console.log(`> ${command.name} - ${command.description}`);
@@ -42,13 +35,7 @@ class HelpCommand implements Command {
       }
 
       if (isACommand) {
-        let maxLength = this.commands[index].description.length;
-
-        for (let line of this.commands[index].longDescription) {
-          if (line.length > maxLength) maxLength = line.length;
-        }
-
-        console.log(`> ${'-'.repeat(maxLength)}`);
+        console.log(`> ${'-'.repeat(`${this.commands[index].syntax}`.length)}`);
 
         if (this.commands[index].syntax != this.commands[index].name) {
           console.log(`> ${this.commands[index].syntax}`);

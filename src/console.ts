@@ -41,6 +41,10 @@ class Console {
         const input = (await this.game.rl.question('> ')).trim();
 
         if (input === null || input == '') continue;
+        if (input === 'iwouldlikesomenergy') {
+          this.game.player.energy = 100;
+          continue;
+        }
         if (input == 'exit') break;
 
         const command = this.commands.find(

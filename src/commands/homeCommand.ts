@@ -20,7 +20,7 @@ class HomeCommand implements Command {
     const elapsed = now.getHours() * 60 + now.getMinutes();
     const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${Utils.getSeason(now)} ${now.toLocaleTimeString().substring(0, 5)} ${elapsed < 360 || elapsed >= 1320 ? Moon.lunarPhaseEmoji() : '☀️'}`;
 
-    console.log('> ');
+    console.log(`> ${'-'.repeat(titleString.length - 2)}`);
     console.log(`> ${titleString}`);
     console.log(`> ${'-'.repeat(titleString.length - 2)}`);
     console.log(`> [ ${this.player.land.name} ]`);
