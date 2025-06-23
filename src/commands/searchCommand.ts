@@ -6,8 +6,12 @@ import Utils from '../utils';
 class SearchCommand implements Command {
   name: string = 'search';
   description: string = 'Vous permet de chercher';
-  syntax: string = 'search [amount] [item]';
-  longDescription: string[] = [];
+  syntax: string = 'search [nombre] [objet]';
+  longDescription: string[] = [
+    "La commande search vous permet de partir à l'aventure pour espérer aller trouver des objets",
+    'Vous pouvez définir le nombre de recherches à faires avec le paramètres [nombre] (1 par défaut)',
+    'Il peut être utile de faire des recherches avec un objet spécifique, entrez son id ou son nom',
+  ];
   game: Game;
 
   constructor(game: Game) {
@@ -16,14 +20,21 @@ class SearchCommand implements Command {
 
   async execute(args: string[]): Promise<void> {
     if (args.length > 0 && isNaN(Number(args[0]))) {
-      console.log(
-        '> Please enter a valid number for the number of times to search'
-      );
+      console.log('> Veuillez entrer un nombre valide');
+      console.log('> ');
       return;
     }
 
     if (args.length > 1 && args[1].length < 1) {
       console.log('> Please enter a valid object to search with');
+      console.log('> ');
+      return;
+    }
+
+    if (this.game.player.energy == 0) {
+      console.log("> Vous n'avez plus assez d'énergie");
+      console.log('> ');
+
       return;
     }
 
@@ -75,6 +86,8 @@ class SearchCommand implements Command {
           break;
         }
       }
+
+      console.log('> ');
     }
   }
 

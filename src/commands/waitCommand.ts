@@ -6,11 +6,11 @@ import Utils from '../utils';
 class WaitCommand implements Command {
   name: string = 'wait';
   description: string = "Vous permet d'attendre";
-  syntax: string = 'wait [duration]';
+  syntax: string = 'wait [durée]';
   longDescription: string[] = [
     "La commande wait par défaut n'a pas de fin, entrez exit ou stop pour arreter d'attendre",
     'Si vous voulez attendre uniquement une durée spécifique, vous pouvez le faire avec le paramètre [duration]',
-    'Le paramètre [duration] est en minutes. "wait 5" vous fera attendre 5 minutes',
+    'Le paramètre [durée] est en minutes. "wait 5" vous fera attendre 5 minutes',
     "Chaque minute d'attente coutera 1 d'énergie",
   ];
   game: Game;
@@ -22,6 +22,7 @@ class WaitCommand implements Command {
   async execute(args: string[]): Promise<void> {
     if (args.length > 0 && isNaN(Number(args[0]))) {
       console.log('> Please enter a valid number for the duration to wait');
+      console.log('> ');
       return;
     }
 
@@ -29,7 +30,7 @@ class WaitCommand implements Command {
       args.length > 0 ? 60 * Number(args[0]) : 60 * this.game.player.energy;
 
     const waitMessage = "> Vous avez commencé d'attendre";
-    console.log(`> ${'-'.repeat(waitMessage.length)}`);
+    console.log(`> ${'-'.repeat(waitMessage.length - 2)}`);
     console.log(waitMessage);
     console.log('> Tapez "exit" ou "stop" pour arreter d\'attendre');
     console.log('> ');

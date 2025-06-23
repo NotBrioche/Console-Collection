@@ -58,6 +58,7 @@ class CollectionCommand implements Command {
       console.log(
         `> ${Utils.printWithRarityColor(Item.rarities[filtered[0].rarity], filtered[0].rarity)} - ${filtered[0].name}`
       );
+      console.log(`> ${'-'.repeat(filtered[0].description.length)}`);
       console.log(`> ${filtered[0].description}`);
       console.log('> ');
       for (let item of filtered

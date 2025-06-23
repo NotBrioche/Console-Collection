@@ -92,7 +92,7 @@ class Utils {
             }
             break;
           case 'night':
-            if (elapsed < 360 && elapsed >= 1380) {
+            if (elapsed < 360 && elapsed >= 1320) {
             } else {
               continue;
             }
@@ -110,7 +110,7 @@ class Utils {
             }
             break;
           case 'evening':
-            if (elapsed >= 1080 && elapsed < 1380) {
+            if (elapsed >= 1080 && elapsed < 1320) {
             } else {
               continue;
             }
