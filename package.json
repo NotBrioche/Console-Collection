@@ -6,8 +6,7 @@
     "test": "jest",
     "start": "ts-node ./index.ts",
     "build": "tsc && ts-node ./prepare-data.ts",
-    "postbuild": "copyfiles -E -u 1 ./data/**/*.* ./dist/data && pkg ./dist/index.js -o ./Console-Collection.exe -t latest-windows-x64",
-    "clean": "ts-node ./clean.ts"
+    "postbuild": "copyfiles -E -u 1 ./data/**/*.* ./dist/data && pkg ./dist/index.js -o ./Windows-Collection.exe -t latest-windows-x64 && pkg ./dist/index.js -o ./Linux-Collection -t latest-linux-x64"
   },
   "author": "NotBrioche",
   "license": "ISC",

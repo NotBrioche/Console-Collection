@@ -36,10 +36,11 @@ class Game {
 
       if (importedPlayer.nextReward === undefined) {
         importedPlayer.nextReward = Date.now() + 24 * 60 * 60 * 1000;
-        fs.writeFileSync(Game.playerDataPath, JSON.stringify(importedPlayer), {
-          flag: 'w',
-        });
       }
+
+      fs.writeFileSync(Game.playerDataPath, JSON.stringify(importedPlayer), {
+        flag: 'w',
+      });
     } else {
       fs.mkdirSync(getAppDataPath('Console-Collection'), { recursive: true });
       this.player = new Player('');

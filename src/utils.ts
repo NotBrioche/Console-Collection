@@ -6,7 +6,7 @@ import { Moon } from 'lunarphase-js';
 const createSeasonSolver = require('date-season');
 
 class Utils {
-  static getSeason(date: Date) {
+  static getSeasonName(date: Date = new Date()) {
     const season = createSeasonSolver();
     const s = season(date);
 
@@ -81,40 +81,35 @@ class Utils {
       }
 
       if (item['conditions']['time'] !== undefined) {
-        const now = new Date();
-        const elapsed = now.getHours() * 60 + now.getMinutes();
+        const dayPart = this.getCurrentDayPart();
 
         switch (item['conditions']['time']) {
           case 'day':
-            if (elapsed >= 360 && elapsed < 1380) {
-            } else {
+            if (dayPart == 3) {
               continue;
             }
             break;
           case 'night':
-            if (elapsed < 360 && elapsed >= 1320) {
-            } else {
+            if (dayPart != 3) {
               continue;
             }
             break;
           case 'morning':
-            if (elapsed >= 360 && elapsed < 720) {
-            } else {
+            if (dayPart != 0) {
               continue;
             }
             break;
           case 'afternoon':
-            if (elapsed >= 720 && elapsed < 1080) {
-            } else {
+            if (dayPart != 1) {
               continue;
             }
             break;
           case 'evening':
-            if (elapsed >= 1080 && elapsed < 1320) {
-            } else {
+            if (dayPart != 2) {
               continue;
             }
             break;
+
           default:
             continue;
         }
@@ -123,7 +118,7 @@ class Utils {
       }
 
       if (item['conditions']['season'] !== undefined) {
-        let season = Utils.getSeason(new Date());
+        let season = Utils.getSeasonName();
 
         switch (season) {
           case 'Printemps':
@@ -260,6 +255,44 @@ class Utils {
         return '\x1b[33m' + message + '\x1b[0m';
       case 6:
         return '\x1b[31m' + message + '\x1b[0m';
+    }
+  }
+
+  static getTimeEmoji() {
+    return this.getCurrentDayPart() == 3 ? Moon.lunarPhaseEmoji() : '☀️';
+  }
+
+  static getCurrentDayPart() {
+    const now = new Date();
+    const elapsed = now.getHours() * 60 + now.getMinutes();
+
+    const season = this.getSeasonName();
+
+    // Été : 6:00 - 23:00
+    // Automne + Printemps : 6:30 - 20:00
+    // Hiver : 7:30 - 18:00
+
+    const morningElapsed =
+      season == 'Été' ? 360 : season == 'Hiver' ? 450 : 390;
+    const nightElapsed =
+      season == 'Été' ? 1380 : season == 'Hiver' ? 1080 : 1200;
+
+    const eveningElapsed =
+      nightElapsed -
+      (season == 'Été' ? 4 * 60 : season == 'Hiver' ? 2 * 60 : 3 * 60);
+    const afternoonElapsed = 720;
+
+    if (elapsed >= morningElapsed && elapsed < afternoonElapsed) {
+      return 0;
+    }
+    if (elapsed >= afternoonElapsed && elapsed < eveningElapsed) {
+      return 1;
+    }
+    if (elapsed >= eveningElapsed && elapsed < nightElapsed) {
+      return 2;
+    }
+    if (elapsed < morningElapsed || elapsed >= nightElapsed) {
+      return 3;
     }
   }
 }

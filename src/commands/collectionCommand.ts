@@ -28,7 +28,7 @@ class CollectionCommand implements Command {
 
       const appeared: number[] = [];
       for (let item of this.game.player.collection.sort(
-        (a, b) => a.id - b.id // TODO add consistency separator '-'
+        (a, b) => a.id - b.id
       )) {
         if (appeared.includes(item.id)) continue;
 

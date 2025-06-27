@@ -68,6 +68,31 @@ class WaitCommand implements Command {
     }, 500);
 
     this.game.player.energy--;
+    const eventOrItemChance = this.getRandomWaitTime();
+
+    while (true) {
+      try {
+        // TODO possibility to get random event
+        const rep = await this.game.rl.question('> ', { signal });
+
+        if (rep == 'exit' || rep == 'stop') {
+          console.log("> Vous avez arreté d'attendre");
+          console.log('> ');
+          clearTimeout(eventOrItemChance);
+          clearInterval(checkTimer);
+          break;
+        }
+      } catch {
+        console.log("> Vous avez arreté d'attendre");
+        console.log('> ');
+        clearTimeout(eventOrItemChance);
+        clearInterval(checkTimer);
+        break;
+      }
+    }
+  }
+
+  private getRandomWaitTime() {
     const randomWaitTime =
       1 + Math.floor(Math.random() * 25) + Math.floor(Math.random() * 10);
 
@@ -90,26 +115,7 @@ class WaitCommand implements Command {
       randomWaitTime * 60 * 1000
     );
 
-    while (true) {
-      try {
-        // TODO possibility to get random event
-        const rep = await this.game.rl.question('> ', { signal });
-
-        if (rep == 'exit' || rep == 'stop') {
-          console.log("> Vous avez arreté d'attendre");
-          console.log('> ');
-          clearTimeout(eventOrItemChance);
-          clearInterval(checkTimer);
-          break;
-        }
-      } catch {
-        console.log("> Vous avez arreté d'attendre");
-        console.log('> ');
-        clearTimeout(eventOrItemChance);
-        clearInterval(checkTimer);
-        break;
-      }
-    }
+    return eventOrItemChance;
   }
 }
 
