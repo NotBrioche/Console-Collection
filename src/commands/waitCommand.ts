@@ -5,13 +5,10 @@ import Utils from '../utils';
 
 class WaitCommand implements Command {
   name: string = 'wait';
-  description: string = "Vous permet d'attendre";
+  description: string = 'Permet d’attendre un certain temps';
   syntax: string = 'wait [durée]';
   longDescription: string[] = [
-    "La commande wait par défaut n'a pas de fin, entrez exit ou stop pour arreter d'attendre",
-    'Si vous voulez attendre uniquement une durée spécifique, vous pouvez le faire avec le paramètre [duration]',
-    'Le paramètre [durée] est en minutes. "wait 5" vous fera attendre 5 minutes',
-    "Chaque minute d'attente coutera 1 d'énergie",
+    'Utilisez la commande wait pour patienter pendant une durée choisie en minutes.',
   ];
   game: Game;
 

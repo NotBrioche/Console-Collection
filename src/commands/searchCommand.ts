@@ -5,12 +5,11 @@ import Utils from '../utils';
 
 class SearchCommand implements Command {
   name: string = 'search';
-  description: string = 'Vous permet de chercher';
+  description: string = 'Effectue une recherche';
   syntax: string = 'search [nombre] [objet]';
   longDescription: string[] = [
-    "La commande search vous permet de partir à l'aventure pour espérer aller trouver des objets",
-    'Vous pouvez définir le nombre de recherches à faires avec le paramètres [nombre] (1 par défaut)',
-    'Il peut être utile de faire des recherches avec un objet spécifique, entrez son id ou son nom',
+    'Utilisez la commande search pour explorer et tenter de récupérer des objets.',
+    'Indiquez un objet avec lequel rechercher pour modifier vos résultats.',
   ];
   game: Game;
 

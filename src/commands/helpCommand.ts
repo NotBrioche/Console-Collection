@@ -2,10 +2,12 @@ import Command from '../command';
 
 class HelpCommand implements Command {
   public name: string = 'help';
-  public description: string = 'Affiche la liste des commandes.';
+  public description: string =
+    "Affiche la liste ou l'aide détaillé des commandes disponibles";
   public syntax: string = 'help [commande]';
   public longDescription: string[] = [
-    "Permet d'afficher la liste des commandes ou d'afficher l'aide d'une commande spécifique.",
+    'Utilisez la commande help pour afficher toutes les commandes disponibles.',
+    'Ajoutez le nom d’une commande pour obtenir son explication détaillée.',
   ];
   private commands: Array<Command> = [];
 
@@ -36,15 +38,10 @@ class HelpCommand implements Command {
 
       if (isACommand) {
         console.log(`> ${'-'.repeat(`${this.commands[index].syntax}`.length)}`);
-
-        if (this.commands[index].syntax != this.commands[index].name) {
-          console.log(`> ${this.commands[index].syntax}`);
-          console.log('> ');
-        }
-
-        if (this.commands[index].longDescription.length < 1) {
-          console.log(`> ${this.commands[index].description}`);
-        }
+        console.log(`> ${this.commands[index].syntax}`);
+        console.log(`> ${'-'.repeat(`${this.commands[index].syntax}`.length)}`);
+        console.log(`> ${this.commands[index].description}`);
+        console.log(`> `);
 
         for (let line of this.commands[index].longDescription) {
           console.log(`> ${line}`);

@@ -5,9 +5,12 @@ import Utils from '../utils';
 
 class CollectionCommand implements Command {
   name: string = 'collection';
-  description: string = "Vous permet d'afficher votre collection";
-  syntax: string = 'collection [item]';
-  longDescription: string[] = [];
+  description: string = 'Affiche la collection du joueur';
+  syntax: string = 'collection [nom|id]';
+  longDescription: string[] = [
+    'Utilisez la commande collection pour afficher l’ensemble de votre collection personnelle.',
+    'Ajoutez le nom ou l’ID d’un objet pour consulter sa fiche détaillée.',
+  ];
   game: Game;
 
   constructor(game: Game) {

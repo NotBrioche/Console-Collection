@@ -5,7 +5,11 @@ class TrainCommand implements Command {
   name: string = 'train';
   description: string = "Permet de gagner de l'énergie";
   syntax: string = 'train';
-  longDescription: string[] = [];
+  longDescription: string[] = [
+    'Utilisez la commande train pour résoudre des calculs rapides et augmenter votre énergie.',
+    'Chaque tranche de quatre réponses correctes vous fait regagner un point d’énergie',
+    'La commande coûte 1 énergie à l’activation.',
+  ];
   game: Game;
 
   constructor(game: Game) {

@@ -8,7 +8,9 @@ class HomeCommand implements Command {
   name: string = 'home';
   description: string = "Affiche la page d'accueil";
   syntax: string = 'home';
-  longDescription: string[] = [];
+  longDescription: string[] = [
+    'Utilisez la commande home pour afficher la page principale de votre interface.',
+  ];
   player: Player;
 
   constructor(player: Player) {
