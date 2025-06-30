@@ -11,6 +11,8 @@ import TrainCommand from './commands/trainCommand';
 import WaitCommand from './commands/waitCommand';
 import SearchCommand from './commands/searchCommand';
 import CollectionCommand from './commands/collectionCommand';
+import Item from './item';
+import Utils from './utils';
 
 class Console {
   game: Game;
@@ -43,6 +45,14 @@ class Console {
         if (input === null || input == '') continue;
         if (input === 'iwouldlikesomenergy') {
           this.game.player.energy = 100;
+          continue;
+        }
+        if (input === 'printrarities') {
+          for (const rarity of Item.rarities) {
+            console.log(
+              Utils.printWithRarityColor(rarity, Item.rarities.indexOf(rarity))
+            );
+          }
           continue;
         }
         if (input == 'exit') break;

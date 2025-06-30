@@ -54,16 +54,16 @@ class Utils {
     const available = [];
 
     for (const item of items) {
-      //   let owned = false;
-      //   for (const playerItem of player.collection) {
-      //     if (item['id'] == playerItem.id) {
-      //       owned = true;
-      //       break;
-      //     }
+      // let owned = false;
+      // for (const playerItem of player.collection) {
+      //   if (item['id'] == playerItem.id) {
+      //     owned = true;
+      //     break;
       //   }
-      //   if (owned) {
-      //     continue;
-      //   }
+      // }
+      // if (owned) {
+      //   continue;
+      // }
 
       if (item['conditions'] === undefined) {
         available.push(
@@ -201,13 +201,13 @@ class Utils {
         }
       }
 
-      //   if (fs.existsSync('data/available.json')) {
-      //     fs.rmSync('data/available.json');
-      //   }
-      //   fs.writeFileSync(
-      //     'data/available.json',
-      //     JSON.stringify(available, null, 2)
-      //   );
+      // if (fs.existsSync('data/available.json')) {
+      //   fs.rmSync('data/available.json');
+      // }
+      // fs.writeFileSync(
+      //   'data/available.json',
+      //   JSON.stringify(available, null, 2)
+      // );
 
       available.push(
         new Item(
@@ -244,17 +244,17 @@ class Utils {
       case 0:
         return message;
       case 1:
-        return '\x1b[34m' + message + '\x1b[0m';
-      case 2:
         return '\x1b[32m' + message + '\x1b[0m';
-      case 3:
+      case 2:
         return '\x1b[36m' + message + '\x1b[0m';
-      case 4:
+      case 3:
         return '\x1b[35m' + message + '\x1b[0m';
-      case 5:
+      case 4:
         return '\x1b[33m' + message + '\x1b[0m';
-      case 6:
+      case 5:
         return '\x1b[31m' + message + '\x1b[0m';
+      case 6:
+        return '\x1b[1m\x1b[31m' + message + '\x1b[0m';
     }
   }
 

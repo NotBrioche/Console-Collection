@@ -42,6 +42,7 @@ class SearchCommand implements Command {
     let searchesAmount = args.length > 0 ? Number(args[0]) : 1;
     console.log('> ');
 
+    // TODO Ajouter la possibilité d'ârreter de chercher
     for (let i = 0; i < searchesAmount; i++) {
       const ac = new AbortController();
       const signal = ac.signal;
@@ -73,7 +74,7 @@ class SearchCommand implements Command {
 
         if (loop == searchTime + 3) {
           this.game.rl.write(` | -${total} energy\n`);
-          this.tryGetItem();
+          this.tryGetItem(0);
 
           total = 0;
           ac.abort();

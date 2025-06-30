@@ -16,6 +16,7 @@ class Item {
     'Rare',
     'Épique',
     'Légendaire',
+    'Mythique',
     'Secret',
   ];
 
