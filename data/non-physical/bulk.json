@@ -24,7 +24,9 @@
         "description": "Accumulation de ressources ou de biens matériels.",
         "rarity": 1,
         "conditions": {
-            "items": ["Monnaie"]
+            "items": [
+                "Monnaie"
+            ]
         }
     },
     {
@@ -50,7 +52,7 @@
         "rarity": 1,
         "conditions": {
             "action": "search",
-            "moon": "full"
+            "moonPhase": "full"
         }
     }
 ]

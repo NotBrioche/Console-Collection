@@ -32,7 +32,7 @@
     "conditions": {
       "action": "wait",
       "time": "night",
-      "moon": [
+      "moonPhase": [
         "full",
         "new"
       ]

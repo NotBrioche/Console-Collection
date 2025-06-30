@@ -3,6 +3,15 @@ import Player from './player';
 import Item from './item';
 import { Moon } from 'lunarphase-js';
 
+import all from '../data/all.json';
+import common from '../data/common.json';
+import uncommon from '../data/uncommon.json';
+import rare from '../data/rare.json';
+import epic from '../data/epic.json';
+import legendary from '../data/legendary.json';
+import mythic from '../data/mythic.json';
+import secret from '../data/secret.json';
+
 const createSeasonSolver = require('date-season');
 
 class Utils {
@@ -24,33 +33,29 @@ class Utils {
 
   static importAllItems(rarity: number = 0) {
     const filesNames = [
-      'all',
-      'common',
-      'uncommon',
-      'rare',
-      'epic',
-      'legendary',
-      'mythic',
-      'secret',
+      all,
+      common,
+      uncommon,
+      rare,
+      epic,
+      legendary,
+      mythic,
+      secret,
     ];
 
-    const fileString = fs.readFileSync(
-      `data/${filesNames[rarity]}.json`,
-      'utf-8'
-    );
-    const json = JSON.parse(fileString);
+    const json = filesNames[rarity];
 
     const items = json['items'];
-    return items;
+    return items as Item[];
   }
 
   static getAllPossibleToGetItems(
     player: Player,
     rarity: number,
     action?: string,
-    equiped?: Item
+    equipped?: Item
   ): Item[] {
-    const items = Utils.importAllItems(rarity);
+    const items: Item[] = Utils.importAllItems(rarity);
     const available = [];
 
     for (const item of items) {
@@ -65,7 +70,7 @@ class Utils {
       //   continue;
       // }
 
-      if (item['conditions'] === undefined) {
+      if (item['conditions']! === undefined) {
         available.push(
           new Item(
             item['id'],
@@ -80,10 +85,10 @@ class Utils {
         continue;
       }
 
-      if (item['conditions']['time'] !== undefined) {
+      if (item['conditions']!!['time'] !== undefined) {
         const dayPart = this.getCurrentDayPart();
 
-        switch (item['conditions']['time']) {
+        switch (item['conditions']!!['time']) {
           case 'day':
             if (dayPart == 3) {
               continue;
@@ -117,7 +122,7 @@ class Utils {
         // TODO plage de temps
       }
 
-      if (item['conditions']['season'] !== undefined) {
+      if (item['conditions']!['season'] !== undefined) {
         let season = Utils.getSeasonName();
 
         switch (season) {
@@ -135,16 +140,16 @@ class Utils {
             break;
         }
 
-        if (item['conditions']['season'] != season) {
+        if (item['conditions']!['season'] != season) {
           continue;
         }
       }
 
-      if (item['conditions']['moon'] !== undefined) {
+      if (item['conditions']!['moonPhase'] !== undefined) {
         const moonPhase = Moon.lunarPhase().toString();
 
         // new first full last
-        switch (item['conditions']['moon']) {
+        switch (item['conditions']!['moonPhase']) {
           case 'new':
             if (moonPhase != 'New') continue;
           case 'first':
@@ -156,15 +161,15 @@ class Utils {
         }
       }
 
-      if (item['conditions']['action'] !== undefined) {
-        if (item['conditions']['action'] != action) {
+      if (item['conditions']!['action'] !== undefined) {
+        if (item['conditions']!['action'] != action) {
           continue;
         }
       }
 
-      if (item['conditions']['items'] !== undefined) {
+      if (item['conditions']!['items'] !== undefined) {
         let itemValid = false;
-        for (const itemId of item['conditions']['items']) {
+        for (const itemId of item['conditions']!['items']!) {
           itemValid = false;
           for (const playerItem of player.collection) {
             if (playerItem.id == itemId) {
@@ -183,20 +188,20 @@ class Utils {
         }
       }
 
-      if (item['conditions']['land'] !== undefined) {
-        if (item['conditions']['land'] != player.land) {
+      if (item['conditions']!['land'] !== undefined) {
+        if (item['conditions']!['land'] != player.land) {
           continue;
         }
       }
 
-      if (item['conditions']['equiped'] !== undefined) {
-        if (item['conditions']['equiped'] != equiped) {
+      if (item['conditions']!['equipped'] !== undefined) {
+        if (item['conditions']!['equipped'] != equipped?.id) {
           continue;
         }
       }
 
-      if (item['conditions']['money'] !== undefined) {
-        if (item['conditions']['money'] > player.money) {
+      if (item['conditions']!['money'] !== undefined) {
+        if (item['conditions']!['money']! > player.money) {
           continue;
         }
       }
