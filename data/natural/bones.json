@@ -8,7 +8,7 @@
     }
   },
   {
-    "name": "Astragale (Talus)",
+    "name": "Talus",
     "description": "Se trouve entre le tibia et le calcanéum, il est en forme de poulie.",
     "rarity": 0,
     "conditions": {
@@ -16,7 +16,7 @@
     }
   },
   {
-    "name": "Atlas (C1)",
+    "name": "Atlas C1",
     "description": "Se trouve entre le crâne et l'axis, il est en forme d'anneau.",
     "rarity": 0,
     "conditions": {
@@ -24,7 +24,7 @@
     }
   },
   {
-    "name": "Atlas (C2)",
+    "name": "Atlas C2",
     "description": "Se trouve entre l'atlas et le corps vertébral, il est en forme de dent.",
     "rarity": 0,
     "conditions": {
@@ -64,7 +64,7 @@
     }
   },
   {
-    "name": "Colonne vertébrale (composée de 33 vertèbres)",
+    "name": "Colonne vertébrale",
     "description": "Os de la colonne vertébrale, il est en forme de S.",
     "rarity": 0,
     "conditions": {
@@ -136,7 +136,7 @@
     }
   },
   {
-    "name": "Fibula (Péroné)",
+    "name": "Péroné",
     "description": "Os de la jambe, il est en forme de long cylindre.",
     "rarity": 0,
     "conditions": {
@@ -192,7 +192,7 @@
     }
   },
   {
-    "name": "Incus (Enclume)",
+    "name": "Incus",
     "description": "Os de l'oreille, il est en forme d'enclume.",
     "rarity": 0,
     "conditions": {
@@ -256,7 +256,7 @@
     }
   },
   {
-    "name": "Malleus (Marteau)",
+    "name": "Malleus",
     "description": "Os de l'oreille, il est en forme de marteau.",
     "rarity": 0,
     "conditions": {
@@ -600,7 +600,7 @@
     }
   },
   {
-    "name": "Semi-lunaire (Lunatum)",
+    "name": "Lunatum",
     "description": "Os du poignet, il est en forme de croissant.",
     "rarity": 0,
     "conditions": {
@@ -624,7 +624,7 @@
     }
   },
   {
-    "name": "Stapes (Étrier)",
+    "name": "Étrier",
     "description": "Os de l'oreille, il est en forme d'étrier.",
     "rarity": 0,
     "conditions": {
@@ -696,7 +696,7 @@
     }
   },
   {
-    "name": "Ulna (Cubitus)",
+    "name": "Cubitus",
     "description": "Os de l'avant-bras, il est en forme de long cylindre.",
     "rarity": 0,
     "conditions": {
