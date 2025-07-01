@@ -13,6 +13,7 @@ import SearchCommand from './commands/searchCommand';
 import CollectionCommand from './commands/collectionCommand';
 import Item from './item';
 import Utils from './utils';
+import FlexCommand from './commands/flexCommand';
 
 class Console {
   game: Game;
@@ -30,6 +31,8 @@ class Console {
       new WaitCommand(this.game),
       new SearchCommand(this.game),
       new CollectionCommand(this.game),
+      new FlexCommand(this.game),
+      // TODO travel command
     ];
     this.commands.push(new HelpCommand(this.commands));
   }

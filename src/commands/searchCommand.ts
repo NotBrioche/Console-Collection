@@ -74,7 +74,7 @@ class SearchCommand implements Command {
 
         if (loop == searchTime + 3) {
           this.game.rl.write(` | -${total} energy\n`);
-          this.tryGetItem(0);
+          this.tryGetItem();
 
           total = 0;
           ac.abort();

@@ -6,8 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "ts-node ./index.ts",
-    "build": "tsc && ts-node ./prepare-data.ts",
-    "postbuild": "copyfiles -E -u 1 ./data/**/*.* ./dist/src/data && pkg ."
+    "build": "tsc && ts-node ./prepare-data.ts && pkg ."
   },
   "author": "NotBrioche",
   "license": "ISC",
@@ -16,10 +15,8 @@
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.11",
-    "copyfiles": "^2.4.1",
     "glob": "^11.0.3",
     "pkg": "^5.8.1",
-    "prettier": "^3.5.3",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"

@@ -60,6 +60,12 @@ class Game {
         flag: 'w',
       });
     }
+
+    // TODO add debug mode
+    // TODO Player total items from file
+    // FIXME Changer la manière dont la collection du joueur est sauvegardée
+    // Les objets sont sauvegardés en entier ce qui empêche un changement dynamique d'un objet si le joueur l'a déjà obtenu
+
     await this.console.init();
     exit();
   }

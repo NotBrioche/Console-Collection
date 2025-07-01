@@ -1,4 +1,3 @@
-import { Moon } from 'lunarphase-js';
 import Command from '../command';
 import '../extensions/date.extension';
 import Player from '../player';
@@ -20,7 +19,10 @@ class HomeCommand implements Command {
   async execute(args: string[]): Promise<void> {
     const now = new Date();
 
-    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${Utils.getSeasonName()} ${now.toLocaleTimeString().substring(0, 5)} ${Utils.getTimeEmoji()}`;
+    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${Utils.getSeasonName()} ${now.toLocaleTimeString(
+      'fr-FR',
+      { hour: '2-digit', minute: '2-digit' }
+    )} ${Utils.getTimeEmoji()}`;
 
     console.log(`> ${'-'.repeat(titleString.length - 2)}`);
     console.log(`> ${titleString}`);

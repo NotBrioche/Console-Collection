@@ -40,19 +40,19 @@ describe('Item class', () => {
   });
 
   test('An object created with the constructor throws an error if the value is out of bounds', () => {
-    const act = () => {
+    const result = () => {
       new Item(
         1,
         'Pierre',
         "C'est une pierre, elle peut vous porter compagnie",
         'Matériaux',
         new Condition(),
-        6,
+        7,
         Math.random()
       );
     };
 
-    expect(act).toThrow(
+    expect(result).toThrow(
       `Rarity must be between 0 and ${Item.rarities.length - 1}`
     );
   });

@@ -47,12 +47,14 @@ files.forEach((file) => {
   const content = fs.readFileSync(file, 'utf-8');
   const json = JSON.parse(content);
 
+  const char = process.platform == 'win32' ? '\\' : '/';
+
   json.forEach((entry: any) => {
     total += 1;
     entry.id = total;
     entry.collection = file.substring(
-      file.substring(file.indexOf('/') + 1, file.length).indexOf('/') +
-        file.indexOf('/') +
+      file.substring(file.indexOf(char) + 1, file.length).indexOf(char) +
+        file.indexOf(char) +
         2,
       file.indexOf('.')
     );

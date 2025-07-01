@@ -29,6 +29,8 @@ class CollectionCommand implements Command {
         return;
       }
 
+      // TODO revamp
+
       const appeared: number[] = [];
       for (let item of this.game.player.collection.sort(
         (a, b) => a.id - b.id
@@ -41,45 +43,72 @@ class CollectionCommand implements Command {
 
         if (appeared.length < 1) {
           console.log(
-            `> ${'-'.repeat(`${item.id}: ${item.name} (${duplicates.length})`.length)}`
+            `> ${'-'.repeat(
+              `${item.id}: ${item.name} (${duplicates.length})`.length
+            )}`
           );
         }
 
         console.log(
-          `> ${item.id}: ${Utils.printWithRarityColor(`${item.name}`, item.rarity)} (${duplicates.length})`
+          `> ${item.id}: ${Utils.printWithRarityColor(
+            `${item.name}`,
+            item.rarity
+          )} (${duplicates.length})`
         );
 
         appeared.push(item.id);
       }
       console.log('> ');
     } else {
-      let filtered: Item[];
+      let filtered: Item[] = [];
       if (isNaN(Number.parseInt(args[0]))) {
-        filtered = this.game.player.collection.filter(
-          (item) => item.name == args[0]
-        );
+        if (args.length > 1) {
+          const full: string = args.join(' ');
+          filtered = this.game.player.collection.filter(
+            (item) => item.name == full
+          );
+        }
+
+        if (filtered.length < 1) {
+          filtered = this.game.player.collection.filter(
+            (item) => item.name == args[0]
+          );
+        }
       } else {
         filtered = this.game.player.collection.filter(
           (item) => item.id == Number.parseInt(args[0])
         );
       }
 
-      console.log(
-        `> ${'-'.repeat(`${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length)}`
-      );
-      console.log(
-        `> ${Utils.printWithRarityColor(Item.rarities[filtered[0].rarity], filtered[0].rarity)} - ${filtered[0].name}`
-      );
-      console.log(
-        `> ${'-'.repeat(`${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length)}`
-      );
-      console.log(`> ${filtered[0].description}`);
-      console.log('> ');
+      if (filtered.length > 0) {
+        console.log(
+          `> ${'-'.repeat(
+            `${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length
+          )}`
+        );
+        console.log(
+          `> ${Utils.printWithRarityColor(
+            Item.rarities[filtered[0].rarity],
+            filtered[0].rarity
+          )} - ${filtered[0].name}`
+        );
+        console.log(
+          `> ${'-'.repeat(
+            `${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length
+          )}`
+        );
+        console.log(`> ${filtered[0].collection} | ${filtered[0].description}`);
+        console.log('> ');
+      }
       for (let item of filtered
         .sort((a, b) => b.quality! - a.quality!)
         .sort((a, b) => Number(b.rareVariant!) - Number(a.rareVariant!))) {
         console.log(
-          `> ${item.rareVariant ? '\x1b[33m' + `[Rare] ${item.name}` + '\x1b[0m' : item.name} - ${item.quality}`
+          `> ${
+            item.rareVariant ? '\x1b[33m' + '[Rare]' + '\x1b[0m' : ''
+          } ${Utils.printWithRarityColor(`${item.name}`, item.rarity)} - ${
+            item.quality
+          }`
         );
       }
       console.log('> ');
