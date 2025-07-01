@@ -1,13 +1,17 @@
 import Command from '../command';
 import Game from '../game';
-import Item from '../item';
 import Utils from '../utils';
 
 class FlexCommand implements Command {
   name: string = 'flex';
-  description: string = 'Affiche les objets rares du joueur';
-  syntax: string = 'collection [nom|id]';
-  longDescription: string[] = ['COMPLETE MOI!!!'];
+  description: string =
+    'Affiche les objets avec la meilleure qualitée du joueur';
+  syntax: string = 'flex [nombre]';
+  longDescription: string[] = [
+    "La commande flex permet d'afficher les objets du joueur avec la meilleure qualitée",
+    'Par défaut les 5 meilleurs objets sont affichés.',
+    "Le paramètre [nombre] permet de changer le nombre d'objets à afficher",
+  ];
   game: Game;
 
   constructor(game: Game) {

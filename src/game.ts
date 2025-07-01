@@ -48,7 +48,7 @@ class Game {
 
     this.console = new Console(this);
 
-    this.init(false);
+    this.init(true);
   }
 
   async init(isDebugMode: boolean = false) {
@@ -60,9 +60,6 @@ class Game {
         flag: 'w',
       });
     }
-
-    // TODO add debug mode
-    // TODO Player total items from file
 
     await this.console.init(isDebugMode);
     exit();

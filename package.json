@@ -4,7 +4,6 @@
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "scripts": {
-    "test": "jest",
     "start": "ts-node ./prepare-data.ts && ts-node ./index.ts",
     "build": "tsc && ts-node ./prepare-data.ts && pkg ."
   },
@@ -12,12 +11,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@jest/globals": "^29.7.0",
-    "@types/jest": "^29.5.14",
     "@types/node": "^22.13.11",
     "glob": "^11.0.3",
     "pkg": "^5.8.1",
-    "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },

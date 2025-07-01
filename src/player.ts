@@ -70,6 +70,16 @@ class Player {
     return items;
   }
 
+  get uniquesItemsNumber(): number {
+    const ids = [];
+
+    for (const compact of this._collection) {
+      ids.push(compact.id);
+    }
+
+    return [...new Set(ids)].length;
+  }
+
   addItem(item: CompactItem) {
     this._collection.push(item);
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });

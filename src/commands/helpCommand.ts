@@ -18,7 +18,9 @@ class HelpCommand implements Command {
   async execute(args: string[]): Promise<void> {
     if (args == null || args.length < 1) {
       console.log(
-        `> ${'-'.repeat(`${this.commands[0].name} - ${this.commands[0].description}`.length)}`
+        `> ${'-'.repeat(
+          `${this.commands[0].name} - ${this.commands[0].description}`.length
+        )}`
       );
 
       this.commands.forEach((command) => {

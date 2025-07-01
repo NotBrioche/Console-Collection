@@ -4,7 +4,7 @@ import Game from '../../game';
 class EnergyDebugCommand implements Command {
   name: string = 'energy';
   description: string = 'Set player energy to 100 or another number';
-  syntax: string = 'energy';
+  syntax: string = 'energy [energy]';
   longDescription: string[] = [];
 
   game: Game;

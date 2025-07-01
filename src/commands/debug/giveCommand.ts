@@ -1,12 +1,11 @@
 import Command from '../../command';
 import Game from '../../game';
-import all from '../../../data/all.json';
 import CompactItem from '../../compact_item';
 
 class GiveDebugCommand implements Command {
   name: string = 'give';
   description: string = 'Unlock a specific Item for the player';
-  syntax: string = 'give [id]';
+  syntax: string = 'give {id}';
   longDescription: string[] = [];
 
   game: Game;
@@ -16,6 +15,11 @@ class GiveDebugCommand implements Command {
   }
   async execute(args: string[]): Promise<void> {
     console.log('\x1b[41m' + '> DEBUG' + '\x1b[0m');
+
+    if (args.length < 1) {
+      console.log('Please provide the id of the item to give.');
+      return;
+    }
 
     this.game.player.addItem(
       new CompactItem(

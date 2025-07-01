@@ -2,6 +2,7 @@ import Command from '../command';
 import '../extensions/date.extension';
 import Player from '../player';
 import Utils from '../utils';
+import all from '../../data/all.json';
 
 class HomeCommand implements Command {
   name: string = 'home';
@@ -30,7 +31,7 @@ class HomeCommand implements Command {
     console.log(`> [ ${this.player.land.name} ]`);
     console.log('> ');
     console.log(
-      `> ${this.player.username} - ${this.player.collection.length} / 372`
+      `> ${this.player.username} - ${this.player.uniquesItemsNumber} / ${all.total}`
     );
     console.log(`> Energie : ${this.player.energy} / 100`);
     console.log(`> Pièces : ${this.player.money}`);
