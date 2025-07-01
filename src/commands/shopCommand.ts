@@ -20,14 +20,31 @@ class ShopCommand implements Command {
     console.log(title);
     console.log(`> ${'-'.repeat(title.length)}`);
 
-    for (let i = 0; i < this.game.shop.items.length; i++) {
-      console.log(
-        `> ${this.game.shop.items[i].id} ${this.game.shop.items[i].name} - ${this.game.shop.prices[i]} Zynthar`
-      );
+    console.log('> Propositions de ventes (sell) :');
+    for (let i = 0; i < 3; i++) {
+      if (i < this.game.shop.sells.length) {
+        console.log(
+          `> ${i + 1}) ${this.game.shop.sells[i].name} - ${this.game.shop.sellPrices[i]} Zynthar`
+        );
+      } else {
+        console.log(`> ${i + 1}) -`);
+      }
     }
 
     console.log('>');
-    console.log(`> 20 Energie : 10/10 - 750 Zynthar`);
+    console.log('> Articles en vente (buy) :');
+    console.log(
+      `> 1) +20 Energie - ${this.game.shop.energyPrice} Zynthar : ${this.game.shop.energies}/20`
+    );
+    for (let i = 0; i < 2; i++) {
+      if (i < this.game.shop.buys.length) {
+        console.log(
+          `> ${i + 2}) ${this.game.shop.buys[i].name} - ${this.game.shop.buyPrices[i]} Zynthar`
+        );
+      } else {
+        console.log(`> ${i + 2}) -`);
+      }
+    }
 
     console.log('>');
   }

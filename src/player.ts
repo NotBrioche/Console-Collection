@@ -85,6 +85,20 @@ class Player {
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }
 
+  removeItem(item: Item) {
+    for (let i = 0; i < this._collection.length; i++) {
+      if (
+        this._collection[i].id == item.id &&
+        this._collection[i].quality == item.quality &&
+        this._collection[i].rareVariant == item.rareVariant
+      ) {
+        this._collection.splice(i--, 1);
+      }
+    }
+
+    fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
+  }
+
   get money(): number {
     return this._money;
   }

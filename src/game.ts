@@ -34,6 +34,13 @@ class Game {
       if (importedPlayer.nextReward <= Date.now()) {
         this.player.energy = 100;
         importedPlayer.nextReward = Date.now() + 18 * 60 * 60 * 1000;
+
+        this.shop = new Shop(this.player);
+        fs.writeFileSync(
+          path.join(getAppDataPath('Console-Collection'), 'shop.json'),
+          JSON.stringify(this.shop),
+          { flag: 'w' }
+        );
       }
 
       if (importedPlayer.nextReward === undefined) {
@@ -48,11 +55,35 @@ class Game {
       this.player = new Player('');
     }
 
-    this.shop = new Shop(this.player);
+    if (
+      fs.existsSync(
+        path.join(getAppDataPath('Console-Collection'), 'shop.json')
+      )
+    ) {
+      const fileString = fs.readFileSync(
+        path.join(getAppDataPath('Console-Collection'), 'shop.json'),
+        'utf-8'
+      );
+      const importedShop = JSON.parse(fileString);
+      this.shop = new Shop(
+        this.player,
+        importedShop._sells,
+        importedShop._buys,
+        importedShop.energies,
+        importedShop.multiplicator
+      );
+    } else {
+      this.shop = new Shop(this.player);
+      fs.writeFileSync(
+        path.join(getAppDataPath('Console-Collection'), 'shop.json'),
+        JSON.stringify(this.shop),
+        { flag: 'w' }
+      );
+    }
 
     this.console = new Console(this);
 
-    this.init(false);
+    this.init(true);
   }
 
   async init(isDebugMode: boolean = false) {

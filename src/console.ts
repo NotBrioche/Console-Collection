@@ -19,6 +19,9 @@ import EnergyDebugCommand from './commands/debug/energyCommand';
 import MoneyDebugCommand from './commands/debug/moneyCommand';
 import AllDebugCommand from './commands/debug/allCommand';
 import ShopCommand from './commands/shopCommand';
+import SellCommand from './commands/sellCommand';
+import BuyCommand from './commands/buyCommand';
+import RerollDebugCommand from './commands/debug/rerollCommand';
 
 class Console {
   game: Game;
@@ -38,6 +41,8 @@ class Console {
       new CollectionCommand(this.game),
       new FlexCommand(this.game),
       new ShopCommand(this.game),
+      new SellCommand(this.game),
+      new BuyCommand(this.game),
       // TODO travel command
     ];
     this.commands.push(new HelpCommand(this.commands));
@@ -54,6 +59,7 @@ class Console {
       this.commands.push(new EnergyDebugCommand(this.game));
       this.commands.push(new MoneyDebugCommand(this.game));
       this.commands.push(new AllDebugCommand(this.game));
+      this.commands.push(new RerollDebugCommand(this.game));
     }
 
     console.log('> home');
