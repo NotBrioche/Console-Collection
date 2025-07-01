@@ -18,6 +18,7 @@ import WaitCommand from './commands/waitCommand';
 import EnergyDebugCommand from './commands/debug/energyCommand';
 import MoneyDebugCommand from './commands/debug/moneyCommand';
 import AllDebugCommand from './commands/debug/allCommand';
+import ShopCommand from './commands/shopCommand';
 
 class Console {
   game: Game;
@@ -36,6 +37,7 @@ class Console {
       new SearchCommand(this.game),
       new CollectionCommand(this.game),
       new FlexCommand(this.game),
+      new ShopCommand(this.game),
       // TODO travel command
     ];
     this.commands.push(new HelpCommand(this.commands));

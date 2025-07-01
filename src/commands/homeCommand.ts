@@ -34,7 +34,7 @@ class HomeCommand implements Command {
       `> ${this.player.username} - ${this.player.uniquesItemsNumber} / ${all.total}`
     );
     console.log(`> Energie : ${this.player.energy} / 100`);
-    console.log(`> Pièces : ${this.player.money}`);
+    console.log(`> Zynthar : ${this.player.money}`);
     console.log(`> ${'-'.repeat(titleString.length - 2)}`);
     console.log('> Tapez "help" pour lister les commandes utilisables.');
     console.log('> ');

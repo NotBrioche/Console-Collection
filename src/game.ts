@@ -5,9 +5,11 @@ import { exit } from 'process';
 import * as fs from 'fs';
 import * as path from 'path';
 import getAppDataPath from 'appdata-path';
+import Shop from './shop';
 
 class Game {
   player: Player;
+  shop: Shop;
   console: Console;
   rl = readline.createInterface(process.stdin, process.stdout);
 
@@ -46,9 +48,11 @@ class Game {
       this.player = new Player('');
     }
 
+    this.shop = new Shop(this.player);
+
     this.console = new Console(this);
 
-    this.init(true);
+    this.init(false);
   }
 
   async init(isDebugMode: boolean = false) {
@@ -60,6 +64,8 @@ class Game {
         flag: 'w',
       });
     }
+
+    new Shop(this.player);
 
     await this.console.init(isDebugMode);
     exit();
