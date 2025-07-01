@@ -5,15 +5,19 @@
   "bin": "dist/index.js",
   "scripts": {
     "start": "ts-node ./prepare-data.ts && ts-node ./index.ts",
-    "build": "tsc && ts-node ./prepare-data.ts && pkg ."
+    "build": "tsc && ts-node ./prepare-data.ts && pkg .",
+    "test": "jest"
   },
   "author": "NotBrioche",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^22.13.11",
     "glob": "^11.0.3",
+    "jest": "^30.0.3",
     "pkg": "^5.8.1",
+    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },
