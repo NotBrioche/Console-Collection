@@ -1,20 +1,22 @@
 import Game from './game';
-import Item from './item';
 import * as fs from 'fs';
 import Land from './land';
+import CompactItem from './compact_item';
+import Item from './item';
+import Utils from './utils';
 
 class Player {
   public username: string;
   private _energy: number;
   private _land: number;
-  private _collection: Array<Item>;
+  private _collection: Array<CompactItem>;
   private _money: number;
 
   constructor(
     username: string,
     energy: number = 100,
     land: number = 0,
-    collection: Item[] = [],
+    collection: CompactItem[] = [],
     money: number = 0
   ) {
     this.username = username;
@@ -43,10 +45,30 @@ class Player {
   }
 
   get collection(): Item[] {
-    return this._collection;
+    const items = [];
+    for (const compact of this._collection) {
+      const item = Utils.getItemFromId(
+        compact.id,
+        compact.quality,
+        compact.rareVariant
+      );
+      items.push(
+        new Item(
+          item.id,
+          item.name,
+          item.description,
+          item.collection,
+          null,
+          item.rarity,
+          item.quality,
+          item.rareVariant
+        )
+      );
+    }
+    return items;
   }
 
-  addItem(item: Item) {
+  addItem(item: CompactItem) {
     this._collection.push(item);
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }

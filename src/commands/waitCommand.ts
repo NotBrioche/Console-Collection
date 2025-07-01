@@ -93,24 +93,24 @@ class WaitCommand implements Command {
     const randomWaitTime =
       1 + Math.floor(Math.random() * 25) + Math.floor(Math.random() * 10);
 
-    const eventOrItemChance = setTimeout(
-      () => {
-        if (Math.floor(Math.random() * 3) == 0) {
-          const items = Utils.getAllPossibleToGetItems(
-            this.game.player,
-            Utils.getRarity(),
-            'wait'
-          );
-          const item = items[Math.floor(Math.random() * items.length)];
+    const eventOrItemChance = setTimeout(() => {
+      if (Math.floor(Math.random() * 3) == 0) {
+        const items = Utils.getAllPossibleToGetItems(
+          this.game.player,
+          Utils.getRarity(),
+          'wait'
+        );
+        const item = items[Math.floor(Math.random() * items.length)];
 
-          this.game.player.collection.push(Item.toOwned(item));
-          this.game.rl.write(
-            `+1 ${Utils.printWithRarityColor(Item.rarities[item.rarity], item.rarity)} ${item.name}\n> `
-          );
-        }
-      },
-      randomWaitTime * 60 * 1000
-    );
+        this.game.player.addItem(Item.toCompact(item));
+        this.game.rl.write(
+          `+1 ${Utils.printWithRarityColor(
+            Item.rarities[item.rarity],
+            item.rarity
+          )} ${item.name}\n> `
+        );
+      }
+    }, randomWaitTime * 60 * 1000);
 
     return eventOrItemChance;
   }

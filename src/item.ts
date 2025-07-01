@@ -1,3 +1,4 @@
+import CompactItem from './compact_item';
 import Condition from './condition';
 
 class Item {
@@ -46,14 +47,9 @@ class Item {
     this.rareVariant = rareVariant;
   }
 
-  static toOwned(item: Item): Item {
-    return new Item(
+  static toCompact(item: Item): CompactItem {
+    return new CompactItem(
       item.id,
-      item.name,
-      item.description,
-      item.collection,
-      undefined,
-      item.rarity,
       Math.random(),
       Math.floor(Math.random() * 1024) == 0 ? true : false
     );

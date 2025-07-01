@@ -300,6 +300,21 @@ class Utils {
       return 3;
     }
   }
+
+  static getItemFromId(id: number, quality?: number, rareVariant?: boolean) {
+    const base = all.items[id - 1];
+
+    return new Item(
+      base.id,
+      base.name,
+      base.description,
+      base.collection,
+      null,
+      base.rarity,
+      quality,
+      rareVariant
+    );
+  }
 }
 
 export default Utils;

@@ -103,9 +103,12 @@ class SearchCommand implements Command {
       );
       const item = items[Math.floor(Math.random() * items.length)];
 
-      this.game.player.collection.push(Item.toOwned(item));
+      this.game.player.addItem(Item.toCompact(item));
       console.log(
-        `> +1 ${Utils.printWithRarityColor(Item.rarities[item.rarity], item.rarity)} ${item.name}`
+        `> +1 ${Utils.printWithRarityColor(
+          Item.rarities[item.rarity],
+          item.rarity
+        )} ${item.name}`
       );
     } else {
       console.log("> Vous n'avez rien trouvé");

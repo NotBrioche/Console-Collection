@@ -58,7 +58,7 @@ class FlexCommand implements Command {
     );
 
     for (let i = 0; i < limit; i++) {
-      if (i + 1 == bestItems.length) {
+      if (i == bestItems.length) {
         break;
       }
 

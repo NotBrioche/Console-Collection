@@ -5,7 +5,7 @@
   "bin": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "start": "ts-node ./index.ts",
+    "start": "ts-node ./prepare-data.ts && ts-node ./index.ts",
     "build": "tsc && ts-node ./prepare-data.ts && pkg ."
   },
   "author": "NotBrioche",
