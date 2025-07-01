@@ -83,7 +83,7 @@ class Game {
 
     this.console = new Console(this);
 
-    this.init(true);
+    this.init(false);
   }
 
   async init(isDebugMode: boolean = false) {
