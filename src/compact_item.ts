@@ -1,5 +1,3 @@
-import Utils from './utils';
-
 class CompactItem {
   id: number;
   quality: number;

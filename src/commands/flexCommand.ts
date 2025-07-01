@@ -66,8 +66,8 @@ class FlexCommand implements Command {
 
       console.log(
         `> ${item.id}: ${
-          item.rareVariant ? '\x1b[33m' + '[Rare]' + '\x1b[0m' : ''
-        } ${Utils.printWithRarityColor(`${item.name}`, item.rarity)} (${
+          item.rareVariant ? '\x1b[33m' + '[Rare] ' + '\x1b[0m' : ''
+        }${Utils.printWithRarityColor(`${item.name}`, item.rarity)} (${
           item.quality
         })`
       );

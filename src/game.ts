@@ -5,7 +5,6 @@ import { exit } from 'process';
 import * as fs from 'fs';
 import * as path from 'path';
 import getAppDataPath from 'appdata-path';
-import { getUnpackedSettings } from 'http2';
 
 class Game {
   player: Player;
@@ -27,7 +26,8 @@ class Game {
         importedPlayer.username,
         importedPlayer._energy,
         importedPlayer._land,
-        importedPlayer._collection
+        importedPlayer._collection,
+        importedPlayer._money
       );
       if (importedPlayer.nextReward <= Date.now()) {
         this.player.energy = 100;
@@ -48,10 +48,10 @@ class Game {
 
     this.console = new Console(this);
 
-    this.init();
+    this.init(false);
   }
 
-  async init() {
+  async init(isDebugMode: boolean = false) {
     if (this.player.username == '') {
       this.player.username = await this.rl.question(
         "Quel est votre nom d'utilisateur ? : "
@@ -64,7 +64,7 @@ class Game {
     // TODO add debug mode
     // TODO Player total items from file
 
-    await this.console.init();
+    await this.console.init(isDebugMode);
     exit();
   }
 }

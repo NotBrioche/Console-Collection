@@ -105,8 +105,8 @@ class CollectionCommand implements Command {
         .sort((a, b) => Number(b.rareVariant!) - Number(a.rareVariant!))) {
         console.log(
           `> ${
-            item.rareVariant ? '\x1b[33m' + '[Rare]' + '\x1b[0m' : ''
-          } ${Utils.printWithRarityColor(`${item.name}`, item.rarity)} - ${
+            item.rareVariant ? '\x1b[33m' + '[Rare] ' + '\x1b[0m' : ''
+          }${Utils.printWithRarityColor(`${item.name}`, item.rarity)} - ${
             item.quality
           }`
         );

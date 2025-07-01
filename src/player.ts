@@ -27,6 +27,8 @@ class Player {
   }
 
   set energy(value: number) {
+    value = value > 100 ? 100 : value;
+
     this._energy = value;
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }
@@ -78,6 +80,8 @@ class Player {
   }
 
   set money(value: number) {
+    value = value > 999999 ? 999999 : value;
+    value = value < -999999 ? -999999 : value;
     this._money = value;
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }

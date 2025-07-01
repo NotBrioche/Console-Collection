@@ -1,19 +1,23 @@
 import Command from './command';
-
+import Item from './item';
 import Game from './game';
+import Utils from './utils';
 
 // Commands
-import HomeCommand from './commands/homeCommand';
-import HelpCommand from './commands/helpCommand';
-import ExitCommand from './commands/exitCommand';
 import ClearCommand from './commands/clearCommand';
+import CollectionCommand from './commands/collectionCommand';
+import ExitCommand from './commands/exitCommand';
+import FlexCommand from './commands/flexCommand';
+import HelpCommand from './commands/helpCommand';
+import HomeCommand from './commands/homeCommand';
+import SearchCommand from './commands/searchCommand';
 import TrainCommand from './commands/trainCommand';
 import WaitCommand from './commands/waitCommand';
-import SearchCommand from './commands/searchCommand';
-import CollectionCommand from './commands/collectionCommand';
-import Item from './item';
-import Utils from './utils';
-import FlexCommand from './commands/flexCommand';
+
+// DEBUG
+import EnergyDebugCommand from './commands/debug/energyCommand';
+import MoneyDebugCommand from './commands/debug/moneyCommand';
+import AllDebugCommand from './commands/debug/allCommand';
 
 class Console {
   game: Game;
@@ -37,7 +41,19 @@ class Console {
     this.commands.push(new HelpCommand(this.commands));
   }
 
-  public async init() {
+  public async init(isDebugMode: boolean = false) {
+    if (isDebugMode) {
+      console.log(
+        '\x1b[41m' +
+          'This is a DEBUG mode. Commands not intended for gameplay are available. Proceed with caution' +
+          '\x1b[0m'
+      );
+
+      this.commands.push(new EnergyDebugCommand(this.game));
+      this.commands.push(new MoneyDebugCommand(this.game));
+      this.commands.push(new AllDebugCommand(this.game));
+    }
+
     console.log('> home');
     this.commands[0].execute([]);
 
@@ -46,18 +62,6 @@ class Console {
         const input = (await this.game.rl.question('> ')).trim();
 
         if (input === null || input == '') continue;
-        if (input === 'iwouldlikesomenergy') {
-          this.game.player.energy = 100;
-          continue;
-        }
-        if (input === 'printrarities') {
-          for (const rarity of Item.rarities) {
-            console.log(
-              Utils.printWithRarityColor(rarity, Item.rarities.indexOf(rarity))
-            );
-          }
-          continue;
-        }
         if (input == 'exit') break;
 
         const command = this.commands.find(

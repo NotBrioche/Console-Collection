@@ -1,4 +1,3 @@
-import * as fs from 'fs';
 import Player from './player';
 import Item from './item';
 import { Moon } from 'lunarphase-js';
