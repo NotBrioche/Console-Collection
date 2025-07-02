@@ -2,23 +2,26 @@ import Command from './command';
 import Game from './game';
 
 // Commands
+import BuyCommand from './commands/buyCommand';
 import ClearCommand from './commands/clearCommand';
 import CollectionCommand from './commands/collectionCommand';
 import ExitCommand from './commands/exitCommand';
 import FlexCommand from './commands/flexCommand';
 import HelpCommand from './commands/helpCommand';
 import HomeCommand from './commands/homeCommand';
+import RewardCommand from './commands/rewardCommand';
 import SearchCommand from './commands/searchCommand';
 import TrainCommand from './commands/trainCommand';
+import TravelCommand from './commands/travelCommand';
+import SellCommand from './commands/sellCommand';
+import ShopCommand from './commands/shopCommand';
 import WaitCommand from './commands/waitCommand';
 
 // DEBUG
-import EnergyDebugCommand from './commands/debug/energyCommand';
-import MoneyDebugCommand from './commands/debug/moneyCommand';
 import AllDebugCommand from './commands/debug/allCommand';
-import ShopCommand from './commands/shopCommand';
-import SellCommand from './commands/sellCommand';
-import BuyCommand from './commands/buyCommand';
+import EnergyDebugCommand from './commands/debug/energyCommand';
+import GiveDebugCommand from './commands/debug/giveCommand';
+import MoneyDebugCommand from './commands/debug/moneyCommand';
 import RerollDebugCommand from './commands/debug/rerollCommand';
 
 class Console {
@@ -41,7 +44,8 @@ class Console {
       new ShopCommand(this.game),
       new SellCommand(this.game),
       new BuyCommand(this.game),
-      // TODO travel command
+      new TravelCommand(this.game),
+      new RewardCommand(this.game),
     ];
     this.commands.push(new HelpCommand(this.commands));
   }
@@ -55,6 +59,7 @@ class Console {
       );
 
       this.commands.push(new EnergyDebugCommand(this.game));
+      this.commands.push(new GiveDebugCommand(this.game));
       this.commands.push(new MoneyDebugCommand(this.game));
       this.commands.push(new AllDebugCommand(this.game));
       this.commands.push(new RerollDebugCommand(this.game));

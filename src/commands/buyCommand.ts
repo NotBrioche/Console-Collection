@@ -7,8 +7,10 @@ import Item from '../item';
 class BuyCommand implements Command {
   name: string = 'buy';
   description: string = "Permet d'acheter des objets listés dans le shop";
-  syntax: string = 'buy';
-  longDescription: string[] = ['A COMPLETER'];
+  syntax: string = 'buy {1-3}';
+  longDescription: string[] = [
+    // TODO Complete
+  ];
   game: Game;
 
   constructor(game: Game) {
@@ -28,7 +30,9 @@ class BuyCommand implements Command {
 
     if (args.length < 1) {
       console.log(
-        `> ${'-'.repeat("Veuillez entrer le numéro de l'objet à acheter (1-3)".length)}`
+        `> ${'-'.repeat(
+          "Veuillez entrer le numéro de l'objet à acheter (1-3)".length
+        )}`
       );
       console.log("> Veuillez entrer le numéro de l'objet à acheter (1-3)");
       console.log('> ');
@@ -42,10 +46,16 @@ class BuyCommand implements Command {
       Number(args[0]) > this.game.shop.buys.length + 1
     ) {
       console.log(
-        `> ${'-'.repeat(`> Veuillez entrer un numéro entre 1 et ${this.game.shop.buys.length + 1}`.length)}`
+        `> ${'-'.repeat(
+          `> Veuillez entrer un numéro entre 1 et ${
+            this.game.shop.buys.length + 1
+          }`.length
+        )}`
       );
       console.log(
-        `> Veuillez entrer un numéro entre 1 et ${this.game.shop.buys.length + 1}`
+        `> Veuillez entrer un numéro entre 1 et ${
+          this.game.shop.buys.length + 1
+        }`
       );
       console.log('> ');
 

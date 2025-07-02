@@ -73,6 +73,10 @@ class Player {
     return items;
   }
 
+  get reward(): number {
+    return this.nextReward;
+  }
+
   get uniquesItemsNumber(): number {
     const ids = [];
 

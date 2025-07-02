@@ -1,43 +1,46 @@
 class Land {
-  id: number;
   name: string;
   destinations: number[];
+  energyCost: number;
+  moneyCost: number;
 
-  constructor(id: number, name: string, destinations: Array<number>) {
-    this.id = id;
+  constructor(
+    name: string,
+    destinations: Array<number>,
+    energyCost: number,
+    moneyCost = 0
+  ) {
     this.name = name;
     this.destinations = destinations;
+    this.energyCost = energyCost;
+    this.moneyCost = moneyCost;
   }
 
   static lands = [
-    new Land(1, 'Nuvarkel', [2, 3, 6]),
-    new Land(2, 'Zonthéria', [1, 4, 7]),
-    new Land(3, 'Ulquassor', [1, 8, 9]),
-    new Land(4, 'Pemdravax', [2, 5, 10]),
-    new Land(5, 'Liranjou', [4, 12, 18]),
-    new Land(6, 'Tobrekian', [1, 7, 11]),
-    new Land(7, 'Azondiël', [2, 6, 13]),
-    new Land(8, 'Flegmorah', [3, 9, 16]),
-    new Land(9, 'Cadrivèze', [3, 8, 14]),
-    new Land(10, 'Yurbaqan', [4, 19, 17]),
-    new Land(11, 'Mifrolyn', [6, 12, 19]),
-    new Land(12, 'Keuzéria', [5, 11, 18]),
-    new Land(13, 'Ombrixane', [7, 15, 18]),
-    new Land(14, 'Dourmavèk', [9, 16, 20]),
-    new Land(15, 'Zélanquo', [13, 16, 18]),
-    new Land(16, 'Grivénatch', [8, 14, 15]),
-    new Land(17, 'Reknubral', [10, 19, 20]),
-    new Land(18, 'Chamoutréa', [5, 12, 13, 15]),
-    new Land(19, 'Velgatrod', [10, 11, 17]),
-    new Land(20, 'Épounazi', [14, 17]),
+    new Land('Nuvarkel', [1, 2, 5], 40),
+    new Land('Zonthéria', [0, 3, 6], 40),
+    new Land('Ulquassor', [0, 7, 8], 40),
+    new Land('Pemdravax', [1, 4, 9], 40),
+    new Land('Liranjou', [3, 11, 17], 40),
+    new Land('Tobrekian', [0, 6, 10], 40),
+    new Land('Azondiël', [1, 5, 12], 40),
+    new Land('Flegmorah', [2, 8, 15], 40),
+    new Land('Cadrivèze', [2, 7, 13], 40),
+    new Land('Yurbaqan', [3, 18, 16], 40),
+    new Land('Mifrolyn', [5, 11, 18], 40),
+    new Land('Keuzéria', [4, 10, 17], 40),
+    new Land('Ombrixane', [6, 14, 17], 40),
+    new Land('Dourmavèk', [8, 15, 19], 40),
+    new Land('Zélanquo', [12, 15, 17], 40),
+    new Land('Grivénatch', [7, 13, 14], 40),
+    new Land('Reknubral', [9, 18, 19], 40),
+    new Land('Chamoutréa', [4, 11, 12, 14], 40),
+    new Land('Velgatrod', [9, 10, 16], 40),
+    new Land('Épounazi', [13, 16], 40),
   ];
 
   equals(other: Land) {
-    return (
-      this.id === other.id &&
-      this.name === other.name &&
-      this.destinations === other.destinations
-    );
+    return this.name === other.name && this.destinations === other.destinations;
   }
 }
 

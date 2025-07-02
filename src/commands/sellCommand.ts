@@ -5,8 +5,10 @@ import Game from '../game';
 class SellCommand implements Command {
   name: string = 'sell';
   description: string = 'Permet de vendre des objets listés dans le shop';
-  syntax: string = 'sell';
-  longDescription: string[] = ['A COMPLETER'];
+  syntax: string = 'sell {1-3}';
+  longDescription: string[] = [
+    // TODO Complete
+  ];
   game: Game;
 
   constructor(game: Game) {
@@ -26,7 +28,9 @@ class SellCommand implements Command {
 
     if (args.length < 1) {
       console.log(
-        `> ${'-'.repeat("Veuillez entrer le numéro de l'objet à vendre (1-3)".length)}`
+        `> ${'-'.repeat(
+          "Veuillez entrer le numéro de l'objet à vendre (1-3)".length
+        )}`
       );
       console.log("> Veuillez entrer le numéro de l'objet à vendre (1-3)");
       console.log('> ');
@@ -40,7 +44,10 @@ class SellCommand implements Command {
       Number(args[0]) > this.game.shop.sells.length
     ) {
       console.log(
-        `> ${'-'.repeat(`> Veuillez entrer un numéro entre 1 et ${this.game.shop.sells.length}`.length)}`
+        `> ${'-'.repeat(
+          `> Veuillez entrer un numéro entre 1 et ${this.game.shop.sells.length}`
+            .length
+        )}`
       );
       console.log(
         `> Veuillez entrer un numéro entre 1 et ${this.game.shop.sells.length}`

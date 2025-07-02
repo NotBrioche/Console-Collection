@@ -6,7 +6,9 @@ class ShopCommand implements Command {
   name: string = 'shop';
   description: string = "Vous permet d'accéder au shop";
   syntax: string = 'shop';
-  longDescription: string[] = ['A COMPLETER'];
+  longDescription: string[] = [
+    // TODO Complete
+  ];
   game: Game;
 
   constructor(game: Game) {
@@ -24,7 +26,9 @@ class ShopCommand implements Command {
     for (let i = 0; i < 3; i++) {
       if (i < this.game.shop.sells.length) {
         console.log(
-          `> ${i + 1}) ${this.game.shop.sells[i].name} - ${this.game.shop.sellPrices[i]} Zynthar`
+          `> ${i + 1}) ${this.game.shop.sells[i].name} - ${
+            this.game.shop.sellPrices[i]
+          } Zynthar`
         );
       } else {
         console.log(`> ${i + 1}) -`);
@@ -39,7 +43,9 @@ class ShopCommand implements Command {
     for (let i = 0; i < 2; i++) {
       if (i < this.game.shop.buys.length) {
         console.log(
-          `> ${i + 2}) ${this.game.shop.buys[i].name} - ${this.game.shop.buyPrices[i]} Zynthar`
+          `> ${i + 2}) ${this.game.shop.buys[i].name} - ${
+            this.game.shop.buyPrices[i]
+          } Zynthar`
         );
       } else {
         console.log(`> ${i + 2}) -`);
