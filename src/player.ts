@@ -11,19 +11,22 @@ class Player {
   private _land: number;
   private _collection: Array<CompactItem>;
   private _money: number;
+  private nextReward: number;
 
   constructor(
     username: string,
     energy: number = 100,
     land: number = 0,
     collection: CompactItem[] = [],
-    money: number = 0
+    money: number = 0,
+    nextReward?: number
   ) {
     this.username = username;
     this._energy = energy;
     this._land = land;
     this._collection = collection;
     this._money = money;
+    this.nextReward = nextReward ?? Date.now() + 24 * 60 * 60 * 1000;
   }
 
   set energy(value: number) {

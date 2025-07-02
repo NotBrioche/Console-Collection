@@ -29,7 +29,8 @@ class Game {
         importedPlayer._energy,
         importedPlayer._land,
         importedPlayer._collection,
-        importedPlayer._money
+        importedPlayer._money,
+        importedPlayer.nextReward
       );
       if (importedPlayer.nextReward <= Date.now()) {
         this.player.energy = 100;
@@ -42,14 +43,6 @@ class Game {
           { flag: 'w' }
         );
       }
-
-      if (importedPlayer.nextReward === undefined) {
-        importedPlayer.nextReward = Date.now() + 24 * 60 * 60 * 1000;
-      }
-
-      fs.writeFileSync(Game.playerDataPath, JSON.stringify(importedPlayer), {
-        flag: 'w',
-      });
     } else {
       fs.mkdirSync(getAppDataPath('Console-Collection'), { recursive: true });
       this.player = new Player('');
