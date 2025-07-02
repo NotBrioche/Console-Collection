@@ -1,20 +1,6 @@
 console-collection-linux
 console-collection-win.exe
 
-data/all.json
-data/common.json
-data/uncommon.json
-data/rare.json
-data/epic.json
-data/legendary.json
-data/mythic.json
-data/secret.json
-data/no_condition.json
-data/wait.json
-data/search.json
-data/trade.json
-data/event.json
-
 # Logs
 logs
 *.log

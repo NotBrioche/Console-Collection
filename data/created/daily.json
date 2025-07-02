@@ -25,7 +25,7 @@
   },
   {
     "name": "Chaussette",
-    "description": "Sers à garder ses pieds au chaud",
+    "description": "Sers à garder son pied au chaud",
     "rarity": 0,
     "conditions": {
       "action": "search",
@@ -44,7 +44,7 @@
   },
   {
     "name": "Clés",
-    "description": "Sers à ouvrir des portes",
+    "description": "Utile pour ouvrir des portes",
     "rarity": 1,
     "conditions": {
       "action": "search"
@@ -52,7 +52,7 @@
   },
   {
     "name": "Oreiller",
-    "description": "Sers à bien dormir",
+    "description": "Utile pour bien dormir",
     "rarity": 0,
     "conditions": {
       "action": "search"
@@ -68,7 +68,7 @@
   },
   {
     "name": "Cadenas",
-    "description": "Sers à sécuriser des choses",
+    "description": "Utile pour sécuriser des choses",
     "rarity": 0,
     "conditions": {
       "action": "search",

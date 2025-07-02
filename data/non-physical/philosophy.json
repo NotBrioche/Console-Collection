@@ -1,10 +1,10 @@
 [
     {
-        "name": "Mortalité quantique",
+        "name": "Mort quantique",
         "description": "Concept philosophique lié à l'interprétation des mondes multiples en physique quantique.",
         "rarity": 2,
         "conditions": {
-            "action": "search"
+            "action": "wait"
         }
     },
     {

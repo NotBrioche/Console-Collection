@@ -1,4 +1,5 @@
 import Command from '../command';
+import { rarities } from '../consts';
 import Game from '../game';
 import Item from '../item';
 import * as utils from '../utils';
@@ -105,7 +106,7 @@ class SearchCommand implements Command {
       this.game.player.addItem(Item.toCompact(item));
       console.log(
         `> +1 ${utils.printWithRarityColor(
-          Item.rarities[item.rarity],
+          rarities[item.rarity],
           item.rarity
         )} ${item.name}`
       );

@@ -1,7 +1,7 @@
 import Command from '../command';
 import '../extensions/date.extension';
 import Game from '../game';
-import Land from '../land';
+import { lands } from '../consts';
 
 class TravelCommand implements Command {
   name: string = 'travel';
@@ -20,14 +20,14 @@ class TravelCommand implements Command {
     if (args.length < 1) {
       console.log(
         `> ${'-'.repeat(
-          `1) ${Land.lands[this.game.player.land.destinations[0]].name}`.length
+          `1) ${lands[this.game.player.land.destinations[0]].name}`.length
         )}`
       );
 
       for (let i = 0; i < this.game.player.land.destinations.length; i++) {
         const destinationId = this.game.player.land.destinations[i];
 
-        console.log(`> ${i + 1}) ${Land.lands[destinationId].name}`);
+        console.log(`> ${i + 1}) ${lands[destinationId].name}`);
       }
     } else {
       if (isNaN(Number(args[0]))) {
@@ -46,7 +46,7 @@ class TravelCommand implements Command {
       }
 
       const destination =
-        Land.lands[this.game.player.land.destinations[Number(args[0]) - 1]];
+        lands[this.game.player.land.destinations[Number(args[0]) - 1]];
 
       if (
         this.game.player.energy >= destination.energyCost &&

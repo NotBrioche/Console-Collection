@@ -12,7 +12,11 @@
         "description": "Peau pouvant être utilisée pour se protéger du froid.",
         "rarity": 0,
         "conditions": {
-            "action": "search"
+            "action": "search",
+            "items": [
+                "Lance",
+                "Ours"
+            ]
         }
     },
     {
@@ -34,7 +38,9 @@
         "conditions": {
             "action": "search",
             "season": "winter",
-            "items": ["Peau d'ours"]
+            "items": [
+                "Peau d'ours"
+            ]
         }
     },
     {

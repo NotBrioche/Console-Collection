@@ -44,9 +44,6 @@
         "description": "Ensemble d'instructions pour résoudre un problème ou effectuer une tâche.",
         "rarity": 1,
         "conditions": {
-            "items": [
-                "Langage de prog."
-            ],
             "action": "search"
         }
     },
@@ -64,10 +61,6 @@
     {
         "name": "Langage de prog.",
         "description": "Langage utilisé pour écrire des programmes informatiques.",
-        "rarity": 1,
-        "conditions": {
-            "action": "search",
-            "season": "summer"
-        }
+        "rarity": 1
     }
 ]

@@ -7,7 +7,8 @@
             "action": "search",
             "items": [
                 "Peinture"
-            ]
+            ],
+            "land": 4
         }
     },
     {
@@ -19,7 +20,8 @@
             "time": "night",
             "items": [
                 "Peinture"
-            ]
+            ],
+            "land": 5
         }
     },
     {
@@ -30,7 +32,8 @@
             "action": "search",
             "items": [
                 "Peinture"
-            ]
+            ],
+            "land": 0
         }
     },
     {
@@ -41,7 +44,8 @@
             "action": "search",
             "items": [
                 "Peinture"
-            ]
+            ],
+            "land": 9
         }
     },
     {
@@ -52,7 +56,8 @@
             "action": "search",
             "items": [
                 "Peinture"
-            ]
+            ],
+            "land": 12
         }
     },
     {
@@ -64,7 +69,8 @@
             "near": "sea",
             "items": [
                 "Peinture"
-            ]
+            ],
+            "land": 14
         }
     }
 ]

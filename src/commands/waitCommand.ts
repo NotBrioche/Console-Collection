@@ -1,7 +1,8 @@
 import Command from '../command';
+import { rarities } from '../consts';
 import Game from '../game';
 import Item from '../item';
-import *as utils from '../utils';
+import * as utils from '../utils';
 
 class WaitCommand implements Command {
   name: string = 'wait';
@@ -105,7 +106,7 @@ class WaitCommand implements Command {
         this.game.player.addItem(Item.toCompact(item));
         this.game.rl.write(
           `+1 ${utils.printWithRarityColor(
-            Item.rarities[item.rarity],
+            rarities[item.rarity],
             item.rarity
           )} ${item.name}\n> `
         );

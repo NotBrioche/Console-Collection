@@ -10,6 +10,7 @@ import epic from '../data/epic.json';
 import legendary from '../data/legendary.json';
 import mythic from '../data/mythic.json';
 import secret from '../data/secret.json';
+import { rarities } from './consts';
 
 const createSeasonSolver = require('date-season');
 
@@ -178,7 +179,7 @@ export function getAllPossibleToGetItems(
     }
 
     if (item['conditions']!['land'] !== undefined) {
-      if (item['conditions']!['land'] != player.land) {
+      if (item['conditions']!['land']! != player.land.name) {
         continue;
       }
     }
@@ -221,7 +222,7 @@ export function getAllPossibleToGetItems(
 export function getRarity() {
   let rarity = 0;
 
-  for (let i = 0; i < Item.rarities.length; i++) {
+  for (let i = 0; i < rarities.length; i++) {
     if (Math.floor(Math.random() * 9) == 0) {
       rarity++;
     } else {
@@ -307,4 +308,4 @@ export function getItemFromId(
   );
 }
 
-export * as Utils from './utils';
+export * as utils from './utils';

@@ -1,10 +1,10 @@
 import CompactItem from '../src/compact_item';
 import Game from '../src/game';
 import Item from '../src/item';
-import Land from '../src/land';
 import Player from '../src/player';
 import * as fs from 'fs';
 import * as utils from '../src/utils';
+import { lands } from '../src/consts';
 
 jest.mock('fs');
 
@@ -33,7 +33,7 @@ it('A new Player named Brioche have correct default values', () => {
   expect(player.collection.length).toBe(0);
   expect(player.energy).toBe(100);
   expect(player.money).toBe(0);
-  expect(player.land).toBe(Land.lands[0]);
+  expect(player.land).toBe(lands[0]);
 });
 
 describe('Player data saves', () => {
@@ -47,7 +47,7 @@ describe('Player data saves', () => {
   });
 
   it('When a Player land is changed, fs writes player data to file', () => {
-    player.land = Land.lands[2];
+    player.land = lands[2];
     expect(fs.writeFileSync).toHaveBeenCalledWith(
       Game.playerDataPath,
       JSON.stringify(player),

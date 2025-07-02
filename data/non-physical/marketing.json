@@ -40,14 +40,24 @@
         }
     },
     {
-        "name": "Deflation",
+        "name": "Déflation",
         "description": "Baisse générale et durable des prix dans une économie.",
-        "rarity": 0
+        "rarity": 0,
+        "conditions": {
+            "items": [
+                "Monnaie"
+            ]
+        }
     },
     {
         "name": "Inflation",
         "description": "Augmentation générale et durable des prix dans une économie.",
-        "rarity": 0
+        "rarity": 0,
+        "conditions": {
+            "items": [
+                "Monnaie"
+            ]
+        }
     },
     {
         "name": "Monnaie",

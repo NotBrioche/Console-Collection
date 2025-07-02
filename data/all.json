@@ -1,0 +1,2589 @@
+{
+  "total": 253,
+  "items": [
+    {
+      "name": "Gravité",
+      "description": "Découvert par Isaac Newton, publié en 1687, pratique pour la physique et notamment pour vous tenir sur Terre.",
+      "rarity": 1,
+      "conditions": {
+        "action": "wait",
+        "items": [
+          4
+        ]
+      },
+      "id": 1,
+      "collection": "Science"
+    },
+    {
+      "name": "Théorème de Pythagore",
+      "description": "Si vous n'avez pas quitté l'école vous savez de qu'il fait.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          4
+        ]
+      },
+      "id": 2,
+      "collection": "Science"
+    },
+    {
+      "name": "Théorème de Thalès",
+      "description": "Apparemment les cercles sont utiles.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          5
+        ]
+      },
+      "id": 3,
+      "collection": "Science"
+    },
+    {
+      "name": "Maths",
+      "description": "Selon Wikipedia, il est probable que les maths ont étés utilisés avant l'écriture",
+      "rarity": 0,
+      "id": 4,
+      "collection": "Science"
+    },
+    {
+      "name": "Géométrie",
+      "description": "Apparemment les cercles sont utiles.",
+      "rarity": 0,
+      "conditions": {
+        "items": [
+          4
+        ]
+      },
+      "id": 5,
+      "collection": "Science"
+    },
+    {
+      "name": "Physique",
+      "description": "Science qui essaye de comprendre les lois de l'Univers et de les expliquer.",
+      "rarity": 0,
+      "conditions": {
+        "items": [
+          4
+        ]
+      },
+      "id": 6,
+      "collection": "Science"
+    },
+    {
+      "name": "Astrologie",
+      "description": "Science de l'espace.",
+      "rarity": 0,
+      "conditions": {
+        "items": [
+          4
+        ]
+      },
+      "id": 7,
+      "collection": "Science"
+    },
+    {
+      "name": "Chimie",
+      "description": "Science qui étude la matière et ses transformations.",
+      "rarity": 0,
+      "id": 8,
+      "collection": "Science"
+    },
+    {
+      "name": "Biologie",
+      "description": "Science qui étudie les êtres vivants",
+      "rarity": 0,
+      "id": 9,
+      "collection": "Science"
+    },
+    {
+      "name": "Vecteurs",
+      "description": "Provient de la géométrie, complexe à utiliser",
+      "rarity": 1,
+      "conditions": {
+        "items": [
+          5
+        ]
+      },
+      "id": 10,
+      "collection": "Science"
+    },
+    {
+      "name": "Atome",
+      "description": "Plus petite partie d'une matière",
+      "rarity": 1,
+      "conditions": {
+        "items": [
+          4,
+          6,
+          226
+        ]
+      },
+      "id": 11,
+      "collection": "Science"
+    },
+    {
+      "name": "Les disciples de VSCode",
+      "description": "On explique qu'ils sont en guerre millénaire avec le culte de Stack Overflow.",
+      "rarity": 2,
+      "id": 12,
+      "collection": "Religion"
+    },
+    {
+      "name": "Le culte de Stack Overflow",
+      "description": "Full stack dev ma geule.",
+      "rarity": 1,
+      "id": 13,
+      "collection": "Religion"
+    },
+    {
+      "name": "Catholicisme",
+      "description": "On ne se prononce pas sur la religion.",
+      "rarity": 0,
+      "id": 14,
+      "collection": "Religion"
+    },
+    {
+      "name": "Protestantisme",
+      "description": "On ne se prononce pas sur la religion.",
+      "rarity": 0,
+      "id": 15,
+      "collection": "Religion"
+    },
+    {
+      "name": "Musulmans",
+      "description": "On ne se prononce pas sur la religion.",
+      "rarity": 0,
+      "id": 16,
+      "collection": "Religion"
+    },
+    {
+      "name": "Athéisme",
+      "description": "Simplement ceux qui ne croient pas en un dieu.",
+      "rarity": 0,
+      "id": 17,
+      "collection": "Religion"
+    },
+    {
+      "name": "Bouddhisme",
+      "description": "On ne se prononce pas sur la religion.",
+      "rarity": 0,
+      "id": 18,
+      "collection": "Religion"
+    },
+    {
+      "name": "Cannibalisme",
+      "description": "C'est pas bien de manger des gens.",
+      "rarity": 0,
+      "id": 19,
+      "collection": "Religion"
+    },
+    {
+      "name": "Fabcorptisme",
+      "description": "Moi ou Souciss, choisissez votre camp.",
+      "rarity": 0,
+      "id": 20,
+      "collection": "Religion"
+    },
+    {
+      "name": "Soucissisme",
+      "description": "Ici la dicature t'es pas content je m'en fous t'as pas le choix.",
+      "rarity": 0,
+      "id": 21,
+      "collection": "Religion"
+    },
+    {
+      "name": "Mortalité quantique",
+      "description": "Concept philosophique lié à l'interprétation des mondes multiples en physique quantique.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 22,
+      "collection": "Philosophy"
+    },
+    {
+      "name": "Remise en question",
+      "description": "Acte de réfléchir sur ses croyances et ses certitudes pour les réévaluer.",
+      "rarity": 1,
+      "id": 23,
+      "collection": "Philosophy"
+    },
+    {
+      "name": "Libre arbitre",
+      "description": "Capacité de faire des choix indépendamment de toute contrainte extérieure.",
+      "rarity": 1,
+      "id": 24,
+      "collection": "Philosophy"
+    },
+    {
+      "name": "Mix Marketing",
+      "description": "Les 4P : Produit, Prix, Place, Promotion, une stratégie clé en marketing.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 25,
+      "collection": "Marketing"
+    },
+    {
+      "name": "Storytelling",
+      "description": "Technique marketing qui consiste à raconter une histoire pour captiver l'audience.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 26,
+      "collection": "Marketing"
+    },
+    {
+      "name": "SWOT Analysis",
+      "description": "Outil stratégique pour analyser les forces, faiblesses, opportunités et menaces.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 27,
+      "collection": "Marketing"
+    },
+    {
+      "name": "Freemium Model",
+      "description": "Modèle économique offrant un service gratuit avec des options payantes.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 28,
+      "collection": "Marketing"
+    },
+    {
+      "name": "Programme de Fidélité",
+      "description": "Stratégie pour récompenser les clients fidèles et les inciter à revenir.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 29,
+      "collection": "Marketing"
+    },
+    {
+      "name": "Deflation",
+      "description": "Baisse générale et durable des prix dans une économie.",
+      "rarity": 0,
+      "id": 30,
+      "collection": "Marketing"
+    },
+    {
+      "name": "Inflation",
+      "description": "Augmentation générale et durable des prix dans une économie.",
+      "rarity": 0,
+      "id": 31,
+      "collection": "Marketing"
+    },
+    {
+      "name": "Monnaie",
+      "description": "Moyen d'échange utilisé pour les transactions économiques.",
+      "rarity": 0,
+      "id": 32,
+      "collection": "Marketing"
+    },
+    {
+      "name": "RLE",
+      "description": "Run Length Encoding, une méthode de compression de données.",
+      "rarity": 1,
+      "conditions": {
+        "items": [
+          39
+        ]
+      },
+      "id": 33,
+      "collection": "Computer"
+    },
+    {
+      "name": "IDE",
+      "description": "Environnement de développement intégré, utilisé pour écrire et déboguer du code.",
+      "rarity": 0,
+      "conditions": {
+        "items": [
+          39
+        ]
+      },
+      "id": 34,
+      "collection": "Computer"
+    },
+    {
+      "name": "IA",
+      "description": "Intelligence artificielle, utilisée pour résoudre des problèmes complexes.",
+      "rarity": 2,
+      "conditions": {
+        "items": [
+          39
+        ]
+      },
+      "id": 35,
+      "collection": "Computer"
+    },
+    {
+      "name": "Tests unitaires",
+      "description": "Méthode pour vérifier que chaque unité de code fonctionne correctement.",
+      "rarity": 0,
+      "conditions": {
+        "items": [
+          39
+        ]
+      },
+      "id": 36,
+      "collection": "Computer"
+    },
+    {
+      "name": "Algorithmes",
+      "description": "Ensemble d'instructions pour résoudre un problème ou effectuer une tâche.",
+      "rarity": 1,
+      "conditions": {
+        "items": [
+          39
+        ],
+        "action": "search"
+      },
+      "id": 37,
+      "collection": "Computer"
+    },
+    {
+      "name": "Classe",
+      "description": "Structure de base pour définir des objets en programmation orientée objet.",
+      "rarity": 0,
+      "conditions": {
+        "items": [
+          39
+        ],
+        "time": "day"
+      },
+      "id": 38,
+      "collection": "Computer"
+    },
+    {
+      "name": "Langage de prog.",
+      "description": "Langage utilisé pour écrire des programmes informatiques.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "season": "summer"
+      },
+      "id": 39,
+      "collection": "Computer"
+    },
+    {
+      "name": "La méthode des six pas",
+      "description": "Principe selon lequel toute personne est connectée à une autre par un maximum de six relations.",
+      "rarity": 1,
+      "id": 40,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Langues",
+      "description": "Moyens de communication variés utilisés par les humains à travers le monde.",
+      "rarity": 0,
+      "id": 41,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Règle des 80/20",
+      "description": "Principe de Pareto : 80% des résultats proviennent de 20% des efforts.",
+      "rarity": 1,
+      "id": 42,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Discipline",
+      "description": "Capacité à maintenir un comportement ou un effort constant pour atteindre un objectif.",
+      "rarity": 0,
+      "id": 43,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Richesse",
+      "description": "Accumulation de ressources ou de biens matériels.",
+      "rarity": 1,
+      "conditions": {
+        "items": [
+          32
+        ]
+      },
+      "id": 44,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Baptême du chalet",
+      "description": "Rituel pour l'entrée d'une nouvelle personne dans un groupe d'amis.",
+      "rarity": 2,
+      "conditions": {
+        "action": "event"
+      },
+      "id": 45,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Réseaux sociaux",
+      "description": "Plateformes en ligne permettant de connecter et d'interagir avec d'autres personnes.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "time": "night"
+      },
+      "id": 46,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Politique",
+      "description": "Art ou science de gouverner une société ou un groupe.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "moonPhase": "full"
+      },
+      "id": 47,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Nuage",
+      "description": "Un amas d'eau, a vous de voir ce que vous allez en faire...",
+      "rarity": 0,
+      "conditions": {
+        "time": "day"
+      },
+      "id": 48,
+      "collection": "Weather"
+    },
+    {
+      "name": "Pluie",
+      "description": "Apparemment certains gens aiment ça, mais pas moi.",
+      "rarity": 0,
+      "id": 49,
+      "collection": "Weather"
+    },
+    {
+      "name": "Neige",
+      "description": "C'EST L'HIVER",
+      "rarity": 0,
+      "conditions": {
+        "season": "winter"
+      },
+      "id": 50,
+      "collection": "Weather"
+    },
+    {
+      "name": "Vent",
+      "description": "Attention, ça décoiffe.",
+      "rarity": 0,
+      "id": 51,
+      "collection": "Weather"
+    },
+    {
+      "name": "Marée Haute",
+      "description": "Attention, ça ne prévient pas quand ça arrive.",
+      "rarity": 1,
+      "conditions": {
+        "action": "wait",
+        "time": "night",
+        "moonPhase": [
+          "full",
+          "new"
+        ]
+      },
+      "id": 52,
+      "collection": "Weather"
+    },
+    {
+      "name": "Avalanche",
+      "description": "Dangereux, faites attention.",
+      "rarity": 1,
+      "conditions": {
+        "items": [
+          50
+        ]
+      },
+      "id": 53,
+      "collection": "Weather"
+    },
+    {
+      "name": "Soleil",
+      "description": "Attention aux coups de soleil.",
+      "rarity": 0,
+      "conditions": {
+        "time": "day"
+      },
+      "id": 54,
+      "collection": "Weather"
+    },
+    {
+      "name": "Tempête",
+      "description": "Attention à la colère de Zeus.",
+      "rarity": 1,
+      "id": 55,
+      "collection": "Weather"
+    },
+    {
+      "name": "Sécheresse",
+      "description": "Attention à bien s'hydrater.",
+      "rarity": 2,
+      "conditions": {
+        "time": "day",
+        "items": [
+          54
+        ]
+      },
+      "id": 56,
+      "collection": "Weather"
+    },
+    {
+      "name": "Canicule",
+      "description": "Restez à l'ombre.",
+      "rarity": 1,
+      "conditions": {
+        "time": "day",
+        "items": [
+          54
+        ]
+      },
+      "id": 57,
+      "collection": "Weather"
+    },
+    {
+      "name": "Arc-en-ciel",
+      "description": "C'est beau.",
+      "rarity": 2,
+      "conditions": {
+        "time": "day",
+        "items": [
+          49,
+          54
+        ]
+      },
+      "id": 58,
+      "collection": "Weather"
+    },
+    {
+      "name": "Pierre",
+      "description": "C'est une pierre, elle peut vous porter compagnie",
+      "rarity": 0,
+      "id": 59,
+      "collection": "Ores"
+    },
+    {
+      "name": "Fer",
+      "description": "Minerais bien connu du grand public.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 60,
+      "collection": "Ores"
+    },
+    {
+      "name": "Diamant",
+      "description": "Pierre précieuse formée sous haute pression, connue pour sa dureté exceptionnelle et son éclat.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 61,
+      "collection": "Ores"
+    },
+    {
+      "name": "Or",
+      "description": "Métal précieux apprécié pour sa rareté, sa malléabilité et son usage en bijouterie et en finance.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 62,
+      "collection": "Ores"
+    },
+    {
+      "name": "Charbon",
+      "description": "Roche combustible d'origine organique, utilisée comme source d'énergie depuis la révolution industrielle.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 63,
+      "collection": "Ores"
+    },
+    {
+      "name": "Palladium",
+      "description": "Métal rare de la famille du platine, utilisé notamment dans les pots catalytiques et l'électronique.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 64,
+      "collection": "Ores"
+    },
+    {
+      "name": "Argent",
+      "description": "Saviez vous que l'argent était le 47ème élément sur le tableau périodique",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 65,
+      "collection": "Ores"
+    },
+    {
+      "name": "Saphir",
+      "description": "Le point de fusion du saphir est de 2050°C, ce qui est plus chaud que celui du diamant, qui est de 1750°C.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 66,
+      "collection": "Ores"
+    },
+    {
+      "name": "Améthyste",
+      "description": "Le mot améthyste vient du grec ancien améthustos composé du verbe methúô qui signifie être ivre",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 67,
+      "collection": "Ores"
+    },
+    {
+      "name": "Uranium",
+      "description": "Saurez vous citer 2 bombes crées avec de l'uranium?",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 68,
+      "collection": "Ores"
+    },
+    {
+      "name": "Quartz",
+      "description": "Selon Wikipedia le quartz peut avoir jusqu'à 9 couleurs différentes.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 69,
+      "collection": "Ores"
+    },
+    {
+      "name": "Opale",
+      "description": "Le mot Opale vient du mot sanskrit upala qui signifie pierre précieuse.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 70,
+      "collection": "Ores"
+    },
+    {
+      "name": "Soufre",
+      "description": "Ceci n'est pas un métal",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 71,
+      "collection": "Ores"
+    },
+    {
+      "name": "Ragondin",
+      "description": "Rongeur semi-aquatique, cousin du castor.",
+      "rarity": 0,
+      "id": 72,
+      "collection": "Living"
+    },
+    {
+      "name": "Tardigrade",
+      "description": "Micro-animal résistant aux conditions extrêmes.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "items": [
+          226
+        ]
+      },
+      "id": 73,
+      "collection": "Living"
+    },
+    {
+      "name": "Arbre",
+      "description": "C'est un arbre.",
+      "rarity": 0,
+      "id": 74,
+      "collection": "Living"
+    },
+    {
+      "name": "Capybara",
+      "description": "Capybara capybara capybara.",
+      "rarity": 0,
+      "id": 75,
+      "collection": "Living"
+    },
+    {
+      "name": "Bigfoot",
+      "description": "Créature légendaire des forêts nord-américaines.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 76,
+      "collection": "Living"
+    },
+    {
+      "name": "Dragon",
+      "description": "Créature légendaire cracheuse de feu.",
+      "rarity": 2,
+      "conditions": {
+        "items": [
+          85
+        ]
+      },
+      "id": 77,
+      "collection": "Living"
+    },
+    {
+      "name": "Kraken",
+      "description": "Micro-animal résistant aux conditions extrêmes.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 78,
+      "collection": "Living"
+    },
+    {
+      "name": "Chat",
+      "description": "Miaou!!!",
+      "rarity": 0,
+      "id": 79,
+      "collection": "Living"
+    },
+    {
+      "name": "Chien",
+      "description": "Ouaf!!!",
+      "rarity": 0,
+      "id": 80,
+      "collection": "Living"
+    },
+    {
+      "name": "Renard",
+      "description": "Le fameux renard du Petit Prince.",
+      "rarity": 0,
+      "id": 81,
+      "collection": "Living"
+    },
+    {
+      "name": "Ours",
+      "description": "Attention, il est très fort.",
+      "rarity": 0,
+      "id": 82,
+      "collection": "Living"
+    },
+    {
+      "name": "Fossile",
+      "description": "Plus vieux que 5 générations",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "equipped": 207
+      },
+      "id": 83,
+      "collection": "Geology"
+    },
+    {
+      "name": "Pétrole",
+      "description": "Comme un fossile mais liquide",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "items": [
+          83
+        ]
+      },
+      "id": 84,
+      "collection": "Geology"
+    },
+    {
+      "name": "Grotte",
+      "description": "Vous avez de la lumière avec vous j'espère.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "time": "day"
+      },
+      "id": 85,
+      "collection": "Geology"
+    },
+    {
+      "name": "Lac souterrain",
+      "description": "Les lacs souterrains ont un des roles les plus importants dans le cycle de l'eau",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          85
+        ]
+      },
+      "id": 86,
+      "collection": "Geology"
+    },
+    {
+      "name": "Stalactite",
+      "description": "Ça prends du temps à se former.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          85
+        ]
+      },
+      "id": 87,
+      "collection": "Geology"
+    },
+    {
+      "name": "Stalagmite",
+      "description": ".remrof es à spmet ud sdenrp aÇ",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          85
+        ]
+      },
+      "id": 88,
+      "collection": "Geology"
+    },
+    {
+      "name": "Séisme",
+      "description": "Accrochez vous bien, vous pouvez en crever.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "items": [
+          91
+        ]
+      },
+      "id": 89,
+      "collection": "Geology"
+    },
+    {
+      "name": "Geyser",
+      "description": "Même si l'eau peut paraître agréable, elle est souvent toxique ou brûlante.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "land": "Yurbaqan"
+      },
+      "id": 90,
+      "collection": "Geology"
+    },
+    {
+      "name": "Plaque tectonique",
+      "description": "Si deux plaques tectoniques entrent en collision, cela crée un séisme.",
+      "rarity": 1,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 91,
+      "collection": "Geology"
+    },
+    {
+      "name": "Feuille",
+      "description": "Je ne pense pas devoir vous le présenter. On en trouve sur les arbres.",
+      "rarity": 0,
+      "conditions": {
+        "items": [
+          74
+        ]
+      },
+      "id": 92,
+      "collection": "Element"
+    },
+    {
+      "name": "Feu",
+      "description": "Ça brûle.",
+      "rarity": 0,
+      "id": 93,
+      "collection": "Element"
+    },
+    {
+      "name": "Air",
+      "description": "Ça souffle.",
+      "rarity": 0,
+      "id": 94,
+      "collection": "Element"
+    },
+    {
+      "name": "Foudre",
+      "description": "Ça électrise.",
+      "rarity": 0,
+      "id": 95,
+      "collection": "Element"
+    },
+    {
+      "name": "Eau",
+      "description": "Ça mouille.",
+      "rarity": 0,
+      "id": 96,
+      "collection": "Element"
+    },
+    {
+      "name": "Acétabulum",
+      "description": "Partie de l'os du bassin, il est en forme de cuillère et s'articule avec la tête fémorale.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 97,
+      "collection": "Bones"
+    },
+    {
+      "name": "Talus",
+      "description": "Se trouve entre le tibia et le calcanéum, il est en forme de poulie.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 98,
+      "collection": "Bones"
+    },
+    {
+      "name": "Atlas C1",
+      "description": "Se trouve entre le crâne et l'axis, il est en forme d'anneau.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 99,
+      "collection": "Bones"
+    },
+    {
+      "name": "Atlas C2",
+      "description": "Se trouve entre l'atlas et le corps vertébral, il est en forme de dent.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 100,
+      "collection": "Bones"
+    },
+    {
+      "name": "Calcanéus",
+      "description": "Os du talon, il est en forme de cube.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 101,
+      "collection": "Bones"
+    },
+    {
+      "name": "Capitatum",
+      "description": "Os du poignet, il est en forme de tête.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 102,
+      "collection": "Bones"
+    },
+    {
+      "name": "Clavicule",
+      "description": "Os de la ceinture scapulaire, il est en forme de S.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 103,
+      "collection": "Bones"
+    },
+    {
+      "name": "Coccyx",
+      "description": "Os de la région pelvienne, il est en forme de triangle.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 104,
+      "collection": "Bones"
+    },
+    {
+      "name": "Colonne vertébrale",
+      "description": "Os de la colonne vertébrale, il est en forme de S.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 105,
+      "collection": "Bones"
+    },
+    {
+      "name": "Cuboïde",
+      "description": "Os du pied, il est en forme de cube.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 106,
+      "collection": "Bones"
+    },
+    {
+      "name": "Cunéiforme intermédiaire",
+      "description": "Os du pied, il est en forme de coin.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 107,
+      "collection": "Bones"
+    },
+    {
+      "name": "Cunéiforme latéral",
+      "description": "Os du pied, il est en forme de coin.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 108,
+      "collection": "Bones"
+    },
+    {
+      "name": "Cunéiforme médial",
+      "description": "Os du pied, il est en forme de coin.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 109,
+      "collection": "Bones"
+    },
+    {
+      "name": "Dent de l'axis",
+      "description": "Os de la colonne vertébrale, il est en forme de dent.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 110,
+      "collection": "Bones"
+    },
+    {
+      "name": "Écaille de l'os temporal",
+      "description": "Os du crâne, il est en forme d'écaille.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 111,
+      "collection": "Bones"
+    },
+    {
+      "name": "Éthmoïde",
+      "description": "Os du crâne, il est en forme de grille.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 112,
+      "collection": "Bones"
+    },
+    {
+      "name": "Fémur",
+      "description": "Os de la cuisse, il est en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 113,
+      "collection": "Bones"
+    },
+    {
+      "name": "Péroné",
+      "description": "Os de la jambe, il est en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 114,
+      "collection": "Bones"
+    },
+    {
+      "name": "Frontal",
+      "description": "Os du crâne, il est en forme de front.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 115,
+      "collection": "Bones"
+    },
+    {
+      "name": "Grand os",
+      "description": "Os du crâne.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 116,
+      "collection": "Bones"
+    },
+    {
+      "name": "Grand palatin",
+      "description": "Os du palais.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 117,
+      "collection": "Bones"
+    },
+    {
+      "name": "Grand os sésamoïdes",
+      "description": "Os du pied.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 118,
+      "collection": "Bones"
+    },
+    {
+      "name": "Hamatum",
+      "description": "Os du poignet, il est en forme de crochet.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 119,
+      "collection": "Bones"
+    },
+    {
+      "name": "Hyoïde",
+      "description": "Os du cou, il est en forme de fer à cheval.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 120,
+      "collection": "Bones"
+    },
+    {
+      "name": "Incus",
+      "description": "Os de l'oreille, il est en forme d'enclume.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 121,
+      "collection": "Bones"
+    },
+    {
+      "name": "Ischion",
+      "description": "Os du bassin, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 122,
+      "collection": "Bones"
+    },
+    {
+      "name": "Lame criblée de l'ethmoïde",
+      "description": "Os du crâne, il est en forme de lame.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 123,
+      "collection": "Bones"
+    },
+    {
+      "name": "Lame perpendiculaire de l'ethmoïde",
+      "description": "Os du crâne, il est en forme de lame.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 124,
+      "collection": "Bones"
+    },
+    {
+      "name": "Lunatum",
+      "description": "Os du poignet, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 125,
+      "collection": "Bones"
+    },
+    {
+      "name": "Malléole latérale",
+      "description": "Os de la cheville, il est en forme de boule.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 126,
+      "collection": "Bones"
+    },
+    {
+      "name": "Malléole médiale",
+      "description": "Os de la cheville, il est en forme de boule.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 127,
+      "collection": "Bones"
+    },
+    {
+      "name": "Mandibule",
+      "description": "Os de la mâchoire inférieure, il est en forme de U.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 128,
+      "collection": "Bones"
+    },
+    {
+      "name": "Malleus",
+      "description": "Os de l'oreille, il est en forme de marteau.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 129,
+      "collection": "Bones"
+    },
+    {
+      "name": "Maxillaire",
+      "description": "Os de la mâchoire supérieure, il est en forme de U.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 130,
+      "collection": "Bones"
+    },
+    {
+      "name": "Méat acoustique externe",
+      "description": "Os du crâne, il est en forme de canal.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 131,
+      "collection": "Bones"
+    },
+    {
+      "name": "Métacarpiens",
+      "description": "Os de la main, ils sont en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 132,
+      "collection": "Bones"
+    },
+    {
+      "name": "Métatarsiens",
+      "description": "Os du pied, ils sont en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 133,
+      "collection": "Bones"
+    },
+    {
+      "name": "Naviculaire",
+      "description": "Os du poignet, il est en forme de bateau.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 134,
+      "collection": "Bones"
+    },
+    {
+      "name": "Occipital",
+      "description": "Os du crâne, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 135,
+      "collection": "Bones"
+    },
+    {
+      "name": "Ombilic",
+      "description": "Os du crâne, il est en forme de bouton.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 136,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os alvéolaire",
+      "description": "Os de la mâchoire, il est en forme de dent.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 137,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os coxal",
+      "description": "Os du bassin, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 138,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os de la face",
+      "description": "Os du visage.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 139,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os frontal",
+      "description": "Os du crâne.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 140,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os hyoïde",
+      "description": "Os du cou, il est en forme de fer à cheval.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 141,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os iliaque",
+      "description": "Os du bassin, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 142,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os lacrymal",
+      "description": "Os du crâne, il est en forme de larme.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 143,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os longs",
+      "description": "Os du corps, ils sont en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 144,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os nasal",
+      "description": "Os du crâne.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 145,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os occipital",
+      "description": "Os du crâne, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 146,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os palatin",
+      "description": "Os du palais, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 147,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os pariétal",
+      "description": "Os du crâne, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 148,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os pétreux",
+      "description": "Os du crâne, il est en forme de pierre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 149,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os plats",
+      "description": "Os du corps, ils sont en forme de plaque.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 150,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os pneumatiques",
+      "description": "Os du corps, ils sont en forme de plaque.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 151,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os propre du nez",
+      "description": "Os du nez, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 152,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os pyramidal",
+      "description": "Os du crâne, il est en forme de pyramide.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 153,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os quadrangulaire",
+      "description": "Os du crâne, il est en forme de carré.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 154,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os ronds",
+      "description": "Os du corps, ils sont en forme de rond.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 155,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os scaphoïde",
+      "description": "Os du poignet, il est en forme de bateau.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 156,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os sésamoïdes",
+      "description": "Os du pied.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 157,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os sphénoïde",
+      "description": "Os du crâne, il est en forme de papillon.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 158,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os squameux",
+      "description": "Os du crâne, il est en forme d'écaille.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 159,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os suturaux",
+      "description": "Os du crâne, ils sont en forme de plaque.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 160,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os trapézoïde",
+      "description": "Os du poignet, il est en forme de trapèze.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 161,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os triangulaire",
+      "description": "Os du poignet, il est en forme de triangle.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 162,
+      "collection": "Bones"
+    },
+    {
+      "name": "Os zygomatique",
+      "description": "Os du crâne, il est en forme de pommette.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 163,
+      "collection": "Bones"
+    },
+    {
+      "name": "Petit os sésamoïdes",
+      "description": "Os du pied.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 164,
+      "collection": "Bones"
+    },
+    {
+      "name": "Petit palatin",
+      "description": "Os du palais.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 165,
+      "collection": "Bones"
+    },
+    {
+      "name": "Phalanges des doigts",
+      "description": "Os de la main, ils sont en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 166,
+      "collection": "Bones"
+    },
+    {
+      "name": "Phalanges des orteils",
+      "description": "Os du pied, ils sont en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 167,
+      "collection": "Bones"
+    },
+    {
+      "name": "Pisiforme",
+      "description": "Os du poignet, il est en forme de pois.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 168,
+      "collection": "Bones"
+    },
+    {
+      "name": "Radius",
+      "description": "Os de l'avant-bras, il est en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 169,
+      "collection": "Bones"
+    },
+    {
+      "name": "Sacrum",
+      "description": "Os du bassin, il est en forme de triangle.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 170,
+      "collection": "Bones"
+    },
+    {
+      "name": "Scaphoïde",
+      "description": "Os du poignet, il est en forme de bateau.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 171,
+      "collection": "Bones"
+    },
+    {
+      "name": "Lunatum",
+      "description": "Os du poignet, il est en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 172,
+      "collection": "Bones"
+    },
+    {
+      "name": "Sésamoïdes",
+      "description": "Os du pied.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 173,
+      "collection": "Bones"
+    },
+    {
+      "name": "Sphénoïde",
+      "description": "Os du crâne, il est en forme de papillon.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 174,
+      "collection": "Bones"
+    },
+    {
+      "name": "Étrier",
+      "description": "Os de l'oreille, il est en forme d'étrier.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 175,
+      "collection": "Bones"
+    },
+    {
+      "name": "Sternum",
+      "description": "Os de la poitrine, il est en forme de plastron.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 176,
+      "collection": "Bones"
+    },
+    {
+      "name": "Suturaux",
+      "description": "Os du crâne, ils sont en forme de plaque.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 177,
+      "collection": "Bones"
+    },
+    {
+      "name": "Talus",
+      "description": "Os de la cheville, il est en forme de poulie.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 178,
+      "collection": "Bones"
+    },
+    {
+      "name": "Temporal",
+      "description": "Os du crâne, il est en forme de tempe.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 179,
+      "collection": "Bones"
+    },
+    {
+      "name": "Tibia",
+      "description": "Os de la jambe, il est en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 180,
+      "collection": "Bones"
+    },
+    {
+      "name": "Trapèze",
+      "description": "Os du poignet, il est en forme de trapèze.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 181,
+      "collection": "Bones"
+    },
+    {
+      "name": "Trapézoïde",
+      "description": "Os du poignet, il est en forme de trapèze.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 182,
+      "collection": "Bones"
+    },
+    {
+      "name": "Triquétrum",
+      "description": "Os du poignet, il est en forme de triangle.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 183,
+      "collection": "Bones"
+    },
+    {
+      "name": "Cubitus",
+      "description": "Os de l'avant-bras, il est en forme de long cylindre.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 184,
+      "collection": "Bones"
+    },
+    {
+      "name": "Vertèbres cervicales",
+      "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 185,
+      "collection": "Bones"
+    },
+    {
+      "name": "Vertèbres dorsales",
+      "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 186,
+      "collection": "Bones"
+    },
+    {
+      "name": "Vertèbres lombaires",
+      "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 187,
+      "collection": "Bones"
+    },
+    {
+      "name": "Vertèbres sacrées",
+      "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 188,
+      "collection": "Bones"
+    },
+    {
+      "name": "Vertèbres thoraciques",
+      "description": "Os de la colonne vertébrale, elles sont en forme de croissant.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 189,
+      "collection": "Bones"
+    },
+    {
+      "name": "Zygomatique",
+      "description": "Os du crâne, il est en forme de pommette.",
+      "rarity": 0,
+      "conditions": {
+        "equipped": 207
+      },
+      "id": 190,
+      "collection": "Bones"
+    },
+    {
+      "name": "Étoile",
+      "description": "C'est chaud et ça éblouit.",
+      "rarity": 1,
+      "conditions": {
+        "time": "night"
+      },
+      "id": 191,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Terre",
+      "description": "C'est la terre ou autrement appelée la planète bleue.",
+      "rarity": 0,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 192,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Système solaire",
+      "description": "Le Système solaire, est le système planétaire du Soleil, auquel appartient la Terre.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          191,
+          192
+        ]
+      },
+      "id": 193,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Trou noir",
+      "description": "Au centre de chaque galaxie.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night",
+        "items": [
+          195
+        ]
+      },
+      "id": 194,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Galaxie",
+      "description": "C'est grand.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night"
+      },
+      "id": 195,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Univers",
+      "description": "C'est encore plus grand.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night",
+        "items": [
+          195,
+          194
+        ]
+      },
+      "id": 196,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Comète",
+      "description": "Saviez vous que le noyau d'une comète peut être appelé une \"boule de neige sale\"",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "time": "night"
+      },
+      "id": 197,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Nébuleuse",
+      "description": "Un nuage de gaz.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "time": "night"
+      },
+      "id": 198,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Supernova",
+      "description": "Une étoile qui explose.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "time": "night"
+      },
+      "id": 199,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Voie lactée",
+      "description": "Notre galaxie.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night",
+        "items": [
+          195
+        ]
+      },
+      "id": 200,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Météorite",
+      "description": "Un rocher qui tombe.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 201,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Éruption solaire",
+      "description": "Attention aux UV.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 202,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Éclipse Solaire",
+      "description": "Attention aux yeux.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 203,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Éclipse Lunaire",
+      "description": "La fameuse lune de sang.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 204,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Marteau",
+      "description": "Pratique pour enfoncer un clou",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 205,
+      "collection": "Tools"
+    },
+    {
+      "name": "Pioche",
+      "description": "Pratique pour miner",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 206,
+      "collection": "Tools"
+    },
+    {
+      "name": "Pelle",
+      "description": "Pratique pour creuser",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 207,
+      "collection": "Tools"
+    },
+    {
+      "name": "Vis",
+      "description": "Pratique pour accrocher du bois ensemble",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 208,
+      "collection": "Tools"
+    },
+    {
+      "name": "Tourne-Vis",
+      "description": "Pratique pour viser une vis",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 209,
+      "collection": "Tools"
+    },
+    {
+      "name": "Mètre",
+      "description": "Pratique pour mesurer des choses",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 210,
+      "collection": "Tools"
+    },
+    {
+      "name": "Perceuse",
+      "description": "Pratique pour percer divers trous",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 211,
+      "collection": "Tools"
+    },
+    {
+      "name": "Scie",
+      "description": "Pratique pour couper du bois",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 212,
+      "collection": "Tools"
+    },
+    {
+      "name": "Clé à molette",
+      "description": "Pratique pour serrer ou desserrer des écrous",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 213,
+      "collection": "Tools"
+    },
+    {
+      "name": "Chalumeau",
+      "description": "Pratique pour souder",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 214,
+      "collection": "Tools"
+    },
+    {
+      "name": "Pince",
+      "description": "Pratique pour saisir des objets",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 215,
+      "collection": "Tools"
+    },
+    {
+      "name": "Machine à remonter le temps",
+      "description": "Une machine permettant de changer d’époque",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 216,
+      "collection": "Machine"
+    },
+    {
+      "name": "Fusée",
+      "description": "Une machine permettant d'aller dans l'espace",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 217,
+      "collection": "Machine"
+    },
+    {
+      "name": "Cheval de Troie",
+      "description": "Machine utilisé pour infiltrer une ville ennemie",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 218,
+      "collection": "Machine"
+    },
+    {
+      "name": "Machine à café",
+      "description": "Sers à faire du café",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 219,
+      "collection": "Machine"
+    },
+    {
+      "name": "Tracteur",
+      "description": "Engin agricole permettant de labourer les champs",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 220,
+      "collection": "Machine"
+    },
+    {
+      "name": "Ordinateur",
+      "description": "Machine permettant de faire des calculs",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "items": [
+          37,
+          4
+        ]
+      },
+      "id": 221,
+      "collection": "Machine"
+    },
+    {
+      "name": "Drone",
+      "description": "Petit engin volant",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 222,
+      "collection": "Machine"
+    },
+    {
+      "name": "Exosquelette",
+      "description": "Machine permettant de renforcer la force humaine",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 223,
+      "collection": "Machine"
+    },
+    {
+      "name": "Accélérateur de particules",
+      "description": "Machine permettant d’étudier la nature et les propriétés des particules",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "items": [
+          221
+        ]
+      },
+      "id": 224,
+      "collection": "Machine"
+    },
+    {
+      "name": "Éolienne",
+      "description": "Machine créant de l'énergie à partir du vent.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 225,
+      "collection": "Machine"
+    },
+    {
+      "name": "Microscope",
+      "description": "Instrument qui permet de regarder des objets trop petits pour l'oeil nu.",
+      "rarity": 1,
+      "conditions": {
+        "action": "trade"
+      },
+      "id": 226,
+      "collection": "Machine"
+    },
+    {
+      "name": "Téléscope",
+      "description": "Instrument optique qui permet d'augmenter la taille apparente des objets observés.",
+      "rarity": 1,
+      "conditions": {
+        "action": "trade"
+      },
+      "id": 227,
+      "collection": "Machine"
+    },
+    {
+      "name": "Brosse à chiotte",
+      "description": "Utile pour se laver les dents",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 228,
+      "collection": "Daily"
+    },
+    {
+      "name": "Horloge",
+      "description": "Utile pour regarder l'heure",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 229,
+      "collection": "Daily"
+    },
+    {
+      "name": "Gourde",
+      "description": "Utile pour stocker de l'eau",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 230,
+      "collection": "Daily"
+    },
+    {
+      "name": "Chaussette",
+      "description": "Sers à garder son pied au chaud",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          250
+        ]
+      },
+      "id": 231,
+      "collection": "Daily"
+    },
+    {
+      "name": "Assiette",
+      "description": "Utile pour manger",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 232,
+      "collection": "Daily"
+    },
+    {
+      "name": "Clés",
+      "description": "Utile pour ouvrir des portes",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 233,
+      "collection": "Daily"
+    },
+    {
+      "name": "Oreiller",
+      "description": "Utile pour bien dormir",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 234,
+      "collection": "Daily"
+    },
+    {
+      "name": "Éponge",
+      "description": "Utile pour nettoyer",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 235,
+      "collection": "Daily"
+    },
+    {
+      "name": "Cadenas",
+      "description": "Utile pour sécuriser des choses",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          233
+        ]
+      },
+      "id": 236,
+      "collection": "Daily"
+    },
+    {
+      "name": "Stylo",
+      "description": "Utile pour écrire",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 237,
+      "collection": "Daily"
+    },
+    {
+      "name": "Bougie",
+      "description": "Utile pour éclairer",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 238,
+      "collection": "Daily"
+    },
+    {
+      "name": "Parapluie",
+      "description": "Utile pour se protéger de la pluie",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 239,
+      "collection": "Daily"
+    },
+    {
+      "name": "Dentifrice",
+      "description": "Utile pour se laver les dents",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 240,
+      "collection": "Daily"
+    },
+    {
+      "name": "Mona Lisa",
+      "description": "Tableau de Léonard de Vinci",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "items": [
+          249
+        ],
+        "land": "Liranjou"
+      },
+      "id": 241,
+      "collection": "Art"
+    },
+    {
+      "name": "Nuit étoilée",
+      "description": "Tableau de Vincent Van Gogh",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "time": "night",
+        "items": [
+          249
+        ],
+        "land": "Tobrekian"
+      },
+      "id": 242,
+      "collection": "Art"
+    },
+    {
+      "name": "La jeune Fille à la perle",
+      "description": "Tableau de Johannes Vermeer",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "items": [
+          249
+        ],
+        "land": "Nuvarkel"
+      },
+      "id": 243,
+      "collection": "Art"
+    },
+    {
+      "name": "La Cène",
+      "description": "Tableau de Léonard de Vinci",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "items": [
+          249
+        ],
+        "land": "Yurbaqan"
+      },
+      "id": 244,
+      "collection": "Art"
+    },
+    {
+      "name": "La liberté guidant le peuple",
+      "description": "Tableau d'Eugène Delacroix",
+      "rarity": 1,
+      "conditions": {
+        "action": "search",
+        "items": [
+          249
+        ],
+        "land": "Ombrixane"
+      },
+      "id": 245,
+      "collection": "Art"
+    },
+    {
+      "name": "La Grande Vague de Kanagawa",
+      "description": "Estampe de Katsushika Hokusai",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "near": "sea",
+        "items": [
+          249
+        ],
+        "land": "Zélanquo"
+      },
+      "id": 246,
+      "collection": "Art"
+    },
+    {
+      "name": "Lance",
+      "description": "Arme pouvant être utilisée pour attaquer les ennemis à distance.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 247,
+      "collection": "Antique"
+    },
+    {
+      "name": "Peau d'ours",
+      "description": "Peau pouvant être utilisée pour se protéger du froid.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "items": [
+          247,
+          82
+        ]
+      },
+      "id": 248,
+      "collection": "Antique"
+    },
+    {
+      "name": "Peinture",
+      "description": "Dessin présents sur les murs de la grotte.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "time": "day",
+        "items": [
+          85
+        ]
+      },
+      "id": 249,
+      "collection": "Antique"
+    },
+    {
+      "name": "Habits",
+      "description": "Objet pouvant être utilisé pour se protéger du froid.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search",
+        "season": "winter",
+        "items": [
+          248
+        ]
+      },
+      "id": 250,
+      "collection": "Antique"
+    },
+    {
+      "name": "Hache",
+      "description": "Objet utilisé pour couper du bois.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 251,
+      "collection": "Antique"
+    },
+    {
+      "name": "Feu de camp",
+      "description": "Construction permettant de se réchauffer et de s'éclairer.",
+      "rarity": 0,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 252,
+      "collection": "Antique"
+    },
+    {
+      "name": "Temple",
+      "description": "Construction antique et vénéré par les hommes préhistoriques.",
+      "rarity": 1,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 253,
+      "collection": "Antique"
+    }
+  ]
+}

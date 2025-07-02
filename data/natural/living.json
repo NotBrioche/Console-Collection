@@ -9,7 +9,10 @@
     "description": "Micro-animal résistant aux conditions extrêmes.",
     "rarity": 2,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "items": [
+        "Microscope"
+      ]
     }
   },
   {

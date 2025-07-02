@@ -33,7 +33,7 @@
   },
   {
     "name": "Tourne-Vis",
-    "description": "Sers à viser une vis",
+    "description": "Pratique pour viser une vis",
     "rarity": 0,
     "conditions": {
       "action": "search"
@@ -41,7 +41,7 @@
   },
   {
     "name": "Mètre",
-    "description": "Sers à mesurer des choses",
+    "description": "Pratique pour mesurer des choses",
     "rarity": 0,
     "conditions": {
       "action": "search"
@@ -57,7 +57,7 @@
   },
   {
     "name": "Scie",
-    "description": "Sers à couper du bois",
+    "description": "Pratique pour couper du bois",
     "rarity": 0,
     "conditions": {
       "action": "search"
@@ -65,7 +65,7 @@
   },
   {
     "name": "Clé à molette",
-    "description": "Sers à serrer ou desserrer des écrous",
+    "description": "Pratique pour serrer ou desserrer des écrous",
     "rarity": 0,
     "conditions": {
       "action": "search"
@@ -73,7 +73,7 @@
   },
   {
     "name": "Chalumeau",
-    "description": "Sers à souder",
+    "description": "Pratique pour souder",
     "rarity": 1,
     "conditions": {
       "action": "search"
@@ -81,7 +81,7 @@
   },
   {
     "name": "Pince",
-    "description": "Sers à saisir des objets",
+    "description": "Pratique pour saisir des objets",
     "rarity": 0,
     "conditions": {
       "action": "search"

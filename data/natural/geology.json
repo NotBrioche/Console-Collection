@@ -5,9 +5,7 @@
     "rarity": 1,
     "conditions": {
       "action": "search",
-      "items": [
-        "Pelle"
-      ]
+      "equipped": "Pelle"
     }
   },
   {
@@ -15,7 +13,10 @@
     "description": "Comme un fossile mais liquide",
     "rarity": 1,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "items": [
+        "Fossile"
+      ]
     }
   },
   {
@@ -66,7 +67,9 @@
     "rarity": 2,
     "conditions": {
       "action": "wait",
-      "items": ["Plaque tectonique"]
+      "items": [
+        "Plaque tectonique"
+      ]
     }
   },
   {
@@ -74,7 +77,8 @@
     "description": "Même si l'eau peut paraître agréable, elle est souvent toxique ou brûlante.",
     "rarity": 1,
     "conditions": {
-      "action": "search"
+      "action": "search",
+      "land": 9
     }
   },
   {

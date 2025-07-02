@@ -6,7 +6,7 @@ class Condition {
   moonPhase: string | null | undefined;
   action: string | null | undefined;
   items: number[] | null | undefined;
-  land: Land | null | undefined;
+  land: string | null | undefined;
   equipped: number | null | undefined;
   money: number | null | undefined;
 
@@ -16,7 +16,7 @@ class Condition {
     moonPhase?: string | null,
     action?: string | null,
     items?: number[] | null,
-    land?: Land | null,
+    land?: string | null,
     equipped?: number | null,
     money?: number | null
   ) {

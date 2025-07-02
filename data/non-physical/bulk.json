@@ -1,6 +1,6 @@
 [
     {
-        "name": "La méthode des six pas",
+        "name": "La théorie des 6",
         "description": "Principe selon lequel toute personne est connectée à une autre par un maximum de six relations.",
         "rarity": 1
     },
@@ -40,19 +40,14 @@
     {
         "name": "Réseaux sociaux",
         "description": "Plateformes en ligne permettant de connecter et d'interagir avec d'autres personnes.",
-        "rarity": 0,
-        "conditions": {
-            "action": "search",
-            "time": "night"
-        }
+        "rarity": 0
     },
     {
         "name": "Politique",
         "description": "Art ou science de gouverner une société ou un groupe.",
         "rarity": 1,
         "conditions": {
-            "action": "search",
-            "moonPhase": "full"
+            "land": 3
         }
     }
 ]

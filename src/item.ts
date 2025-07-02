@@ -1,5 +1,6 @@
 import CompactItem from './compact_item';
 import Condition from './condition';
+import { rarities } from './consts';
 
 class Item {
   id: number;
@@ -11,16 +12,6 @@ class Item {
   quality: number | null | undefined;
   rareVariant: boolean | null | undefined;
 
-  public static rarities = [
-    'Commun',
-    'Peu Commun',
-    'Rare',
-    'Épique',
-    'Légendaire',
-    'Mythique',
-    'Secret',
-  ];
-
   constructor(
     id: number,
     name: string,
@@ -31,9 +22,9 @@ class Item {
     quality?: number | null | undefined,
     rareVariant?: boolean | null | undefined
   ) {
-    if (rarity != null && (rarity >= Item.rarities.length || rarity < 0)) {
+    if (rarity != null && (rarity >= rarities.length || rarity < 0)) {
       throw new Error(
-        `Rarity must be between 0 and ${Item.rarities.length - 1}`
+        `Rarity must be between 0 and ${rarities.length - 1}`
       );
     }
 

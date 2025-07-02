@@ -1,10 +1,9 @@
 import * as fs from 'fs';
 import * as glob from 'glob';
+import { lands } from './src/consts';
 
 let total = 0;
 const items: any[] = [];
-
-const noCondition: any[] = [];
 
 const common: any[] = [];
 const uncommon: any[] = [];
@@ -14,14 +13,8 @@ const legendary: any[] = [];
 const mythic: any[] = [];
 const secret: any[] = [];
 
-const wait: any[] = [];
-const search: any[] = [];
-const trade: any[] = [];
-const event: any[] = [];
-
 const names = [
   'all',
-  'no_condition',
   'common',
   'uncommon',
   'rare',
@@ -29,25 +22,43 @@ const names = [
   'legendary',
   'mythic',
   'secret',
-  'wait',
-  'search',
-  'trade',
-  'event',
 ];
 
 for (let file of names) {
-  if (fs.existsSync(`data/${file}.json`)) {
-    fs.rmSync(`data/${file}.json`);
-  }
+  fs.writeFileSync(
+    `data/${file}.json`,
+    JSON.stringify({
+      total: 0,
+      items: [
+        {
+          id: 0,
+          name: 'Placeholder',
+          description: 'If you see this, my game is broken',
+          collection: 'Debug',
+          rarity: 1000,
+        },
+      ],
+    })
+  );
 }
 
 const files = glob.globSync('data/**/*.json');
+const char = process.platform == 'win32' ? '\\' : '/';
 
 files.forEach((file) => {
+  let pass = true;
+  for (const name of names) {
+    if (file == `data${char}${name}.json`) {
+      pass = false;
+    }
+  }
+
+  if (!pass) {
+    return;
+  }
+
   const content = fs.readFileSync(file, 'utf-8');
   const json = JSON.parse(content);
-
-  const char = process.platform == 'win32' ? '\\' : '/';
 
   json.forEach((entry: any) => {
     total += 1;
@@ -78,22 +89,17 @@ items.forEach((item: any) => {
       }
     }
 
-    switch (item.conditions['action']) {
-      case 'event':
-        event.push(item);
-        break;
-      case 'wait':
-        wait.push(item);
-        break;
-      case 'search':
-        search.push(item);
-        break;
-      case 'trade':
-        trade.push(item);
-        break;
+    if (item.conditions['equipped'] !== undefined) {
+      items.forEach((condition: any) => {
+        if (condition.name == item.conditions['equipped']) {
+          item.conditions['equipped'] = condition.id;
+        }
+      });
     }
-  } else {
-    noCondition.push(item);
+
+    if (item.conditions['land'] !== undefined) {
+      item.conditions['land'] = lands[item.conditions['land']].name;
+    }
   }
 
   switch (item.rarity) {
@@ -122,24 +128,15 @@ items.forEach((item: any) => {
   }
 });
 
-[
-  items,
-  noCondition,
-  common,
-  uncommon,
-  rare,
-  epic,
-  legendary,
-  mythic,
-  secret,
-  wait,
-  search,
-  trade,
-  event,
-].forEach((collection, key) => {
-  const output = {
-    total: collection.length,
-    items: collection,
-  };
-  fs.writeFileSync(`data/${names[key]}.json`, JSON.stringify(output, null, 2));
-});
+[items, common, uncommon, rare, epic, legendary, mythic, secret].forEach(
+  (collection, key) => {
+    const output = {
+      total: collection.length,
+      items: collection,
+    };
+    fs.writeFileSync(
+      `data/${names[key]}.json`,
+      JSON.stringify(output, null, 2)
+    );
+  }
+);

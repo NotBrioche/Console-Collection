@@ -4,6 +4,7 @@ import Land from './land';
 import CompactItem from './compact_item';
 import Item from './item';
 import * as utils from './utils';
+import { lands } from './consts';
 
 class Player {
   public username: string;
@@ -41,12 +42,12 @@ class Player {
   }
 
   set land(value: Land) {
-    this._land = Land.lands.indexOf(value);
+    this._land = lands.indexOf(value);
     fs.writeFileSync(Game.playerDataPath, JSON.stringify(this), { flag: 'w' });
   }
 
   get land(): Land {
-    return Land.lands[this._land];
+    return lands[this._land];
   }
 
   get collection(): Item[] {

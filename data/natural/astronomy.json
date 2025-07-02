@@ -4,11 +4,7 @@
     "description": "C'est chaud et ça éblouit.",
     "rarity": 1,
     "conditions": {
-      "action": "search",
-      "time": "night",
-      "items": [
-        "Téléscope"
-      ]
+      "time": "night"
     }
   },
   {
@@ -21,12 +17,12 @@
   },
   {
     "name": "Système solaire",
-    "description": "Nope",
+    "description": "Le Système solaire, est le système planétaire du Soleil, auquel appartient la Terre.",
     "rarity": 0,
     "conditions": {
       "action": "search",
       "items": [
-        "Maths",
+        "Étoile",
         "Terre"
       ]
     }
@@ -37,7 +33,10 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "time": "night"
+      "time": "night",
+      "items": [
+        "Galaxie"
+      ]
     }
   },
   {
@@ -55,7 +54,11 @@
     "rarity": 2,
     "conditions": {
       "action": "search",
-      "time": "night"
+      "time": "night",
+      "items": [
+        "Galaxie",
+        "Trou noir"
+      ]
     }
   },
   {

@@ -45,7 +45,8 @@
     "conditions": {
       "items": [
         "Neige"
-      ]
+      ],
+      "season": "winter"
     }
   },
   {
@@ -69,7 +70,8 @@
       "time": "day",
       "items": [
         "Soleil"
-      ]
+      ],
+      "season": "summer"
     }
   },
   {

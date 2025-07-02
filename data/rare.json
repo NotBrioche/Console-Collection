@@ -1,0 +1,359 @@
+{
+  "total": 31,
+  "items": [
+    {
+      "name": "Les disciples de VSCode",
+      "description": "On explique qu'ils sont en guerre millénaire avec le culte de Stack Overflow.",
+      "rarity": 2,
+      "id": 12,
+      "collection": "Religion"
+    },
+    {
+      "name": "Mortalité quantique",
+      "description": "Concept philosophique lié à l'interprétation des mondes multiples en physique quantique.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 22,
+      "collection": "Philosophy"
+    },
+    {
+      "name": "IA",
+      "description": "Intelligence artificielle, utilisée pour résoudre des problèmes complexes.",
+      "rarity": 2,
+      "conditions": {
+        "items": [
+          39
+        ]
+      },
+      "id": 35,
+      "collection": "Computer"
+    },
+    {
+      "name": "Baptême du chalet",
+      "description": "Rituel pour l'entrée d'une nouvelle personne dans un groupe d'amis.",
+      "rarity": 2,
+      "conditions": {
+        "action": "event"
+      },
+      "id": 45,
+      "collection": "Bulk"
+    },
+    {
+      "name": "Sécheresse",
+      "description": "Attention à bien s'hydrater.",
+      "rarity": 2,
+      "conditions": {
+        "time": "day",
+        "items": [
+          54
+        ]
+      },
+      "id": 56,
+      "collection": "Weather"
+    },
+    {
+      "name": "Arc-en-ciel",
+      "description": "C'est beau.",
+      "rarity": 2,
+      "conditions": {
+        "time": "day",
+        "items": [
+          49,
+          54
+        ]
+      },
+      "id": 58,
+      "collection": "Weather"
+    },
+    {
+      "name": "Diamant",
+      "description": "Pierre précieuse formée sous haute pression, connue pour sa dureté exceptionnelle et son éclat.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 61,
+      "collection": "Ores"
+    },
+    {
+      "name": "Palladium",
+      "description": "Métal rare de la famille du platine, utilisé notamment dans les pots catalytiques et l'électronique.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 64,
+      "collection": "Ores"
+    },
+    {
+      "name": "Saphir",
+      "description": "Le point de fusion du saphir est de 2050°C, ce qui est plus chaud que celui du diamant, qui est de 1750°C.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 66,
+      "collection": "Ores"
+    },
+    {
+      "name": "Uranium",
+      "description": "Saurez vous citer 2 bombes crées avec de l'uranium?",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 68,
+      "collection": "Ores"
+    },
+    {
+      "name": "Opale",
+      "description": "Le mot Opale vient du mot sanskrit upala qui signifie pierre précieuse.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "equipped": 206
+      },
+      "id": 70,
+      "collection": "Ores"
+    },
+    {
+      "name": "Tardigrade",
+      "description": "Micro-animal résistant aux conditions extrêmes.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "items": [
+          226
+        ]
+      },
+      "id": 73,
+      "collection": "Living"
+    },
+    {
+      "name": "Bigfoot",
+      "description": "Créature légendaire des forêts nord-américaines.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 76,
+      "collection": "Living"
+    },
+    {
+      "name": "Dragon",
+      "description": "Créature légendaire cracheuse de feu.",
+      "rarity": 2,
+      "conditions": {
+        "items": [
+          85
+        ]
+      },
+      "id": 77,
+      "collection": "Living"
+    },
+    {
+      "name": "Kraken",
+      "description": "Micro-animal résistant aux conditions extrêmes.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 78,
+      "collection": "Living"
+    },
+    {
+      "name": "Séisme",
+      "description": "Accrochez vous bien, vous pouvez en crever.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "items": [
+          91
+        ]
+      },
+      "id": 89,
+      "collection": "Geology"
+    },
+    {
+      "name": "Trou noir",
+      "description": "Au centre de chaque galaxie.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night",
+        "items": [
+          195
+        ]
+      },
+      "id": 194,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Galaxie",
+      "description": "C'est grand.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night"
+      },
+      "id": 195,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Univers",
+      "description": "C'est encore plus grand.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night",
+        "items": [
+          195,
+          194
+        ]
+      },
+      "id": 196,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Comète",
+      "description": "Saviez vous que le noyau d'une comète peut être appelé une \"boule de neige sale\"",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "time": "night"
+      },
+      "id": 197,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Nébuleuse",
+      "description": "Un nuage de gaz.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "time": "night"
+      },
+      "id": 198,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Supernova",
+      "description": "Une étoile qui explose.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait",
+        "time": "night"
+      },
+      "id": 199,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Voie lactée",
+      "description": "Notre galaxie.",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "time": "night",
+        "items": [
+          195
+        ]
+      },
+      "id": 200,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Météorite",
+      "description": "Un rocher qui tombe.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 201,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Éruption solaire",
+      "description": "Attention aux UV.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 202,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Éclipse Solaire",
+      "description": "Attention aux yeux.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 203,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Éclipse Lunaire",
+      "description": "La fameuse lune de sang.",
+      "rarity": 2,
+      "conditions": {
+        "action": "wait"
+      },
+      "id": 204,
+      "collection": "Astronomy"
+    },
+    {
+      "name": "Machine à remonter le temps",
+      "description": "Une machine permettant de changer d’époque",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 216,
+      "collection": "Machine"
+    },
+    {
+      "name": "Exosquelette",
+      "description": "Machine permettant de renforcer la force humaine",
+      "rarity": 2,
+      "conditions": {
+        "action": "search"
+      },
+      "id": 223,
+      "collection": "Machine"
+    },
+    {
+      "name": "Accélérateur de particules",
+      "description": "Machine permettant d’étudier la nature et les propriétés des particules",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "items": [
+          221
+        ]
+      },
+      "id": 224,
+      "collection": "Machine"
+    },
+    {
+      "name": "La Grande Vague de Kanagawa",
+      "description": "Estampe de Katsushika Hokusai",
+      "rarity": 2,
+      "conditions": {
+        "action": "search",
+        "near": "sea",
+        "items": [
+          249
+        ],
+        "land": "Zélanquo"
+      },
+      "id": 246,
+      "collection": "Art"
+    }
+  ]
+}

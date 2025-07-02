@@ -1,4 +1,5 @@
 import Command from '../command';
+import { rarities } from '../consts';
 import Game from '../game';
 import Item from '../item';
 import * as utils from '../utils';
@@ -83,18 +84,18 @@ class CollectionCommand implements Command {
       if (filtered.length > 0) {
         console.log(
           `> ${'-'.repeat(
-            `${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length
+            `${rarities[filtered[0].rarity]} - ${filtered[0].name}`.length
           )}`
         );
         console.log(
           `> ${utils.printWithRarityColor(
-            Item.rarities[filtered[0].rarity],
+            rarities[filtered[0].rarity],
             filtered[0].rarity
           )} - ${filtered[0].name}`
         );
         console.log(
           `> ${'-'.repeat(
-            `${Item.rarities[filtered[0].rarity]} - ${filtered[0].name}`.length
+            `${rarities[filtered[0].rarity]} - ${filtered[0].name}`.length
           )}`
         );
         console.log(`> ${filtered[0].collection} | ${filtered[0].description}`);
