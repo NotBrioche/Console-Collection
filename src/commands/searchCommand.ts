@@ -1,7 +1,7 @@
 import Command from '../command';
 import Game from '../game';
 import Item from '../item';
-import Utils from '../utils';
+import * as utils from '../utils';
 
 class SearchCommand implements Command {
   name: string = 'search';
@@ -95,16 +95,16 @@ class SearchCommand implements Command {
 
   tryGetItem(chance: number = 3) {
     if (Math.floor(Math.random() * chance) == 0) {
-      const items = Utils.getAllPossibleToGetItems(
+      const items = utils.getAllPossibleToGetItems(
         this.game.player,
-        Utils.getRarity(),
+        utils.getRarity(),
         'search'
       );
       const item = items[Math.floor(Math.random() * items.length)];
 
       this.game.player.addItem(Item.toCompact(item));
       console.log(
-        `> +1 ${Utils.printWithRarityColor(
+        `> +1 ${utils.printWithRarityColor(
           Item.rarities[item.rarity],
           item.rarity
         )} ${item.name}`

@@ -1,7 +1,7 @@
 import Command from '../command';
 import Game from '../game';
 import Item from '../item';
-import Utils from '../utils';
+import *as utils from '../utils';
 
 class WaitCommand implements Command {
   name: string = 'wait';
@@ -95,16 +95,16 @@ class WaitCommand implements Command {
 
     const eventOrItemChance = setTimeout(() => {
       if (Math.floor(Math.random() * 3) == 0) {
-        const items = Utils.getAllPossibleToGetItems(
+        const items = utils.getAllPossibleToGetItems(
           this.game.player,
-          Utils.getRarity(),
+          utils.getRarity(),
           'wait'
         );
         const item = items[Math.floor(Math.random() * items.length)];
 
         this.game.player.addItem(Item.toCompact(item));
         this.game.rl.write(
-          `+1 ${Utils.printWithRarityColor(
+          `+1 ${utils.printWithRarityColor(
             Item.rarities[item.rarity],
             item.rarity
           )} ${item.name}\n> `

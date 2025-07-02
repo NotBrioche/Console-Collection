@@ -1,7 +1,7 @@
 import Command from '../command';
 import Game from '../game';
 import Item from '../item';
-import Utils from '../utils';
+import * as utils from '../utils';
 
 class CollectionCommand implements Command {
   name: string = 'collection';
@@ -50,7 +50,7 @@ class CollectionCommand implements Command {
         }
 
         console.log(
-          `> ${item.id}: ${Utils.printWithRarityColor(
+          `> ${item.id}: ${utils.printWithRarityColor(
             `${item.name}`,
             item.rarity
           )} (${duplicates.length})`
@@ -87,7 +87,7 @@ class CollectionCommand implements Command {
           )}`
         );
         console.log(
-          `> ${Utils.printWithRarityColor(
+          `> ${utils.printWithRarityColor(
             Item.rarities[filtered[0].rarity],
             filtered[0].rarity
           )} - ${filtered[0].name}`
@@ -106,7 +106,7 @@ class CollectionCommand implements Command {
         console.log(
           `> ${
             item.rareVariant ? '\x1b[33m' + '[Rare] ' + '\x1b[0m' : ''
-          }${Utils.printWithRarityColor(`${item.name}`, item.rarity)} - ${
+          }${utils.printWithRarityColor(`${item.name}`, item.rarity)} - ${
             item.quality
           }`
         );

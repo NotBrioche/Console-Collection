@@ -1,6 +1,6 @@
 import Command from '../command';
 import Game from '../game';
-import Utils from '../utils';
+import * as utils from '../utils';
 
 class FlexCommand implements Command {
   name: string = 'flex';
@@ -51,13 +51,13 @@ class FlexCommand implements Command {
         '-'.repeat(
           `> ${bestItems[0].id}: ${
             bestItems[0].rareVariant ? '\x1b[33m' + '[Rare]' + '\x1b[0m' : ''
-          } ${Utils.printWithRarityColor(
+          } ${utils.printWithRarityColor(
             `${bestItems[0].name}`,
             bestItems[0].rarity
           )} (${bestItems[0].quality})`.length -
             (bestItems[0].rareVariant
-              ? 11 + Utils.printWithRarityColor('', bestItems[0].rarity).length
-              : 0 + Utils.printWithRarityColor('', bestItems[0].rarity).length)
+              ? 11 + utils.printWithRarityColor('', bestItems[0].rarity).length
+              : 0 + utils.printWithRarityColor('', bestItems[0].rarity).length)
         )
     );
 
@@ -71,7 +71,7 @@ class FlexCommand implements Command {
       console.log(
         `> ${item.id}: ${
           item.rareVariant ? '\x1b[33m' + '[Rare] ' + '\x1b[0m' : ''
-        }${Utils.printWithRarityColor(`${item.name}`, item.rarity)} (${
+        }${utils.printWithRarityColor(`${item.name}`, item.rarity)} (${
           item.quality
         })`
       );

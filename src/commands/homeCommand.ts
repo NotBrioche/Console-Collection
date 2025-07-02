@@ -1,7 +1,7 @@
 import Command from '../command';
 import '../extensions/date.extension';
 import Player from '../player';
-import Utils from '../utils';
+import * as utils from '../utils';
 import all from '../../data/all.json';
 
 class HomeCommand implements Command {
@@ -20,10 +20,10 @@ class HomeCommand implements Command {
   async execute(args: string[]): Promise<void> {
     const now = new Date();
 
-    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${Utils.getSeasonName()} ${now.toLocaleTimeString(
+    const titleString = `${now.getDayName()} ${now.getDate()} ${now.getMonthName()} ${now.getFullYear()} - ${utils.getSeasonName()} ${now.toLocaleTimeString(
       'fr-FR',
       { hour: '2-digit', minute: '2-digit' }
-    )} ${Utils.getTimeEmoji()}`;
+    )} ${utils.getTimeEmoji()}`;
 
     console.log(`> ${'-'.repeat(titleString.length - 2)}`);
     console.log(`> ${titleString}`);

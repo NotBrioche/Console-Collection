@@ -33,7 +33,7 @@ class Game {
         importedPlayer.nextReward
       );
       if (importedPlayer.nextReward <= Date.now()) {
-        this.player.energy = 100;
+        this.player.energy += 100;
         importedPlayer.nextReward = Date.now() + 18 * 60 * 60 * 1000;
 
         this.shop = new Shop(this.player);

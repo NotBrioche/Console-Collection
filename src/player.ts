@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import Land from './land';
 import CompactItem from './compact_item';
 import Item from './item';
-import Utils from './utils';
+import * as utils from './utils';
 
 class Player {
   public username: string;
@@ -52,7 +52,7 @@ class Player {
   get collection(): Item[] {
     const items = [];
     for (const compact of this._collection) {
-      const item = Utils.getItemFromId(
+      const item = utils.getItemFromId(
         compact.id,
         compact.quality,
         compact.rareVariant
