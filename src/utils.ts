@@ -32,7 +32,6 @@ class Utils {
 
   static importAllItems(rarity: number = 0) {
     const filesNames = [
-      all,
       common,
       uncommon,
       rare,

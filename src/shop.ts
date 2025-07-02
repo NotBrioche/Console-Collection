@@ -74,7 +74,7 @@ class Shop {
             item.quality! *
             this.multiplicator *
             (item.rareVariant ? 5 : 1) *
-            ((item.rarity + 1) * 0.5)
+            (1 + item.rarity * 0.15)
         )
       );
     }
@@ -88,11 +88,11 @@ class Shop {
     for (const item of this._buys) {
       prices.push(
         Math.round(
-          3000 *
+          2500 *
             item.quality! *
             this.multiplicator *
             (item.rareVariant ? 7 : 1) *
-            ((item.rarity + 1) * 0.6)
+            (1 + item.rarity * 0.2)
         )
       );
     }

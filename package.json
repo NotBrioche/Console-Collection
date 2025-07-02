@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node ./prepare-data.ts && ts-node ./index.ts",
     "build": "tsc && ts-node ./prepare-data.ts && pkg .",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "author": "NotBrioche",
   "license": "ISC",
