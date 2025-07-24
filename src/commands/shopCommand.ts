@@ -1,6 +1,7 @@
 import Command from '../command';
 import '../extensions/date.extension';
 import Game from '../game';
+import { printWithRarityColor } from '../utils';
 
 class ShopCommand implements Command {
   name: string = 'shop';
@@ -26,9 +27,10 @@ class ShopCommand implements Command {
     for (let i = 0; i < 3; i++) {
       if (i < this.game.shop.sells.length) {
         console.log(
-          `> ${i + 1}) ${this.game.shop.sells[i].name} - ${
-            this.game.shop.sellPrices[i]
-          } Zynthar`
+          `> ${i + 1}) ${printWithRarityColor(
+            this.game.shop.sells[i].name,
+            this.game.shop.sells[i].rarity
+          )} - ${this.game.shop.sellPrices[i]} Zynthar`
         );
       } else {
         console.log(`> ${i + 1}) -`);
@@ -43,9 +45,10 @@ class ShopCommand implements Command {
     for (let i = 0; i < 2; i++) {
       if (i < this.game.shop.buys.length) {
         console.log(
-          `> ${i + 2}) ${this.game.shop.buys[i].name} - ${
-            this.game.shop.buyPrices[i]
-          } Zynthar`
+          `> ${i + 2}) ${printWithRarityColor(
+            this.game.shop.buys[i].name,
+            this.game.shop.buys[i].rarity
+          )} - ${this.game.shop.buyPrices[i]} Zynthar`
         );
       } else {
         console.log(`> ${i + 2}) -`);

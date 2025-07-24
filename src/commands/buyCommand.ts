@@ -1,8 +1,8 @@
-import { getDefaultHighWaterMark } from 'stream';
 import Command from '../command';
 import '../extensions/date.extension';
 import Game from '../game';
 import Item from '../item';
+import { printWithRarityColor } from '../utils';
 
 class BuyCommand implements Command {
   name: string = 'buy';
@@ -93,7 +93,7 @@ class BuyCommand implements Command {
       ) {
         const item = this.game.shop.buys[Number(args[0]) - 2] as Item;
 
-        console.log(`> +1 ${item.name}`);
+        console.log(`> +1 ${printWithRarityColor(item.name, item.rarity)}`);
         console.log('> ');
 
         this.game.player.money -= this.game.shop.buyPrices[Number(args[0]) - 2];

@@ -96,11 +96,22 @@ class WaitCommand implements Command {
 
     const eventOrItemChance = setTimeout(() => {
       if (Math.floor(Math.random() * 3) == 0) {
-        const items = utils.getAllPossibleToGetItems(
+        let rarity = utils.getRarity();
+        let items = utils.getAllPossibleToGetItems(
           this.game.player,
-          utils.getRarity(),
+          rarity,
           'wait'
         );
+
+        while (items.length < 1) {
+          rarity--;
+          items = utils.getAllPossibleToGetItems(
+            this.game.player,
+            rarity,
+            'wait'
+          );
+        }
+
         const item = items[Math.floor(Math.random() * items.length)];
 
         this.game.player.addItem(Item.toCompact(item));

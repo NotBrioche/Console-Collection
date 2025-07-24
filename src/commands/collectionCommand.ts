@@ -30,8 +30,6 @@ class CollectionCommand implements Command {
         return;
       }
 
-      // TODO revamp
-
       const appeared: number[] = [];
       for (let item of this.game.player.collection.sort(
         (a, b) => a.id - b.id

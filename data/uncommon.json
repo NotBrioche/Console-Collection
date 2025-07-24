@@ -98,9 +98,6 @@
       "description": "Ensemble d'instructions pour résoudre un problème ou effectuer une tâche.",
       "rarity": 1,
       "conditions": {
-        "items": [
-          39
-        ],
         "action": "search"
       },
       "id": 37,
@@ -110,15 +107,11 @@
       "name": "Langage de prog.",
       "description": "Langage utilisé pour écrire des programmes informatiques.",
       "rarity": 1,
-      "conditions": {
-        "action": "search",
-        "season": "summer"
-      },
       "id": 39,
       "collection": "Computer"
     },
     {
-      "name": "La méthode des six pas",
+      "name": "La théorie des 6",
       "description": "Principe selon lequel toute personne est connectée à une autre par un maximum de six relations.",
       "rarity": 1,
       "id": 40,
@@ -148,8 +141,7 @@
       "description": "Art ou science de gouverner une société ou un groupe.",
       "rarity": 1,
       "conditions": {
-        "action": "search",
-        "moonPhase": "full"
+        "land": "Pemdravax"
       },
       "id": 47,
       "collection": "Bulk"
@@ -176,7 +168,8 @@
       "conditions": {
         "items": [
           50
-        ]
+        ],
+        "season": "winter"
       },
       "id": 53,
       "collection": "Weather"
@@ -325,7 +318,10 @@
       "description": "Une machine permettant d'aller dans l'espace",
       "rarity": 1,
       "conditions": {
-        "action": "search"
+        "action": "search",
+        "items": [
+          7
+        ]
       },
       "id": 217,
       "collection": "Machine"

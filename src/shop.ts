@@ -4,6 +4,7 @@ import Player from './player';
 import path from 'path';
 import * as fs from 'fs';
 import all from '../data/all.json';
+import { getAllPossibleToGetItems, getRarity } from './utils';
 
 class Shop {
   private _sells: Item[];
@@ -30,7 +31,13 @@ class Shop {
 
       for (let i = 0; i < 10; i++) {
         if (Math.floor(Math.random() * 5) == 0) {
-          const item = all.items[Math.floor(Math.random() * all.total)] as Item;
+          let rarity = getRarity(5);
+          let items = getAllPossibleToGetItems(player, rarity, 'trade');
+          while (items.length < 1) {
+            rarity--;
+            items = getAllPossibleToGetItems(player, rarity, 'trade');
+          }
+          const item = items[Math.floor(Math.random() * items.length)];
 
           buys.push(
             new Item(

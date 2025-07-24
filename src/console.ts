@@ -23,6 +23,8 @@ import EnergyDebugCommand from './commands/debug/energyCommand';
 import GiveDebugCommand from './commands/debug/giveCommand';
 import MoneyDebugCommand from './commands/debug/moneyCommand';
 import RerollDebugCommand from './commands/debug/rerollCommand';
+import RaritiesDebugCommand from './commands/debug/raritiesCommand';
+import ItemsDebugCommand from './commands/debug/itemsCommand';
 
 class Console {
   game: Game;
@@ -63,6 +65,8 @@ class Console {
       this.commands.push(new MoneyDebugCommand(this.game));
       this.commands.push(new AllDebugCommand(this.game));
       this.commands.push(new RerollDebugCommand(this.game));
+      this.commands.push(new ItemsDebugCommand(this.game));
+      this.commands.push(new RaritiesDebugCommand());
     }
 
     console.log('> home');

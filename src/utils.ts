@@ -43,22 +43,25 @@ export function getAllPossibleToGetItems(
   player: Player,
   rarity: number,
   action?: string,
-  equipped?: Item
+  equipped?: Item,
+  onlyNewItems: boolean = false
 ): Item[] {
   const items: Item[] = importAllItems(rarity);
   const available = [];
 
   for (const item of items) {
-    // let owned = false;
-    // for (const playerItem of player.collection) {
-    //   if (item['id'] == playerItem.id) {
-    //     owned = true;
-    //     break;
-    //   }
-    // }
-    // if (owned) {
-    //   continue;
-    // }
+    if (onlyNewItems) {
+      let owned = false;
+      for (const playerItem of player.collection) {
+        if (item['id'] == playerItem.id) {
+          owned = true;
+          break;
+        }
+      }
+      if (owned) {
+        continue;
+      }
+    }
 
     if (item['conditions']! === undefined) {
       available.push(
@@ -219,11 +222,11 @@ export function getAllPossibleToGetItems(
   return available;
 }
 
-export function getRarity() {
+export function getRarity(probability: number = 9) {
   let rarity = 0;
 
-  for (let i = 0; i < rarities.length; i++) {
-    if (Math.floor(Math.random() * 9) == 0) {
+  for (let i = 0; i < rarities.length - 1; i++) {
+    if (Math.floor(Math.random() * probability) == 0) {
       rarity++;
     } else {
       break;

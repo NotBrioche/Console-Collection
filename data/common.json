@@ -171,9 +171,14 @@
       "collection": "Marketing"
     },
     {
-      "name": "Deflation",
+      "name": "Déflation",
       "description": "Baisse générale et durable des prix dans une économie.",
       "rarity": 0,
+      "conditions": {
+        "items": [
+          32
+        ]
+      },
       "id": 30,
       "collection": "Marketing"
     },
@@ -181,6 +186,11 @@
       "name": "Inflation",
       "description": "Augmentation générale et durable des prix dans une économie.",
       "rarity": 0,
+      "conditions": {
+        "items": [
+          32
+        ]
+      },
       "id": 31,
       "collection": "Marketing"
     },
@@ -246,10 +256,6 @@
       "name": "Réseaux sociaux",
       "description": "Plateformes en ligne permettant de connecter et d'interagir avec d'autres personnes.",
       "rarity": 0,
-      "conditions": {
-        "action": "search",
-        "time": "night"
-      },
       "id": 46,
       "collection": "Bulk"
     },

@@ -96,11 +96,21 @@ class SearchCommand implements Command {
 
   tryGetItem(chance: number = 3) {
     if (Math.floor(Math.random() * chance) == 0) {
-      const items = utils.getAllPossibleToGetItems(
+      let rarity = utils.getRarity();
+      let items = utils.getAllPossibleToGetItems(
         this.game.player,
-        utils.getRarity(),
+        rarity,
         'search'
       );
+
+      while (items.length < 1) {
+        rarity--;
+        items = utils.getAllPossibleToGetItems(
+          this.game.player,
+          rarity,
+          'search'
+        );
+      }
       const item = items[Math.floor(Math.random() * items.length)];
 
       this.game.player.addItem(Item.toCompact(item));
